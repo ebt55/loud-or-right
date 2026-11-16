@@ -8,6 +8,8 @@ Code, data and analysis for a submission to the Apart Research **AI x Epistemics
 
 **Explainer video (3:34):** [`paper/video/loud-or-right-explainer.mp4`](paper/video/loud-or-right-explainer.mp4), with captions in [`loud-or-right-explainer.srt`](paper/video/loud-or-right-explainer.srt).
 
+https://github.com/user-attachments/assets/47c0b10b-2412-48b4-931e-44024d78b8e1
+
 **Slides:** [`paper/slides/loud-or-right-slides.pdf`](paper/slides/loud-or-right-slides.pdf) (editable: [`.pptx`](paper/slides/loud-or-right-slides.pptx)).
 
 ## What the study does
