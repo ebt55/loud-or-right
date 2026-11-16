@@ -61,7 +61,7 @@ Items come from MMLU-Pro (Wang et al., 2024; https://arxiv.org/abs/2406.01574), 
 - **Background and literature.** GPT-6 Astra synthesised the sprint talks. GPT-6 Astra and Gemini Carbon read and synthesised the provided resources and papers, and scouted further related work.
 - **Implementation.** Claude Opus 5.5 did all the implementation (code, runs, analysis, figures, report build), with periodic reviews by Claude Fable 5.2.
 - **Adversarial review.** GPT-6 Astra and Gemini Carbon red-teamed the design, checked it for confounds, and reviewed the results.
-- **Writing.** Claude Fable 5.2 drafted the report from the audited analysis outputs.
+- **Writing.** Claude Fable 5.2 drafted the report from the audited analysis outputs and revised it after six independent AI reviews.
 
 The author selected the project, directed the work, approved its key decisions and spending, and is responsible for all claims.
 
