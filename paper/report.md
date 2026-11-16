@@ -44,7 +44,7 @@ Models abandon correct answers under pushback [3, 5], and other work gives model
 
 **Models.** The main set has six open-weight and five closed models (hidden reasoning off or minimal). An exploratory "recency tier" adds four newer open-weight models (Table 1; Appendix A). The main protocol is answer-only; a secondary one allows 100 words of reasoning.
 
-**Analysis.** Four contrasts per model were registered before the test run: C1 = d_c, C2 = D, C3, and C4 = d_c with a distractor named. Arms B, R and S and later additions are exploratory; each was logged before it ran, arms R and S with predictions or decision rules. Intervals are 95% item bootstraps.
+**Analysis.** Four contrasts per model were registered before the test run (records in the code repository): C1 = d_c, C2 = D, C3, and C4 = d_c with a distractor named. Arms B, R and S and later additions are exploratory; each was logged before it ran, arms R and S with predictions or decision rules. Intervals are 95% item bootstraps.
 
 ## 4. Results
 
@@ -116,7 +116,7 @@ Given a critic's record split by how sure the critic sounded, Claude Sonnet 5.5 
 
 ## Code and Data
 
-- **Code repository:** [CODE LINK: author decides whether to publish a repository]
+- **Code repository:** https://github.com/ebt55/loud-or-right. It contains the harness, run outputs, analyses, figure scripts, and the pre-registration and exploratory records (`harness/FREEZE.md`, `harness_x/FREEZE_X.md`).
 - **Data/Datasets:** MMLU-Pro [13], https://arxiv.org/abs/2406.01574. All conversations are synthetic and built from its items.
 - **Other artifacts:** none.
 
@@ -227,7 +227,7 @@ Arm R shows the same entries in reverse order and renumbers them, so the voices 
 
 **Manipulation.** The results show which features of a challenge move a model: confident wording, a reviewer's overall record, the order of a history and, for record-faithful models, a stated record of past correctness. Someone wanting to push a model toward a wrong answer could fabricate a history of correct, confident objections; Sonnet answering immediately gave up correct answers on up to 31 of 40 items under such a history. We report aggregate rates and use simple templates already implied by prior work on pushback. We do not search for maximally persuasive histories.
 
-**Defensive use.** The same setup can test whether an agent weighs feedback by its source's record, whether order or overall score drives it, and whether a mitigation or brief reasoning helps. That is the purpose of the harness.
+**Defensive use.** The same setup can test whether an agent weighs feedback by its source's record, whether order or overall score drives it, and whether a mitigation or brief reasoning helps. That is the purpose of the released harness (https://github.com/ebt55/loud-or-right).
 
 **No human subjects, no personal data.** All conversations are synthetic, and the reviewer is fictional.
 
@@ -413,7 +413,7 @@ Arm R is arm A with the eight log entries in reverse order. D = d_c - d_u in eac
 
 Ministral 3 8B: arm A is a same-day repeat, because its system prompt carries the date, so its arm-A D differs from C2 in Table D1. Arm-A intervals here can differ slightly from Table D1 because the bootstrap and item population differ.
 
-**D11. Process record.** The pre-registration record (main run) and the exploratory record (later additions), kept with the code, list every deviation with its time, the results seen before it, and, for arms R and S and the Sonnet reasoning run, predictions or decision rules fixed before the run. Total API spend was about $41.
+**D11. Process record.** The pre-registration record (`harness/FREEZE.md`) and the exploratory record (`harness_x/FREEZE_X.md`) in the repository (https://github.com/ebt55/loud-or-right) list every deviation with its time, the results seen before it, and, for arms R and S and the Sonnet reasoning run, predictions or decision rules fixed before the run. Total API spend was about $41.
 
 **D12. Sonnet, Sol and Gemini across variants.** d_c and d_u, answer-only, model-was-wrong items:
 - second surface form: Sonnet 0.68 and 0.63; Sol 0.55 and 0.49;
