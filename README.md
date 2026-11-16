@@ -24,7 +24,7 @@ None. All code and data were produced during the sprint; work began on 15 Novemb
 | Path | Contents |
 |---|---|
 | `loud-or-right-design.md` | Design document, as red-teamed before the test run |
-| `pilot/` | Pilot scripts and data from development items |
+| `pilot/` | Pilot scripts and data from development items; also scripts from other candidate projects explored briefly during project selection (`pareto_*`, `memory_fallback_*`), which are not part of this study |
 | `harness/` | Frozen code for the main run (`design.py`, `run.py`, `run_all.py`, `analyze.py`, `api_client.py`, ...), item pool, selected items, run outputs (`runs/*.jsonl`), analysis outputs (`analysis/`), and `FREEZE.md`, the pre-registration record with every later deviation logged |
 | `harness_x/` | A copy of the code with the exploratory additions: the recency tier, arm R (reversed order), arm S (order randomised per item) and Sonnet with reasoning on model-was-wrong items. Its record is `FREEZE_X.md`; predictions and decision rules were written there before each run |
 | `harness/posthoc/` | Post hoc analyses (first-entry split, arm R vs A, arm S) |
