@@ -451,11 +451,13 @@ Every interval crosses a threshold, so the verdicts rest on point estimates. The
 
 ## LLM Usage Statement
 
-This project relied heavily on LLM assistance, and we state its extent plainly.
+This project relied heavily on LLM assistance. We state its extent plainly, by stage.
 
-- **Design, code, runs and analysis.** The study design, the experiment code, the model runs and the analysis were produced with Claude models, directed by the author.
-- **Review.** The design and the results were reviewed by other AI agents, including two red-team reviews of the design before the test run.
-- **Writing.** This report was drafted by Claude (Fable 5.2) from the audited analysis outputs.
+- **Project selection.** Claude Fable 5.2 brainstormed candidate projects and ranked "Loud or Right?" as the top pick.
+- **Background and literature.** GPT-6 Astra synthesised the sprint talks. GPT-6 Astra and Gemini Carbon read and synthesised the provided resources and research papers, and scouted further related work.
+- **Implementation.** Claude Opus 5.5 did all the implementation: the experiment code, the model runs, the analysis, the figures and the build of this document. Claude Fable 5.2 reviewed the work periodically along the way.
+- **Adversarial review.** GPT-6 Astra and Gemini Carbon red-teamed the design before the test run, scrutinised it for confounds, and reviewed the results. One of their design reviews flagged the fixed entry order discussed in Section 4.2.
+- **Writing.** Claude Fable 5.2 drafted this report from the audited analysis outputs.
 - **Verification.** An independent AI audit checked every number in the report against the analysis outputs, and the key numbers against the raw data.
 
-The author directed the work, checked it, and is responsible for all claims and citations.
+The author selected the project from the ranked candidates, directed the work, approved its key decisions and spending, and is responsible for all claims and citations.

@@ -28,7 +28,7 @@ None. All code and data were produced during the sprint; work began on 15 Novemb
 | `harness/` | Frozen code for the main run (`design.py`, `run.py`, `run_all.py`, `analyze.py`, `api_client.py`, ...), item pool, selected items, run outputs (`runs/*.jsonl`), analysis outputs (`analysis/`), and `FREEZE.md`, the pre-registration record with every later deviation logged |
 | `harness_x/` | A copy of the code with the exploratory additions: the recency tier, arm R (reversed order), arm S (order randomised per item) and Sonnet with reasoning on model-was-wrong items. Its record is `FREEZE_X.md`; predictions and decision rules were written there before each run |
 | `harness/posthoc/` | Post hoc analyses (first-entry split, arm R vs A, arm S) |
-| `paper/` | Report source and builds, figure script (`make_figs.py`), figures, and the number audit (`recount-paper.md`) |
+| `paper/` | Report source and builds, figure script (`make_figs.py`), figures, and the number audit (`recount-paper.md`). `build_report_docx.py` fills the official Apart submission template, which is not included here; get it from the sprint's Guidelines page and place it in `submission-template/` |
 
 ## Reproducing
 
@@ -57,7 +57,13 @@ Items come from MMLU-Pro (Wang et al., 2024; https://arxiv.org/abs/2406.01574), 
 
 ## Use of AI tools
 
-The study design, code, runs and analysis were produced with Claude models, directed by the author. Design and results were reviewed by other AI agents. The report was drafted by Claude (Fable 5.2) from the audited analysis outputs. See the LLM Usage Statement in the report.
+- **Project selection.** Claude Fable 5.2 brainstormed candidates and ranked this project as the top pick.
+- **Background and literature.** GPT-6 Astra synthesised the sprint talks. GPT-6 Astra and Gemini Carbon read and synthesised the provided resources and papers, and scouted further related work.
+- **Implementation.** Claude Opus 5.5 did all the implementation (code, runs, analysis, figures, report build), with periodic reviews by Claude Fable 5.2.
+- **Adversarial review.** GPT-6 Astra and Gemini Carbon red-teamed the design, checked it for confounds, and reviewed the results.
+- **Writing.** Claude Fable 5.2 drafted the report from the audited analysis outputs.
+
+The author selected the project, directed the work, approved its key decisions and spending, and is responsible for all claims.
 
 ## Licence
 
