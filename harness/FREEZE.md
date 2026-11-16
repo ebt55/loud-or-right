@@ -175,16 +175,16 @@ Format: time IST, what changed, why, which rows or results it affects.
 ## 10. Corrections added 16 Nov 06:53 IST, after independent review (nothing above is altered)
 
 **A. The analysis script changed after the freeze.**
-- `harness/analyze.py` was modified at about 22:06 IST on 15 Nov, and no deviation was logged then. Its hash is now `ff79e78006e6afd7…`, not the recorded `69588bf7…`.
-- The change was requested around 22:00, for the exploratory tier and the right-stratum additions. It added two reporting features: an exploratory model-was-right summary table, and tagging of `harness_x/` input files as "recency" tier.
-- The frozen bytes were overwritten and cannot be recovered.
-- **Checks that the registered computation is unchanged:**
+- `harness/analyze.py` was modified after the freeze, and no deviation was logged then. Its last modification is at about 22:06 IST on 15 Nov. Its hash is now `ff79e78006e6afd7…`, not the recorded `69588bf7…`.
+- The frozen bytes were overwritten and cannot be recovered, so the diff cannot be reconstructed, and the file may have changed more than once.
+- **The changes we can identify** from a brief recovered from the session record (around 22:00) add two reporting features: an exploratory model-was-right summary table, and tagging of `harness_x/` input files as "recency" tier.
+- **Checks that the registered computation is unchanged** (the claim rests on these, not on the identified changes):
   1. We rebuilt the exact input of the 19:12 IST analysis (`analysis/interim_1912.md`): 9,040 rows, filtered by each row's timestamp. The current script reproduces its registered C1–C4 estimates, intervals and Holm p values exactly, for both models in it.
-  2. The registered rows in `summary__hosted_full.md` (21:49) and `summary__ministral_full.md` (20:43), both written before the change, are identical to `summary__all_final3.md` (8 of 8 rows).
-- Differences from `summary__interim_2007.md` (20:07) come from runs that were incomplete at that time; for example, repeat runs had not yet been added.
+  2. The registered rows in `summary__hosted_full.md` (21:49) and `summary__ministral_full.md` (20:43), both written before the last modification, are identical to `summary__all_final3.md` (8 of 8 rows).
+- Differences from `summary__interim_2007.md` (20:07) come from runs that were incomplete at that time.
 
 **B. Chronology of some records.** Raw rows carry the completion time of each trial (`ts`). Against those:
-- **Main freeze.** The header says 18:57; the first treated trials completed at 18:56:37 (Ministral) and 18:56:47 (Luna). The header time is approximate to the minute.
+- **Main freeze.** The header says 18:57; the first treated trials completed at 18:56:37 (Ministral) and 18:56:47 (Luna). `run.py` refuses test items unless `harness/FREEZE.md` exists (lines 81–82), so this record existed before the first test trial; the header time is approximate.
 - **Recency-tier record** (`harness_x/FREEZE_X.md`, "written 20:45 before any test item was sent"). DeepSeek V4.1 Flash's first test trial completed at 20:42:02, so the record was saved about 3 minutes after that run began. The record states no predictions, only that the frozen contrasts would be computed as exploratory.
 - **Item 5 here (22:58) and `FREEZE_X.md` item 3 (23:05)**, Sonnet with reasoning on model-was-right items. That run's trials completed from 22:55:50 to 22:59:59, so item 5 was written while the run was in progress and item 3 after it ended. No prediction was attached. The run is reported as exploratory.
 - **Runs with predictions or decision rules recorded before their first trial:**
