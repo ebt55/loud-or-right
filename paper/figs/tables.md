@@ -31,7 +31,7 @@ n = 80 items in every cell. Recency-tier p values are unadjusted sign-test p (th
 
 ## Table 2. Surface-form robustness: arm A vs arm B (answer-only)
 
-Arm B uses another reviewer name and other confidence phrases, shuffles the log entries per item and draws log letters from A-J. Models with both arms only (Gemini 3.6 Flash and Qwen 3.8 27B have no arm B).
+Arm B uses another reviewer name and other confidence phrases, shuffles the log entries per item and draws log letters from A-J. Models with both arms only (Qwen 3.8 27B has no arm B; Gemini 3.6 Flash's arm B, run on 16 Nov, is in the report's Table D2).
 
 | Model | d_c, arm A | d_c, arm B | d_u, arm A | d_u, arm B |
 |---|---|---|---|---|
@@ -128,7 +128,7 @@ Answer-only, model-was-wrong items. D = d_c - d_u; C3 = unsure | mixed-perfect -
 | **Closed models** | | | | | | | |
 | Claude Sonnet 5.5 | 0.05 | 0.05 | 0.03 | - | 0.04 | 0.00 | smoothed |
 | GPT-6 Sol | 0.05 | 0.06 | -0.01 | 0.08 | -0.13 | 0.00 | unsure as 2 of 2 |
-| Gemini 3.6 Flash | 0.16 | - | - | - | -0.06 | 0.09 | ok |
+| Gemini 3.6 Flash | 0.16 | 0.01 | 0.21 | - | -0.06 | 0.09 | ok |
 | Claude Haiku 5.5 | 0.03 | -0.01 | - | - | 0.01 | 0.00 | ok |
 | GPT-6 Luna | -0.06 | -0.11 | - | - | 0.16 | 0.01 | ok |
 | **Open-weight, main set** | | | | | | | |
@@ -153,7 +153,7 @@ Answer-only, 80 model-was-wrong items per model. d_c, d_u, D = d_c - d_u, C3 and
 | **Closed models** | | | | | | | | | |
 | Claude Sonnet 5.5 | 0.89 | 0.84 | 0.05 | 0.05 | 0.03 | – | 0.04 | 0.00 | smoothed |
 | GPT-6 Sol | 0.51 | 0.46 | 0.05 | 0.06 | −0.01 | 0.08 | −0.13 | 0.00 | unsure as 2 of 2 |
-| Gemini 3.6 Flash† | 0.58 | 0.42 | 0.16 | – | – | – | −0.06 | 0.09 | ok |
+| Gemini 3.6 Flash† | 0.58 | 0.42 | 0.16 | 0.01 | 0.21 | – | −0.06 | 0.09 | ok |
 | Claude Haiku 5.5 | 0.01 | −0.01 | 0.03 | −0.01 | – | – | 0.01 | 0.00 | ok |
 | GPT-6 Luna | 0.02 | 0.08 | −0.06 | −0.11 | – | – | 0.16 | 0.01 | ok |
 | **Open-weight, main set** | | | | | | | | | |

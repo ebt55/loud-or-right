@@ -1,6 +1,6 @@
 # Arm R (reversed entry order) vs arm A
 
-Generated 2026-11-16 03:11 by `harness/posthoc/arm_r.py`. Exploratory. Pre-run record and predictions: `harness_x/FREEZE_X.md`, Deviations item 5. Arm R is arm A with the eight log entries shown in reverse order: the first entry is (C) unsure-voice and the last (B) certain-voice.
+Generated 2026-11-16 14:26 by `harness/posthoc/arm_r.py`. Exploratory. Pre-run record and predictions: `harness_x/FREEZE_X.md`, Deviations item 5. Arm R is arm A with the eight log entries shown in reverse order: the first entry is (C) unsure-voice and the last (B) certain-voice.
 
 Answer-only, stratum wrong, target key. Strict missing rule (error, final "?", done "length", trunc_risk). Items: non-missing in c|CR, c|UR, u|UR, u|CR and u|PM in both arms. Replicates are averaged within item and cell (gemma4:12b and Llama 3.3 70B arm A: rep1 and rep2 for the four core cells; their rep2 did not run perfect_mixed, so u|PM is rep1 only). d_c = c|CR - c|UR; d_u = u|UR - u|CR; D = d_c - d_u; C3 = u|PM - u|UR. Estimate [paired item-bootstrap 95% interval, 2000 resamples, seed 20261116]. CR = certain_right, UR = unsure_right, PM = perfect_mixed.
 
@@ -26,6 +26,9 @@ ministral-3:8b: the primary arm A is the same-day repeat in `harness_x/runs` (it
 | GPT-6 Sol | `harness/runs/test__openai_gpt-6-sol__instant__A.jsonl` | 800 | 0 |
 | Claude Sonnet 5.5 | `harness_x/runs/test__anthropic_claude-sonnet-5-5__instant__R.jsonl` | 720 | 0 |
 | Claude Sonnet 5.5 | `harness/runs/test__anthropic_claude-sonnet-5-5__instant__A.jsonl` | 800 | 0 |
+| Gemini 3.6 Flash | `harness_x/runs/test__google_gemini-3.6-flash__instant__R.jsonl` | 720 | 0 |
+| Gemini 3.6 Flash | `harness/runs/test__google_gemini-3.6-flash__instant__A.jsonl` | 800 | 0 |
+| Gemini 3.6 Flash | `harness/runs/test__google_gemini-3.6-flash__instant__A__rep2.jsonl` | 560 | 0 |
 
 ## 1. Per arm
 
@@ -45,6 +48,8 @@ ministral-3:8b: the primary arm A is the same-day repeat in `harness_x/runs` (it
 | GPT-6 Sol | R | 80 | 0.550 | 0.087 | 0.562 | 0.087 | 0.425 | +0.463 [+0.362, +0.575] | +0.475 [+0.375, +0.588] | -0.013 [-0.100, +0.075] | -0.138 [-0.225, -0.062] |
 | Claude Sonnet 5.5 | A | 80 | 0.887 | 0.000 | 0.838 | 0.000 | 0.875 | +0.887 [+0.812, +0.950] | +0.838 [+0.750, +0.912] | +0.050 [-0.050, +0.150] | +0.037 [-0.050, +0.125] |
 | Claude Sonnet 5.5 | R | 80 | 0.775 | 0.000 | 0.750 | 0.000 | 0.887 | +0.775 [+0.675, +0.863] | +0.750 [+0.650, +0.838] | +0.025 [-0.075, +0.125] | +0.138 [+0.037, +0.237] |
+| Gemini 3.6 Flash | A | 80 | 0.613 | 0.037 | 0.419 | 0.000 | 0.362 | +0.575 [+0.469, +0.675] | +0.419 [+0.319, +0.519] | +0.156 [+0.062, +0.250] | -0.056 [-0.150, +0.044] |
+| Gemini 3.6 Flash | R | 80 | 0.750 | 0.037 | 0.525 | 0.025 | 0.375 | +0.713 [+0.613, +0.812] | +0.500 [+0.388, +0.613] | +0.212 [+0.100, +0.325] | -0.150 [-0.250, -0.050] |
 
 ## 2. Paired differences, arm R minus arm A (same items)
 
@@ -57,6 +62,7 @@ ministral-3:8b: the primary arm A is the same-day repeat in `harness_x/runs` (it
 | ministral-3:8b vs 15 Nov arm A (secondary) | 80 | -0.688 [-0.887, -0.487] | -0.025 [-0.113, +0.062] | -0.475 [-0.650, -0.312] | +0.212 [+0.100, +0.338] |
 | GPT-6 Sol | 80 | -0.062 [-0.200, +0.075] | -0.013 [-0.113, +0.087] | -0.050 [-0.150, +0.050] | +0.013 [-0.087, +0.113] |
 | Claude Sonnet 5.5 | 80 | -0.025 [-0.163, +0.100] | +0.100 [-0.025, +0.225] | -0.113 [-0.200, -0.037] | -0.087 [-0.200, +0.037] |
+| Gemini 3.6 Flash | 80 | +0.056 [-0.075, +0.181] | -0.094 [-0.212, +0.031] | +0.138 [+0.037, +0.244] | +0.081 [-0.025, +0.181] |
 
 ## 3. Predictions (fixed before any arm R call)
 
@@ -90,6 +96,7 @@ In arm R both perfect_mixed and unsure_right open with an unsure-voice entry mar
 | ministral-3:8b vs 15 Nov arm A (secondary) | 80 | 0.338 | 0.138 | +0.200 [+0.113, +0.287] | +0.225 [+0.138, +0.312] | -0.025 [-0.113, +0.062] |
 | GPT-6 Sol | 80 | 0.425 | 0.562 | -0.138 [-0.225, -0.062] | -0.125 [-0.212, -0.050] | -0.013 [-0.113, +0.087] |
 | Claude Sonnet 5.5 | 80 | 0.887 | 0.750 | +0.138 [+0.037, +0.237] | +0.037 [-0.050, +0.125] | +0.100 [-0.025, +0.225] |
+| Gemini 3.6 Flash | 80 | 0.375 | 0.525 | -0.150 [-0.250, -0.050] | -0.056 [-0.150, +0.044] | -0.094 [-0.212, +0.031] |
 
 ## 5. Order-averaged effects (follow-up)
 
@@ -103,3 +110,4 @@ Per item, the mean of arm A and arm R (entries shown in BASE order and in revers
 | ministral-3:8b | 80 | +0.050 [+0.006, +0.094] | yes (above) | +0.006 [-0.019, +0.031] | no | +0.044 [-0.006, +0.094] | no |
 | GPT-6 Sol | 80 | +0.487 [+0.394, +0.581] | yes (above) | +0.469 [+0.369, +0.569] | yes (above) | +0.019 [-0.044, +0.075] | no |
 | Claude Sonnet 5.5 | 80 | +0.831 [+0.756, +0.894] | yes (above) | +0.794 [+0.725, +0.863] | yes (above) | +0.037 [-0.037, +0.119] | no |
+| Gemini 3.6 Flash | 80 | +0.644 [+0.547, +0.728] | yes (above) | +0.459 [+0.369, +0.550] | yes (above) | +0.184 [+0.103, +0.269] | yes (above) |

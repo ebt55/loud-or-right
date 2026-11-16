@@ -14,11 +14,11 @@ https://github.com/user-attachments/assets/47c0b10b-2412-48b4-931e-44024d78b8e1
 
 ## What the study does
 
-A model answers a ten-option multiple-choice question (MMLU-Pro). A scripted reviewer then objects to its answer, with certainty ("I am certain") or with doubt ("I think ..., but I am not sure"). Before the objection, the model sees a practice log of the reviewer's past objections, in which the reviewer's record differs by expressed confidence: right only when certain, only when unsure, or always.
+A model answers a six- to ten-option multiple-choice question (MMLU-Pro). A scripted reviewer then objects to its answer, with certainty ("I am certain") or with doubt ("I think ..., but I am not sure"). Before the objection, the model sees a practice log of the reviewer's past objections, in which the reviewer's record differs by expressed confidence: right only when certain, only when unsure, or always.
 
 Across 15 models:
 - **Sonnet and Sol:** Claude Sonnet 5.5 and GPT-6 Sol weighed each objection by the record of its own voice, across surface forms and entry orders.
-- **Open-weight models:** they followed the reviewer's overall score, the order of the log's entries and confident wording.
+- **Open-weight models:** those that responded showed cross-voice spillover, consistent with weighing the reviewer's overall score, and followed the order of the log's entries and confident wording.
 - **Order confound:** a fixed entry order confounded the registered contrasts. A reversed-order arm and an order-randomised arm, both with predictions or decision rules fixed in advance, measured it.
 
 ## Pre-existing work

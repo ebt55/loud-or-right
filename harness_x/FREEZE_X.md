@@ -173,6 +173,17 @@ Separate ledger (`harness_x/data/spend.json`). OpenRouter calls are refused once
      - **Stop rule.** If not complete and analysed by 15:15 IST, it is left out of the final version.
      - **Seen before:** all results so far.
      - **Status.** Exploratory.
+   - **Result (16 Nov 14:25 IST, analysed with the frozen `harness/analyze.py`).**
+     - **Complete:** arm B 560/560 and arm R 720/720 trials, 0 errors, 0 missing under the strict rule; 80 items in the by-voice population in each arm.
+     - **Arm B:** d_c .725 [.625, .825], d_u .713 [.613, .812], D +.013 [−.113, .138].
+     - **Arm R:** d_c .713 [.613, .812], d_u .500 [.388, .613], D +.2125 [.100, .325]. C3 in arm R −.150 [−.250, −.050].
+     - **Verdict under the 04:23 rule:** |D| ≥ .2 in arm R (point estimate .2125; its interval spans .2). So Gemini does not join the Sonnet/Sol profile, and by the rule its profile is order- or form-dependent. For reference, D was +.16 in arm A, +.21 in arm R and +.01 in arm B.
+     - **Deviation (launch).**
+       - The runs launched at 13:36 as planned, with the arguments above.
+       - The machine's internet connection then dropped (mobile data during a broadband outage), so most of the first trials failed with DNS errors (`getaddrinfo failed`). Those requests never reached the API and were not billed.
+       - Both processes were stopped at about 14:05. A watcher relaunched them at 14:08 with identical arguments whenever the API host was reachable.
+       - `run.py` dropped the error rows and reran them. The rows completed in the first launch (24 per arm) were kept.
+       - Both arms finished at 14:21, before the 15:15 stop rule.
 2. 21:10: the user raised the OpenRouter cap from $15 to $20. Mistral Medium 3.5 launched with the same runs as the others. Seen before this launch: the other three tier models' answer-only results (DeepSeek V4.1 Flash and Llama 4 Maverick strongly positive on all four contrasts; Qwen 3.8 27B near zero).
 
 ## Correction (16 Nov 06:53 IST, after independent review)

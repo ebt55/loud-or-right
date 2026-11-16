@@ -1187,7 +1187,7 @@ def tables(d, sonnet_delib, d3, s_res, b_res, r_res, d_x=None):
     # T2
     L += ["## Table 2. Surface-form robustness: arm A vs arm B (answer-only)", "",
           "Arm B uses another reviewer name and other confidence phrases, shuffles the log entries per item and draws "
-          "log letters from A-J. Models with both arms only (Gemini 3.6 Flash and Qwen 3.8 27B have no arm B).", "",
+          "log letters from A-J. Models with both arms only (Qwen 3.8 27B has no arm B; Gemini 3.6 Flash's arm B, run on 16 Nov, is in the report's Table D2).", "",
           "| Model | d_c, arm A | d_c, arm B | d_u, arm A | d_u, arm B |", "|---|---|---|---|---|"]
     for cls in CLASSES:
         block = []

@@ -10,10 +10,10 @@
  "google": {
   "by_model": {
    "gemini-3.1-flash-lite": 0.0009547499999999999,
-   "gemini-3.6-flash": 5.226698249999958
+   "gemini-3.6-flash": 5.478431249999958
   },
-  "calls": 10011,
-  "usd": 5.22765299999996
+  "calls": 10571,
+  "usd": 5.47938599999996
  },
  "openai": {
   "by_model": {

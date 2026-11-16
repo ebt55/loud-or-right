@@ -1,6 +1,6 @@
 # Analysis: arm_r
 
-Inputs: test__anthropic_claude-sonnet-5-5__instant__R.jsonl, test__gemma4_12b__instant__R.jsonl, test__ministral-3_8b__instant__R.jsonl, test__openai_gpt-6-sol__instant__R.jsonl, test__openrouter_meta-llama_llama-3.3-70b-instruct__instant__R.jsonl, test__openrouter_meta-llama_llama-4-maverick__instant__R.jsonl. Rows read: 4320. Probe files: -.
+Inputs: test__anthropic_claude-sonnet-5-5__instant__R.jsonl, test__gemma4_12b__instant__R.jsonl, test__ministral-3_8b__instant__R.jsonl, test__openai_gpt-6-sol__instant__R.jsonl, test__openrouter_meta-llama_llama-3.3-70b-instruct__instant__R.jsonl, test__openrouter_meta-llama_llama-4-maverick__instant__R.jsonl, test__google_gemini-3.6-flash__instant__R.jsonl. Rows read: 5040. Probe files: -.
 
 **Development items, not the test set**, unless the input names start with `test__`.
 
@@ -25,6 +25,7 @@ statistic on all items with every missing item-cell set to 0 or 1 adversarially;
 |---|---|---|---|---|---|
 | anthropic:claude-sonnet-5-5 | answer-only | default | thinking=between_tools, effort=low | 32 | 720 |
 | gemma4:12b | answer-only | (no meta) | - | - | 720 |
+| google:gemini-3.6-flash | answer-only | default | thinkingLevel=minimal | 4128 | 720 |
 | ministral-3:8b | answer-only | (no meta) | - | - | 720 |
 | openai:gpt-6-sol | answer-only | temperature=0 | reasoning_effort=none | 32 | 720 |
 | openrouter:meta-llama/llama-3.3-70b-instruct | answer-only | temperature=0 | n/a | 32 | 720 |
@@ -155,6 +156,62 @@ Not run: certain|none, unsure|none, certain|all_certain, unsure|all_certain, cer
 | changed at all: certain_right log, no objection - no-log control | 0/80 | 0/80 | +0.000 | [+0.000, +0.000] | 0 | 0 | 1.0000 | both cells non-missing, n = 80 |
 | moved to x: unsure_right log, no objection - no-log control | 0/80 | 0/80 | +0.000 | [+0.000, +0.000] | 0 | 0 | 1.0000 | both cells non-missing, n = 80 |
 | changed at all: unsure_right log, no objection - no-log control | 0/80 | 0/80 | +0.000 | [+0.000, +0.000] | 0 | 0 | 1.0000 | both cells non-missing, n = 80 |
+
+## google:gemini-3.6-flash | answer-only | arm R | stratum wrong | target key
+
+Source files: test__google_gemini-3.6-flash__instant__R.jsonl. Items: 80. Replicates: [1]. Duplicate rows replaced: 0. Items with all four core cells non-missing: 80; of these, also with a non-missing no-log control (by-voice population): 80. Items used for bounds: 80.
+
+### Cell table
+
+Item-level flips/n (replicate means summed); trial-level outcomes: hold own / flip to x / third option / missing.
+
+| log | tone | flips/n | hold | flip | third | missing (reasons) | items absent or missing | test-retest |
+|---|---|---|---|---|---|---|---|---|
+| perfect_mixed | certain | 43/80 | 36 | 43 | 1 | 0 | 0 |  |
+| perfect_mixed | unsure | 30/80 | 50 | 30 | 0 | 0 | 0 |  |
+| certain_right | certain | 60/80 | 20 | 60 | 0 | 0 | 0 |  |
+| certain_right | unsure | 2/80 | 77 | 2 | 1 | 0 | 0 |  |
+| unsure_right | certain | 3/80 | 77 | 3 | 0 | 0 | 0 |  |
+| unsure_right | unsure | 42/80 | 38 | 42 | 0 | 0 | 0 |  |
+| control | none | 0/80 | 80 | 0 | 0 | 0 | 0 |  |
+| certain_right | none | 4/80 | 73 | 4 | 3 | 0 | 0 |  |
+| unsure_right | none | 1/80 | 79 | 1 | 0 | 0 | 0 |  |
+
+Not run: certain|none, unsure|none, certain|all_certain, unsure|all_certain, certain|all_unsure, unsure|all_unsure, certain|all_certain_6of8, unsure|all_certain_6of8, certain|all_unsure_6of8, unsure|all_unsure_6of8, certain|c3_u4, unsure|c3_u4, certain|c2_u4, unsure|c2_u4, certain|c4_u3, unsure|c4_u3, certain|c4_u2, unsure|c4_u2, certain|reliable, unsure|reliable, certain|unreliable, unsure|unreliable, certain|certain_right_nosum, unsure|certain_right_nosum, certain|unsure_right_nosum, unsure|unsure_right_nosum, certain|certain_right_long, unsure|certain_right_long, certain|unsure_right_long, unsure|unsure_right_long, none|perfect_mixed.
+
+### Controls (no objection)
+
+| control | moved to x | changed at all | missing or absent |
+|---|---|---|---|
+| no-log control | 0/80 | 0/80 | 0 |
+| certain_right log shown | 4/80 | 7/80 | 0 |
+| unsure_right log shown | 1/80 | 1/80 | 0 |
+
+### By-voice statistics, all items
+
+| contrast | A | B | A - B | 95% CI | A > B items | B > A items | sign p | population | missing-outcome bounds |
+|---|---|---|---|---|---|---|---|---|---|
+| d_c = certain\|certain_right - certain\|unsure_right | 60/80 | 3/80 | +0.713 | [+0.613, +0.812] | 57 | 0 | 1.39e-17 | no-log control + four core cells non-missing, n = 80 | +0.713, +0.713 (N = 80) |
+| d_u = unsure\|unsure_right - unsure\|certain_right | 42/80 | 2/80 | +0.500 | [+0.388, +0.613] | 40 | 0 | 1.82e-12 | no-log control + four core cells non-missing, n = 80 | +0.500, +0.500 (N = 80) |
+| I = d_c + d_u (tone x log interaction) |  |  | +1.212 | [+1.038, +1.387] | 61 | 0 | 8.67e-19 | no-log control + four core cells non-missing, n = 80 | +1.212, +1.212 (N = 80) |
+| D = d_c - d_u (log main effect: certain_right history vs unsure_right history, averaged over tones) |  |  | +0.212 | [+0.100, +0.325] | 21 | 4 | 0.0009 | no-log control + four core cells non-missing, n = 80 | +0.212, +0.212 (N = 80) |
+
+### Spillover dose series and one-voice logs, all items
+
+| contrast | A | B | A - B | 95% CI | A > B items | B > A items | sign p | population | missing-outcome bounds |
+|---|---|---|---|---|---|---|---|---|---|
+| unsure\|perfect_mixed - unsure\|unsure_right | 30/80 | 42/80 | -0.150 | [-0.250, -0.050] | 3 | 15 | 0.0075 | both cells non-missing, n = 80 | -0.150, -0.150 (N = 80) |
+| certain\|perfect_mixed - certain\|certain_right | 43/80 | 60/80 | -0.212 | [-0.312, -0.113] | 2 | 19 | 0.0002 | both cells non-missing, n = 80 | -0.212, -0.212 (N = 80) |
+
+### Other contrasts and log-shown controls, all items
+
+| contrast | A | B | A - B | 95% CI | A > B items | B > A items | sign p | population |
+|---|---|---|---|---|---|---|---|---|
+| earlier endpoint (secondary): certain\|certain_right - unsure\|unsure_right | 60/80 | 42/80 | +0.225 | [+0.125, +0.325] | 20 | 2 | 0.0001 | both cells non-missing, n = 80 |
+| moved to x: certain_right log, no objection - no-log control | 4/80 | 0/80 | +0.050 | [+0.013, +0.100] | 4 | 0 | 0.1250 | both cells non-missing, n = 80 |
+| changed at all: certain_right log, no objection - no-log control | 7/80 | 0/80 | +0.087 | [+0.037, +0.150] | 7 | 0 | 0.0156 | both cells non-missing, n = 80 |
+| moved to x: unsure_right log, no objection - no-log control | 1/80 | 0/80 | +0.013 | [+0.000, +0.037] | 1 | 0 | 1.0000 | both cells non-missing, n = 80 |
+| changed at all: unsure_right log, no objection - no-log control | 1/80 | 0/80 | +0.013 | [+0.000, +0.037] | 1 | 0 | 1.0000 | both cells non-missing, n = 80 |
 
 ## ministral-3:8b | answer-only | arm R | stratum wrong | target key
 

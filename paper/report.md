@@ -1,6 +1,6 @@
 # Loud or Right? How Language Models Weigh a Critic's Confidence, Its Track Record, and the Order of the Evidence[^1]
 
-Ebin Babu Thomas, Independent AI Engineer & Researcher
+Ebin Babu Thomas<br>Independent AI Engineer & Researcher
 
 **With** Apart Research
 
@@ -54,7 +54,7 @@ In the main form, Sonnet (d_c 0.89 [0.81, 0.95], d_u 0.84 [0.75, 0.91]) and Sol 
 
 The profile held in the second surface form and with entries reversed and, for Sol, with order randomised (Appendix D12). Without the per-voice summary line (arm A only) Sol held fully, while Sonnet stayed responsive to both voices but less symmetrically (d_c 0.69, d_u 0.53, D +0.16 [0.03, 0.29]). Under reversal both stayed inside the bound fixed in advance (|D| < 0.15); Sonnet's d_c fell by 0.11 [0.04, 0.20], but its profile stayed balanced. Their main-form C3 was near zero or negative (Sonnet +0.04 [−0.06, 0.13], Sol −0.13 [−0.21, −0.05]), and with no log neither gave wording any weight. Both responded only to perfect records: under a 3/4 record per voice they switched about as often as with no log (Sonnet 9 and 8 of 80 vs 7 of 79; Sol 26 vs 27 of 80). This is defensible, since a high threshold for overriding one's own answer would produce it (Appendix B).
 
-Gemini 3.6 Flash showed the same pattern in the main form, less symmetrically (d_c 0.58, d_u 0.42, D 0.16 [0.06, 0.25]); Table 1 lists the forms in which it was run. Five models showed small or no core record effects: Haiku, Luna, DeepSeek V3.2, Qwen 3.5 9B and Qwen 3.8 27B (Luna's C3 was +0.16 [0.06, 0.26]).
+Gemini 3.6 Flash showed the same pattern in the main form, less symmetrically (d_c 0.58, d_u 0.42, D 0.16 [0.06, 0.25]). It responded to both voices in the second form and under reversal, but did not meet the rule fixed in advance for joining Sonnet and Sol (D 0.01 and 0.21; Appendix D12). Five models showed small or no core record effects: Haiku, Luna, DeepSeek V3.2, Qwen 3.5 9B and Qwen 3.8 27B (Luna's C3 was +0.16 [0.06, 0.26]).
 
 ### 4.2 Entry order explains most of the open-weight asymmetry
 
@@ -71,12 +71,13 @@ Gemini 3.6 Flash showed the same pattern in the main form, less symmetrically (d
 **Randomised order, arm S (exploratory; decision rule fixed in advance).** The rule classified |D_bal| below 0.10 as consistent with little residual asymmetry and 0.15 or above as a positive residual. The estimates: Ministral 3 8B +0.02 [−0.09, 0.14] (little residual), Gemma +0.11 [0.04, 0.17] (inconclusive), Llama 3.3 +0.16 [0.03, 0.30] and Llama 4 Maverick +0.23 [0.10, 0.35] (positive residual estimates). Every interval crosses a threshold, so these classifications rest on point estimates. The Llamas' residual is surface-form dependent: it disappeared under the same orders in arm B, which changes name, phrases and letters together (Appendix D13). Only these four open-weight models ran arm S; DeepSeek V4.1 Flash and Mistral Medium 3.5 kept positive D in arm B and were not run in arm R or S.
 
 <!-- TABLE1:START -->
+
 | Model | d_c A | d_u A | D A | D B | D R | D_bal S | C3 A | Tone gap | Probe |
 |---|---|---|---|---|---|---|---|---|---|
 | **Closed models** | | | | | | | | | |
 | Claude Sonnet 5.5 | 0.89 | 0.84 | 0.05 | 0.05 | 0.03 | – | 0.04 | 0.00 | smoothed |
 | GPT-6 Sol | 0.51 | 0.46 | 0.05 | 0.06 | −0.01 | 0.08 | −0.13 | 0.00 | unsure as 2 of 2 |
-| Gemini 3.6 Flash† | 0.58 | 0.42 | 0.16 | – | – | – | −0.06 | 0.09 | ok |
+| Gemini 3.6 Flash† | 0.58 | 0.42 | 0.16 | 0.01 | 0.21 | – | −0.06 | 0.09 | ok |
 | Claude Haiku 5.5 | 0.01 | −0.01 | 0.03 | −0.01 | – | – | 0.01 | 0.00 | ok |
 | GPT-6 Luna | 0.02 | 0.08 | −0.06 | −0.11 | – | – | 0.16 | 0.01 | ok |
 | **Open-weight, main set** | | | | | | | | | |
@@ -91,6 +92,7 @@ Gemini 3.6 Flash showed the same pattern in the main form, less symmetrically (d
 | Qwen 3.8 27B | 0.03 | 0.00 | 0.03 | – | – | – | 0.01 | 0.09 | ok |
 | Llama 4 Maverick | 0.68 | −0.06 | 0.74 | −0.08 | −0.14 | 0.23 | 0.45 | 0.18 | ok |
 | Mistral Medium 3.5 | 0.48 | 0.14 | 0.34 | 0.18 | – | – | 0.45 | 0.38 | ok |
+
 <!-- TABLE1:END -->
 
 *Table 1. Per-model summary: answer-only, 80 model-was-wrong items, reviewer names the key; statistics as in Section 3. d_c, d_u, C3 and tone gap are from the main form (arm A), where the fixed entry order confounds d_c > d_u. D is given for arms A, B (second surface form) and R (reversed order), and D_bal for arm S (randomised order). Probe: "ok" means the model stated each voice's record correctly (other entries: Appendix D14). † = added after the freeze under a pre-set rule. ‡ = paired with a same-day repeat of arm A (D 0.40). – = not run.*
@@ -282,7 +284,7 @@ Local models used a 4,096-token context. Each pinned OpenRouter model had fallba
 
 **Item filter and development.** We excluded calculation-heavy items, so results apply to knowledge and reasoning questions. The design was revised on 80 development items, including after two AI red-team reviews. Those items are excluded from the test set. Four contrasts were fixed before any test item was run; later additions are logged in the exploratory record.
 
-**Process deviations.** The analysis script was modified after the freeze, and no deviation was logged at the time. The frozen version cannot be recovered, so the full diff is unknown; the changes we can identify add an exploratory summary table and a tier tag. The claim that registered results are unchanged rests on two checks: a replay on the exact input of the 19:12 IST analysis reproduces its registered C1–C4 estimates, intervals and Holm p values exactly, and the registered rows written before the last modification are identical to the final ones. Two exploratory records, neither carrying predictions, were completed minutes after their runs began: the recency-tier record and the record for Sonnet's reasoning run on model-was-right items. The runs with predictions or decision rules (arm R, Sonnet's arm R, Sonnet's reasoning run on model-was-wrong items, and arm S) all have records before their first trial. Details: `harness/FREEZE.md`, section 10.
+**Process deviations.** The analysis script was modified after the freeze, and no deviation was logged at the time. The frozen version cannot be recovered, so the full diff is unknown; the changes we can identify add an exploratory summary table and a tier tag. The claim that registered results are unchanged rests on two checks: a replay on the exact input of the 19:12 IST analysis reproduces its registered C1–C4 estimates, intervals and Holm p values exactly, and the registered rows written before the last modification are identical to the final ones. Two exploratory records, neither carrying predictions, were completed minutes after their runs began: the recency-tier record and the record for Sonnet's reasoning run on model-was-right items. The runs with predictions or decision rules (arm R, Sonnet's arm R, Sonnet's reasoning run on model-was-wrong items, arm S, and Gemini's arms B and R) all have records before their first trial. Details: `harness/FREEZE.md`, section 10.
 
 **Item selection.** Each model contributes its own first 80 wrongly answered and 40 correctly answered items in pool order, so item difficulty differs across models. Near-zero effects can reflect floors or strong prior confidence, and profiles are not matched-item comparisons.
 
@@ -409,6 +411,7 @@ Arm B uses another reviewer name and other confidence phrases, shuffles the log 
 | GPT-6 Sol | 0.51 [0.40, 0.63] | 0.55 [0.44, 0.65] | 0.46 [0.35, 0.58] | 0.49 [0.38, 0.60] |
 | Claude Haiku 5.5 | 0.01 [-0.01, 0.04] | -0.01 [-0.04, 0.00] | -0.01 [-0.06, 0.03] | 0.00 [-0.04, 0.04] |
 | Claude Sonnet 5.5 | 0.89 [0.81, 0.95] | 0.68 [0.56, 0.78] | 0.84 [0.75, 0.91] | 0.63 [0.51, 0.73] |
+| Gemini 3.6 Flash | 0.58 [0.47, 0.68] | 0.73 [0.63, 0.83] | 0.42 [0.32, 0.53] | 0.71 [0.61, 0.81] |
 | **Recency tier (exploratory)** | | | | |
 | DeepSeek V4.1 Flash | 0.59 [0.48, 0.70] | 0.51 [0.40, 0.63] | 0.09 [0.04, 0.15] | 0.24 [0.15, 0.34] |
 | Llama 4 Maverick | 0.68 [0.58, 0.78] | 0.13 [0.00, 0.25] | -0.06 [-0.13, -0.01] | 0.20 [0.08, 0.33] |
@@ -473,18 +476,21 @@ Arm R is arm A with the eight log entries in reverse order. D = d_c - d_u in eac
 | **Closed** | | | | |
 | GPT-6 Sol | 0.05 [-0.05, 0.15] | -0.01 [-0.10, 0.08] | -0.06 [-0.20, 0.08] | -0.14 [-0.23, -0.06] |
 | Claude Sonnet 5.5 | 0.05 [-0.05, 0.15] | 0.03 [-0.08, 0.13] | -0.03 [-0.16, 0.10] | 0.14 [0.04, 0.24] |
+| Gemini 3.6 Flash | 0.16 [0.06, 0.25] | 0.21 [0.10, 0.33] | 0.06 [-0.08, 0.18] | -0.15 [-0.25, -0.05] |
 | **Recency tier (exploratory)** | | | | |
 | Llama 4 Maverick | 0.74 [0.63, 0.85] | -0.14 [-0.24, -0.04] | -0.88 [-1.05, -0.71] | 0.39 [0.29, 0.50] |
 
 Ministral 3 8B: arm A is a same-day repeat, because its system prompt carries the date, so its arm-A D differs from C2 in Table D1. Arm-A intervals here can differ slightly from Table D1 because the bootstrap and item population differ.
 
-**D11. Process record.** The pre-registration record (`harness/FREEZE.md`) and the exploratory record (`harness_x/FREEZE_X.md`) in the repository (https://github.com/ebt55/loud-or-right) list the deviations with their times and the results seen before them. Arms R and S and the Sonnet reasoning run on model-was-wrong items had predictions or decision rules recorded before their first trial. Two other records were completed minutes after their runs began, and the analysis script changed after the freeze; a replay check shows the registered results are unchanged (`harness/FREEZE.md`, section 10; Appendix B). Total API spend was about $41.
+**D11. Process record.** The pre-registration record (`harness/FREEZE.md`) and the exploratory record (`harness_x/FREEZE_X.md`) in the repository (https://github.com/ebt55/loud-or-right) list the deviations with their times and the results seen before them. Arms R and S and the Sonnet reasoning run on model-was-wrong items had predictions or decision rules recorded before their first trial. Two other records were completed minutes after their runs began, and the analysis script changed after the freeze; a replay check shows the registered results are unchanged (`harness/FREEZE.md`, section 10; Appendix B). Total API spend was about $42.
 
 **D12. Sonnet, Sol and Gemini across variants.** d_c and d_u, answer-only, model-was-wrong items:
-- second surface form: Sonnet 0.68 and 0.63; Sol 0.55 and 0.49;
-- entries reversed: Sonnet 0.78 and 0.75; Sol 0.46 and 0.48;
+- second surface form: Sonnet 0.68 and 0.63; Sol 0.55 and 0.49; Gemini 0.73 and 0.71;
+- entries reversed: Sonnet 0.78 and 0.75; Sol 0.46 and 0.48; Gemini 0.71 and 0.50;
 - no summary line: Sonnet 0.69 and 0.53; Sol 0.50 and 0.46; Gemini 0.36 and 0.28;
 - order randomised in the main wording: Sol 0.48 and 0.40.
+
+Gemini's arms B and R ran last, under a decision rule recorded before they began: Gemini would join the Sonnet/Sol profile if d_c and d_u exceeded 0.3 and |D| stayed below 0.2 in both arms. D was 0.01 [−0.11, 0.14] in arm B and 0.21 [0.10, 0.33] in arm R, so by that rule its profile is order- or form-dependent.
 
 With no log, Sonnet switched on 7 of 79 items for either voice and Sol on 27 of 80. Under a 3/4 record per voice, Sonnet switched on 9 of 80 and Sol on 26 of 80.
 

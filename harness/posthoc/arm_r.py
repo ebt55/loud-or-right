@@ -54,6 +54,11 @@ PAIRS = [
     ("GPT-6 Sol", R("openai_gpt-6-sol"), [H / "test__openai_gpt-6-sol__instant__A.jsonl"], "sol"),
     # added 16 Nov 03:10: FREEZE_X item 6, same prediction as P2
     ("Claude Sonnet 5.5", R("anthropic_claude-sonnet-5-5"), [H / "test__anthropic_claude-sonnet-5-5__instant__A.jsonl"], "sol"),
+    # added 16 Nov 14:25: Gemini arm R (FREEZE_X item 9). It has a decision rule, not a prediction, so role "rule"
+    # gives it descriptive rows only (no P1/P2 verdict line); the rule's verdict is recorded in FREEZE_X item 9.
+    ("Gemini 3.6 Flash", R("google_gemini-3.6-flash"),
+     [H / "test__google_gemini-3.6-flash__instant__A.jsonl", H / "test__google_gemini-3.6-flash__instant__A__rep2.jsonl"],
+     "rule"),
 ]
 MUST_BE_FULL = {R("ministral-3_8b"), X / "test__ministral-3_8b__instant__A.jsonl"}   # plus every arm R file
 

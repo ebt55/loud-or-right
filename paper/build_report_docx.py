@@ -98,6 +98,7 @@ TABLE_CELL_PAD_CM = 2 * 70 / 1440 * 2.54 + 0.1  # left + right cell margins plus
 KEEP_TABLE_MAX_FRACTION = 0.75  # keep a table on one page if its estimated height fits this share of it
 
 # Template text that must not survive (matched whitespace-insensitively, case-sensitively).
+AUTHOR_DETAIL_PT = 9  # size of author-slot lines after the first (title or affiliation); the name keeps the template size
 GUIDANCE_PHRASES = ["Replace the", "italicized guidance", "Author name", "[Reference 1]",
                     "Summarize your project", "How to use this template", "PROJECT TITLE",
                     "Delete all guidance", "Evaluation Rubric", "Recommended length"]
@@ -723,7 +724,11 @@ class TemplateReport:
                 br = para.add_run()
                 br._r.insert(0, copy.deepcopy(rpr))
                 br.add_break()
+            n0 = len(para.runs)
             self.add_inline(para, line, rpr)
+            if k:  # lines after the first (e.g. the author's title or affiliation) in a smaller size
+                for run in para.runs[n0:]:
+                    run.font.size = Pt(AUTHOR_DETAIL_PT)
 
         # Abstract: the guidance paragraph's formatting, without its italics and underline.
         gp = next(p for p in tb.iter(W("p")) if text_of(p).startswith("Summarize your project"))
