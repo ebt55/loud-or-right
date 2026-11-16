@@ -19,6 +19,12 @@ the extra author slots, the "How to use this template" box and all guidance text
 the body (everything after the Abstract section) is rebuilt with the template's own heading, body
 and list formatting. The markdown parser is the one in build_docx.py.
 
+Layout: centred page numbers in the footer from page 1; each image kept with its caption (captions
+never split); table rows never split, the header row repeats on continuation pages, and a table
+whose estimated height fits on a page is kept on one page; a table drops to 8 pt only if that stops
+its body cells wrapping. HTML comment lines are skipped; d_c, d_u, D_bal become italic with a
+subscript (not inside `code`). The PDF check confirms every row of every table appears.
+
 Report layout expected (extra lines are tolerated):
     # Title[^1]
     Author name            <- every other line before the Abstract goes into the author slot
@@ -41,6 +47,7 @@ import zipfile
 from pathlib import Path
 
 from docx import Document
+from docx.enum.style import WD_STYLE_TYPE
 from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_COLOR_INDEX
 from docx.opc.constants import RELATIONSHIP_TYPE as RT
 from docx.oxml import OxmlElement
@@ -82,6 +89,13 @@ APART_RE = re.compile(r"^[\W_]*apart[\W_]+research[\W_]*$", re.I)
 ABSTRACT_RE = re.compile(r"^[\W_]*abstract[\W_]*$", re.I)
 LINK_RE = re.compile(r"(?<![!\\])\[([^\[\]]+)\]\((\S+?)\)")
 TOKEN_RE = re.compile("\ue000(\\d+)\ue001")
+COMMENT_RE = re.compile(r"<!--.*?-->", re.S)  # HTML comments (e.g. <!-- TABLE1:START -->) are dropped
+# d_c, d_u, D_bal -> italic d/D with a subscript (not inside code spans)
+MATH_RE = re.compile(r"(?<![A-Za-z0-9_])([dD])_(c|u|bal)(?![A-Za-z0-9_])")
+CAPTION_RE = re.compile(r"^[*_]*(Figure|Fig\.|Table)\s+[A-Z]?\d+")  # a caption under an image
+TABLE_MIN_PT = 8  # a table drops from TABLE_PT to this only if that stops its body cells wrapping
+TABLE_CELL_PAD_CM = 2 * 70 / 1440 * 2.54 + 0.1  # left + right cell margins plus slack
+KEEP_TABLE_MAX_FRACTION = 0.75  # keep a table on one page if its estimated height fits this share of it
 
 # Template text that must not survive (matched whitespace-insensitively, case-sensitively).
 GUIDANCE_PHRASES = ["Replace the", "italicized guidance", "Author name", "[Reference 1]",
@@ -94,10 +108,34 @@ W = lambda tag: qn("w:" + tag)  # noqa: E731
 
 # --------------------------------------------------------------------------- report splitting
 
+def strip_comments(text):
+    """Drop HTML comments; a line holding nothing but comments disappears entirely."""
+    text = COMMENT_RE.sub("\x00", text)
+    out = []
+    for ln in text.splitlines():
+        if "\x00" in ln and not ln.replace("\x00", "").strip():
+            continue
+        out.append(ln.replace("\x00", ""))
+    return "\n".join(out)
+
+
+def is_caption(text, after_table=False):
+    """Caption under an image: wholly italic or starting 'Figure N'/'Table N'. Under a table only a
+    wholly italic 'Table N ...' line counts (a bold 'Table D2.' line is the next table's title)."""
+    if after_table:
+        return bool(FULL_ITALIC_RE.match(text) and CAPTION_RE.match(text))
+    return bool(FULL_ITALIC_RE.match(text) or CAPTION_RE.match(text))
+
+
+def shown_text(md):
+    """Text as it appears in the PDF: markdown removed, d_c -> dc (subscript)."""
+    return MATH_RE.sub(r"\1\2", plain(md))
+
+
 def split_report(text):
     """Return (title, author_lines, abstract_text, body_text, footnotes)."""
     lines, footnotes, i = [], [], 0
-    raw = text.splitlines()
+    raw = strip_comments(text).splitlines()
     while i < len(raw):
         m = FOOTDEF_RE.match(raw[i])
         if m:
@@ -193,7 +231,59 @@ def text_cm_template_font(text, bold=False, size=TABLE_PT):
 
 
 _bd_text_cm = bd.text_cm
-bd.text_cm = text_cm_template_font  # column_widths() in build_docx measures with this
+
+
+def column_widths(rows, group, total, pt):
+    """Column widths (cm) that fit `total` at `pt` (the build_docx algorithm, measured in the
+    template font): natural widths if they fit, else headers wrap at spaces/hyphens, else body
+    cells wrap too. Returns (widths, body_cells_wrap)."""
+    ncols = len(rows[0])
+    full, desired, minimum = [], [], []
+    for c in range(ncols):
+        body = [shown_text(r[c]) for k, r in enumerate(rows) if k > 0 and not group[k]]
+        head = shown_text(rows[0][c])
+        body_long = max((text_cm_template_font(t, size=pt) for t in body), default=0)
+        body_word = max((text_cm_template_font(w, size=pt) for t in body for w in t.split()), default=0)
+        head_full = text_cm_template_font(head, bold=True, size=pt)
+        head_word = max((text_cm_template_font(w, bold=True, size=pt)
+                         for w in re.findall(r"[^\s-]+-?", head)), default=0)
+        full.append(max(body_long, head_full) + TABLE_CELL_PAD_CM)
+        desired.append(max(body_long, head_word) + TABLE_CELL_PAD_CM)
+        minimum.append(max(min(body_word, 3.0), head_word) + TABLE_CELL_PAD_CM)
+    if sum(full) <= total:
+        return full, False
+    if sum(desired) <= total:
+        spare = total - sum(desired)
+        extra = [f - d for f, d in zip(full, desired)]
+        return [d + spare * e / sum(extra) for d, e in zip(desired, extra)], False
+    widths = [0.0] * ncols
+    remaining, left = total, ncols
+    for c in sorted(range(ncols), key=lambda k: desired[k]):
+        w = max(min(desired[c], remaining / left), minimum[c])
+        widths[c] = w
+        remaining -= w
+        left -= 1
+    if sum(widths) > total:
+        widths = [w * total / sum(widths) for w in widths]
+    return widths, True
+
+
+def wrapped_lines(text, width_cm, pt, bold=False):
+    """Greedy word-wrap line count of `text` in a cell `width_cm` wide."""
+    avail = max(width_cm - TABLE_CELL_PAD_CM, 0.3)
+    lines, cur = 1, 0.0
+    space = text_cm_template_font(" ", bold=bold, size=pt)
+    for word in text.split():
+        w = text_cm_template_font(word, bold=bold, size=pt)
+        if cur and cur + space + w > avail:
+            lines += 1
+            cur = w
+        else:
+            cur = cur + space + w if cur else w
+        while cur > avail:  # a word wider than the cell breaks
+            lines += 1
+            cur -= avail
+    return lines
 
 
 # --------------------------------------------------------------------------- template builder
@@ -201,7 +291,7 @@ bd.text_cm = text_cm_template_font  # column_widths() in build_docx measures wit
 class TemplateReport:
     def __init__(self, template, src_dir):
         self.doc = Document(str(template))
-        _normal = self.doc.styles['Normal']
+        _normal = self.doc.styles.default(WD_STYLE_TYPE.PARAGRAPH)  # the template names it "normal"
         _normal.font.size = Pt(BODY_PT)
         _normal.paragraph_format.line_spacing = BODY_LINE_SPACING
         self.src_dir = src_dir
@@ -211,8 +301,11 @@ class TemplateReport:
         self.n_tables = 0
         self.missing_images = []
         self.warnings = []
+        self.math_tokens = 0
+        self.table_notes = []
         sec = self.doc.sections[0]
         self.text_w_cm = (sec.page_width - sec.left_margin - sec.right_margin) / 360000
+        self.text_h_pt = (sec.page_height - sec.top_margin - sec.bottom_margin) / 12700
         self._find_template_parts()
 
     # ---- template inspection
@@ -290,8 +383,25 @@ class TemplateReport:
                         ltext, url = links[int(part)]
                         self._hyperlink(p, plain(ltext), url, base_rpr, size, bold or rb, italic if italic is not None else ri, hl)
                     elif part:
-                        self._run(p, part, base_rpr, size, bold or rb, italic if italic is not None else ri, rc, hl)
+                        self._text(p, part, base_rpr, size, bold or rb, italic if italic is not None else ri, rc, hl)
         return list(p._p)[start_len:]
+
+    def _text(self, p, text, base_rpr, size, bold, italic, code, highlight):
+        """Runs for plain text; d_c, d_u, D_bal become italic d/D with a subscript (not in code)."""
+        if code:
+            self._run(p, text, base_rpr, size, bold, italic, code, highlight)
+            return
+        pos = 0
+        for m in MATH_RE.finditer(text):
+            if m.start() > pos:
+                self._run(p, text[pos:m.start()], base_rpr, size, bold, italic, False, highlight)
+            self._run(p, m.group(1), base_rpr, size, bold, True, False, highlight)
+            sub = self._run(p, m.group(2), base_rpr, size, bold, True, False, highlight)
+            sub.font.subscript = True
+            self.math_tokens += 1
+            pos = m.end()
+        if pos < len(text):
+            self._run(p, text[pos:], base_rpr, size, bold, italic, False, highlight)
 
     def _run(self, p, text, base_rpr, size, bold, italic, code, highlight):
         run = p.add_run(text)
@@ -363,7 +473,47 @@ class TemplateReport:
         self.add_inline(p, text, self.body_rpr, size=CAPTION_PT, italic=True)
         pf = p.paragraph_format
         pf.space_before, pf.space_after, pf.line_spacing = Pt(2), Pt(10), 1.0
+        pf.keep_together = True  # a caption never splits across pages (the image keeps with it)
         return p
+
+    def add_page_numbers(self):
+        """Centred page number in the footer of every page, starting at 1 (the template has none)."""
+        sec = self.doc.sections[0]
+        sec.different_first_page_header_footer = False
+        footer = sec.footer
+        footer.is_linked_to_previous = False
+        p = footer.paragraphs[0] if footer.paragraphs else footer.add_paragraph()
+        for child in list(p._p):
+            p._p.remove(child)
+        ppr = OxmlElement("w:pPr")
+        jc = OxmlElement("w:jc")
+        jc.set(W("val"), "center")
+        ppr.append(jc)
+        ppr.append(copy.deepcopy(self.body_rpr))
+        p._p.append(ppr)
+
+        def fld_run(kind=None, instr=None, text=None):
+            r = p.add_run(text) if text else p.add_run()
+            r._r.insert(0, copy.deepcopy(self.body_rpr))
+            r.font.size = Pt(BODY_PT)
+            if kind:
+                fc = OxmlElement("w:fldChar")
+                fc.set(W("fldCharType"), kind)
+                r._r.append(fc)
+            if instr:
+                it = OxmlElement("w:instrText")
+                it.set(qn("xml:space"), "preserve")
+                it.text = instr
+                r._r.append(it)
+
+        fld_run("begin")
+        fld_run(instr=" PAGE ")
+        fld_run("separate")
+        fld_run(text="1")
+        fld_run("end")
+        pg = self.body.find(W("sectPr")).find(W("pgNumType"))
+        if pg is not None:
+            pg.set(W("start"), "1")
 
     def image(self, rel_path, keep_next):
         path = (self.src_dir / rel_path).resolve()
@@ -442,11 +592,31 @@ class TemplateReport:
         if last is not None:
             last.paragraph_format.space_after = Pt(PARA_AFTER_PT)
 
-    def table(self, rows):
+    def table(self, rows, caption_follows=False):
         ncols = max(len(r) for r in rows)
         rows = [r + [""] * (ncols - len(r)) for r in rows]
         group = [k > 0 and bool(r[0]) and not any(c.strip() for c in r[1:]) for k, r in enumerate(rows)]
-        widths = bd.column_widths(rows, group, self.text_w_cm - 0.05)
+        total = self.text_w_cm - 0.05
+        pt = TABLE_PT
+        widths, wraps = column_widths(rows, group, total, pt)
+        if wraps:  # body cells would wrap at TABLE_PT: use TABLE_MIN_PT if that avoids it
+            w8, wraps8 = column_widths(rows, group, total, TABLE_MIN_PT)
+            if not wraps8:
+                pt, widths, wraps = TABLE_MIN_PT, w8, False
+
+        # Estimated height, to keep tables that fit on one page together.
+        line_pt, row_extra_pt = 1.2 * pt, 4.0
+        height = 0.0
+        for k, r in enumerate(rows):
+            if group[k]:
+                n = 1
+            else:
+                n = max(wrapped_lines(shown_text(cell), widths[c], pt, bold=(k == 0)) for c, cell in enumerate(r))
+            height += n * line_pt + row_extra_pt
+        keep_together = height <= KEEP_TABLE_MAX_FRACTION * self.text_h_pt
+        self.table_notes.append(f"{ncols} cols, {pt} pt, {sum(widths):.1f} of {self.text_w_cm:.1f} cm wide, "
+                                f"~{height:.0f} pt tall, {'kept on one page' if keep_together else 'may split'}"
+                                f"{', body cells wrap' if wraps else ''}")
 
         t = self.doc.add_table(rows=len(rows), cols=ncols)
         tbl = t._tbl
@@ -476,7 +646,6 @@ class TemplateReport:
         for gc, w in zip(tbl.tblGrid.findall(W("gridCol")), widths):
             gc.set(W("w"), str(int(w / 2.54 * 1440)))
 
-        keep_together = len(rows) <= 12
         for k, r in enumerate(rows):
             row = t.rows[k]
             trPr = row._tr.get_or_add_trPr()
@@ -493,16 +662,17 @@ class TemplateReport:
                 ppr = p._p.get_or_add_pPr()
                 mark = copy.deepcopy(self.body_rpr)
                 for tag in ("sz", "szCs"):
-                    mark.append(el(tag, val=TABLE_PT * 2))
+                    mark.append(el(tag, val=int(pt * 2)))
                 ppr.append(mark)
                 pf = p.paragraph_format
                 pf.space_before, pf.space_after, pf.line_spacing = Pt(1), Pt(1), 1.0
-                if keep_together and k < len(rows) - 1:
+                if keep_together and (k < len(rows) - 1 or caption_follows):
                     pf.keep_with_next = True
-                self.add_inline(p, text, self.body_rpr, size=TABLE_PT, bold=(k == 0) or None)
-        gap = self.new_p(self.bodyp[0], mark_size=6)
-        gap.paragraph_format.space_after = Pt(0)
-        gap.paragraph_format.line_spacing = 1.0
+                self.add_inline(p, text, self.body_rpr, size=pt, bold=(k == 0) or None)
+        if not caption_follows:  # a caption paragraph right after the table separates it instead
+            gap = self.new_p(self.bodyp[0], mark_size=6)
+            gap.paragraph_format.space_after = Pt(0)
+            gap.paragraph_format.line_spacing = 1.0
         self.n_tables += 1
         return t
 
@@ -615,21 +785,24 @@ def build(src, out):
             rep.heading(level, htext)
         elif kind == "p":
             ptext = blk[1]
-            if prev and prev[0] == "img" and FULL_ITALIC_RE.match(ptext):
+            if prev and prev[0] in ("img", "table") and is_caption(ptext, after_table=prev[0] == "table"):
                 rep.caption(ptext)
             else:
                 keep = bool(nxt and nxt[0] in ("table", "list", "quote"))
                 rep.paragraph(ptext, references=in_refs, keep_next=keep)
         elif kind == "img":
-            is_cap = bool(nxt and nxt[0] == "p" and FULL_ITALIC_RE.match(nxt[1]))
+            is_cap = bool(nxt and nxt[0] == "p" and is_caption(nxt[1]))
+            if not is_cap:
+                rep.warnings.append(f"image {blk[1]} has no caption paragraph directly after it")
             rep.image(blk[1], keep_next=is_cap)
         elif kind == "table":
-            rep.table(blk[1])
+            rep.table(blk[1], caption_follows=bool(nxt and nxt[0] == "p" and is_caption(nxt[1], after_table=True)))
         elif kind == "quote":
             rep.quote(blk[1])
         elif kind == "list":
             rep.list(blk[1])
 
+    rep.add_page_numbers()
     body_refs = sorted(set(FOOTREF_RE.findall(body_text)))
     if body_refs:
         rep.warnings.append(f"footnote references left as text in the body: {body_refs}")
@@ -754,22 +927,50 @@ def check_pdf(pdf_path, info, phrases, png_dir=None, png_all=False, dpi=110):
     if len(shown) < len(md_imgs):
         problems.append(f"only {len(shown)} of {len(md_imgs)} images drawn in PDF")
 
-    # Tables: header's last cell and last row's first and last cells must appear.
+    # Tables: every row must appear, its cells in order, after the previous table's rows
+    # (PDF text in content-stream order, whitespace removed; repeated header rows are harmless).
     tables = [b[1] for b in blocks if b[0] == "table"]
-    found_tables = 0
+    found_tables, pos = 0, 0
+    starts = [0]
+    for t in page_sq:
+        starts.append(starts[-1] + len(t))
+
+    def page_at(idx):
+        return next(k for k in range(len(page_sq)) if starts[k] <= idx < starts[k + 1]) + 1
+
     for t_idx, rows in enumerate(tables, 1):
-        probes = [squash(plain(c)) for c in (rows[0][-1], rows[-1][0], rows[-1][-1]) if plain(c).strip()]
-        ok = all(p_ in full_sq for p_ in probes)
-        found_tables += ok
-        header = " | ".join(plain(c) for c in rows[0])
-        if ok:
-            first = squash(plain(rows[1][0])) if len(rows) > 1 else probes[0]
-            pages = [k + 1 for k, t in enumerate(page_sq) if first in t and squash(plain(rows[0][-1])) in t]
-            print(f"    table {t_idx}: found ({len(rows) - 1} rows), '{header[:50]}'"
-                  f"{', page ' + str(pages[0]) if len(pages) == 1 else ''}")
+        header = " | ".join(shown_text(c) for c in rows[0])
+        missing, first_idx, last_idx, t_pos = [], None, None, pos
+        for k, r in enumerate(rows):
+            cells = [squash(shown_text(c)) for c in r if shown_text(c).strip()]
+            # Prefer the whole row as one run of text (cells are drawn in order); else cells in order.
+            i = full_sq.find("".join(cells), t_pos)
+            if i >= 0:
+                ok, r_pos = True, i + len("".join(cells))
+                first_idx = i if first_idx is None else first_idx
+            else:
+                r_pos, ok = t_pos, True
+                for cell in cells:
+                    i = full_sq.find(cell, r_pos)
+                    if i < 0:
+                        ok = False
+                        break
+                    r_pos = i + len(cell)
+            if ok:
+                t_pos = r_pos
+                last_idx = r_pos - 1
+            else:
+                missing.append(k)
+        if missing:
+            problems.append(f"table {t_idx} ('{header[:40]}'): rows {missing} (0 = header) not found in PDF")
+            print(f"    table {t_idx}: MISSING rows {missing} of {len(rows)}, '{header[:50]}'")
         else:
-            problems.append(f"table {t_idx} ('{header[:50]}') not fully found in PDF text")
-    print(f"  tables found: {found_tables} of {len(tables)}")
+            found_tables += 1
+            pos = t_pos
+            p0, p1 = page_at(first_idx if first_idx is not None else last_idx), page_at(last_idx)
+            print(f"    table {t_idx}: all {len(rows)} rows found, page {p0}{'-' + str(p1) if p1 != p0 else ''}, "
+                  f"'{header[:50]}'")
+    print(f"  tables complete: {found_tables} of {len(tables)}")
 
     # Template guidance
     left = [ph for ph in phrases if squash(ph) in full_sq]
@@ -802,7 +1003,8 @@ def check_pdf(pdf_path, info, phrases, png_dir=None, png_all=False, dpi=110):
     for pno, t in enumerate(page_texts):
         for ln in t.splitlines():
             s = ln.strip()
-            if "**" in s or "`" in s or "![" in s or "|---" in s or "](" in s or "[^" in s or re.match(r"^#{1,6}\s", s):
+            if ("**" in s or "`" in s or "![" in s or "|---" in s or "](" in s or "[^" in s
+                    or "<!--" in s or "-->" in s or re.match(r"^#{1,6}\s", s)):
                 leftovers.append((pno + 1, s[:90]))
     if leftovers:
         problems.append(f"{len(leftovers)} line(s) with leftover markdown")
@@ -862,6 +1064,9 @@ def main():
         problems.append(f"missing image files: {rep.missing_images}")
     if rep.n_tables != md_tables:
         problems.append("table count mismatch")
+    for k, note in enumerate(rep.table_notes, 1):
+        print(f"    table {k}: {note}")
+    print(f"  d_c / d_u / D_bal set as italic with subscript: {rep.math_tokens}")
     for wmsg in rep.warnings:
         print(f"  WARNING: {wmsg}")
     for fn in info["footnotes"]:

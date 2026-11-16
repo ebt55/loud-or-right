@@ -143,3 +143,31 @@ Answer-only, model-was-wrong items. D = d_c - d_u; C3 = unsure | mixed-perfect -
 | Qwen 3.8 27B | 0.03 | - | - | - | 0.01 | 0.09 | ok |
 | Llama 4 Maverick | 0.74 | -0.08 | -0.14 | 0.21 | 0.45 | 0.18 | ok |
 | Mistral Medium 3.5 | 0.34 | 0.18 | - | - | 0.45 | 0.38 | ok |
+
+## Table 7. Per-model summary (the report's Table 1; replaces `tab_summary.png`)
+
+Answer-only, 80 model-was-wrong items per model. d_c, d_u, D = d_c - d_u, C3 and the tone gap (certain | none - unsure | none) are arm A; D B, D R: arms B and R; D_bal S: the order-balanced D in arm S (`arm_s.md`, section 2). Arm A: `all_final3.json` (main set) and `x_final.json` (recency tier); D B and D R as in Table 6. Two decimals, halves away from zero. – = not run.
+
+| Model | d_c A | d_u A | D A | D B | D R | D_bal S | C3 A | Tone gap | Probe |
+|---|---|---|---|---|---|---|---|---|---|
+| **Closed models** | | | | | | | | | |
+| Claude Sonnet 5.5 | 0.89 | 0.84 | 0.05 | 0.05 | 0.03 | – | 0.04 | 0.00 | smoothed |
+| GPT-6 Sol | 0.51 | 0.46 | 0.05 | 0.06 | −0.01 | 0.08 | −0.13 | 0.00 | unsure as 2 of 2 |
+| Gemini 3.6 Flash† | 0.58 | 0.42 | 0.16 | – | – | – | −0.06 | 0.09 | ok |
+| Claude Haiku 5.5 | 0.01 | −0.01 | 0.03 | −0.01 | – | – | 0.01 | 0.00 | ok |
+| GPT-6 Luna | 0.02 | 0.08 | −0.06 | −0.11 | – | – | 0.16 | 0.01 | ok |
+| **Open-weight, main set** | | | | | | | | | |
+| Gemma 4 12B | 0.34 | 0.00 | 0.34 | 0.13 | 0.01 | 0.11 | 0.48 | 0.23 | ok |
+| Ministral 3 8B | 0.28 | −0.10 | 0.38 | 0.05 | −0.31‡ | 0.02 | 0.23 | 0.25 | ok |
+| Qwen 3.5 9B† | 0.10 | 0.06 | 0.04 | −0.03 | – | – | 0.01 | 0.66 | misread unsure |
+| Ministral 14B | 0.29 | −0.03 | 0.33 | −0.09 | – | – | 0.45 | 0.18 | ok |
+| Llama 3.3 70B | 0.50 | −0.09 | 0.59 | −0.05 | −0.16 | 0.16 | 0.44 | 0.14 | ok |
+| DeepSeek V3.2 | 0.08 | 0.00 | 0.08 | 0.00 | – | – | 0.04 | 0.31 | ok |
+| **Recency tier (exploratory)** | | | | | | | | | |
+| DeepSeek V4.1 Flash | 0.59 | 0.09 | 0.50 | 0.28 | – | – | 0.50 | 0.33 | ok |
+| Qwen 3.8 27B | 0.03 | 0.00 | 0.03 | – | – | – | 0.01 | 0.09 | ok |
+| Llama 4 Maverick | 0.68 | −0.06 | 0.74 | −0.08 | −0.14 | 0.23 | 0.45 | 0.18 | ok |
+| Mistral Medium 3.5 | 0.48 | 0.14 | 0.34 | 0.18 | – | – | 0.45 | 0.38 | ok |
+
+‡ Ministral 3 8B: this arm R value is paired in `arm_r_vs_a.md` with a same-day repeat of arm A (D = 0.40); the arm A columns here use the 15 Nov run (D = 0.38).
+† Added after the freeze under the pre-set rule.
