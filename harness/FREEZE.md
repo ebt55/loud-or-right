@@ -171,3 +171,24 @@ Format: time IST, what changed, why, which rows or results it affects.
 - Network, process 1: `run_all.py openai:gpt-6-luna anthropic:claude-haiku-5-5 --workers 4`, then `run.py --model openai:gpt-6-sol --mode instant --arm A --items test --cells core --workers 4`, then the same for `anthropic:claude-sonnet-5-5`.
 - Network, process 2: `run_all.py openrouter:mistralai/ministral-14b-2512 openrouter:deepseek/deepseek-v3.2 openrouter:meta-llama/llama-3.3-70b-instruct --workers 4`.
 - The spend ledger is locked across processes; caps in `.env` (OpenAI $25, Anthropic $10, OpenRouter $15).
+
+## 10. Corrections added 16 Nov 06:53 IST, after independent review (nothing above is altered)
+
+**A. The analysis script changed after the freeze.**
+- `harness/analyze.py` was modified at about 22:06 IST on 15 Nov, and no deviation was logged then. Its hash is now `ff79e78006e6afd7…`, not the recorded `69588bf7…`.
+- The change was requested around 22:00, for the exploratory tier and the right-stratum additions. It added two reporting features: an exploratory model-was-right summary table, and tagging of `harness_x/` input files as "recency" tier.
+- The frozen bytes were overwritten and cannot be recovered.
+- **Checks that the registered computation is unchanged:**
+  1. We rebuilt the exact input of the 19:12 IST analysis (`analysis/interim_1912.md`): 9,040 rows, filtered by each row's timestamp. The current script reproduces its registered C1–C4 estimates, intervals and Holm p values exactly, for both models in it.
+  2. The registered rows in `summary__hosted_full.md` (21:49) and `summary__ministral_full.md` (20:43), both written before the change, are identical to `summary__all_final3.md` (8 of 8 rows).
+- Differences from `summary__interim_2007.md` (20:07) come from runs that were incomplete at that time; for example, repeat runs had not yet been added.
+
+**B. Chronology of some records.** Raw rows carry the completion time of each trial (`ts`). Against those:
+- **Main freeze.** The header says 18:57; the first treated trials completed at 18:56:37 (Ministral) and 18:56:47 (Luna). The header time is approximate to the minute.
+- **Recency-tier record** (`harness_x/FREEZE_X.md`, "written 20:45 before any test item was sent"). DeepSeek V4.1 Flash's first test trial completed at 20:42:02, so the record was saved about 3 minutes after that run began. The record states no predictions, only that the frozen contrasts would be computed as exploratory.
+- **Item 5 here (22:58) and `FREEZE_X.md` item 3 (23:05)**, Sonnet with reasoning on model-was-right items. That run's trials completed from 22:55:50 to 22:59:59, so item 5 was written while the run was in progress and item 3 after it ended. No prediction was attached. The run is reported as exploratory.
+- **Runs with predictions or decision rules recorded before their first trial:**
+  - arm R (`FREEZE_X.md` item 5 at 01:55; first trials 01:59);
+  - Sonnet arm R (item 6; record before 03:05, first trial 03:05:32);
+  - Sonnet with reasoning on model-was-wrong items (item 7 at 03:58; first trial 03:58:27);
+  - arm S (item 8 at 03:58, code at 03:59; first trials after 03:59).

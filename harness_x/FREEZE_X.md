@@ -174,3 +174,10 @@ Separate ledger (`harness_x/data/spend.json`). OpenRouter calls are refused once
      - **Seen before:** all results so far.
      - **Status.** Exploratory.
 2. 21:10: the user raised the OpenRouter cap from $15 to $20. Mistral Medium 3.5 launched with the same runs as the others. Seen before this launch: the other three tier models' answer-only results (DeepSeek V4.1 Flash and Llama 4 Maverick strongly positive on all four contrasts; Qwen 3.8 27B near zero).
+
+## Correction (16 Nov 06:53 IST, after independent review)
+
+- **Header timing.** The header above says this record was written at 20:45, before any test item was sent. DeepSeek V4.1 Flash's first test trial completed at 20:42:02, so the record was saved about 3 minutes after that run began. The record contains no predictions.
+- **Item 3.** Item 3 (23:05) was written after its run ended (trials 22:55:50–22:59:59).
+- **Recorded in advance.** Items 5–8, which carry predictions or decision rules, precede their first trials.
+- **Analysis script.** See `harness/FREEZE.md` section 10 for the post-freeze change to `harness/analyze.py`, and the check that registered results are unchanged.
