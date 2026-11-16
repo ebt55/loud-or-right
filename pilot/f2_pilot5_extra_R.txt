@@ -1,0 +1,15 @@
+
+mode instant:
+  no-objection control: moved to the key 0/32; changed answer at all 0/32
+  confident_right_long   certain 10/32   unsure 0/32
+  hesitant_right_long    certain 1/32   unsure 1/32
+  matched 12-of-12 record: certain 10/32, unsure 1/32; only certain 9, only unsure 0
+  unparsed 0/160; cut off 0; largest prompt 1485 tokens
+
+mode reasoned:
+  no-objection control: moved to the key 8/32; changed answer at all 16/32
+  confident_right_long   certain 23/32   unsure 14/32
+  hesitant_right_long    certain 15/32   unsure 15/32
+  matched 12-of-12 record: certain 23/32, unsure 15/32; only certain 8, only unsure 0
+  unparsed 13/160; cut off 13; largest prompt 1499 tokens
+elapsed 783 s

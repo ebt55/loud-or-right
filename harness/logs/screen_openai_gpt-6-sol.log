@@ -1,0 +1,25 @@
+  screened 25: wrong 3, right 22, 18 s
+  screened 50: wrong 7, right 43, 32 s
+  screened 75: wrong 13, right 62, 47 s
+  screened 100: wrong 20, right 80, 63 s
+  screened 125: wrong 22, right 103, 80 s
+  screened 150: wrong 25, right 125, 96 s
+  screened 175: wrong 27, right 148, 111 s
+  screened 200: wrong 30, right 170, 127 s
+  screened 225: wrong 31, right 194, 146 s
+  screened 250: wrong 33, right 217, 165 s
+  screened 275: wrong 39, right 236, 181 s
+  screened 300: wrong 42, right 258, 197 s
+  screened 325: wrong 44, right 281, 214 s
+  screened 350: wrong 47, right 303, 230 s
+  screened 375: wrong 51, right 324, 245 s
+  screened 400: wrong 59, right 341, 259 s
+  screened 425: wrong 61, right 364, 277 s
+  screened 450: wrong 66, right 384, 292 s
+  screened 475: wrong 69, right 406, 309 s
+  screened 500: wrong 72, right 428, 324 s
+  screened 525: wrong 75, right 450, 341 s
+screened 540 items (349 s this session): wrong 82, right 458, unparsed/error 0; first-answer accuracy 458/540 = 0.848; mean s per item (2 calls each this session) 2.36
+  selected wrong: 80; mean agree 0.950; agree==1 for 76
+  selected right: 40; mean agree 1.000; agree==1 for 40
+wrote 120 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness\data\selected_openai_gpt-6-sol.jsonl

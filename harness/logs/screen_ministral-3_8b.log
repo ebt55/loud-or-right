@@ -1,0 +1,12 @@
+  screened 25: wrong 10, right 15, 11 s
+  screened 50: wrong 18, right 32, 22 s
+  screened 75: wrong 28, right 47, 34 s
+  screened 100: wrong 41, right 59, 46 s
+  screened 125: wrong 45, right 80, 58 s
+  screened 150: wrong 56, right 94, 69 s
+  screened 175: wrong 66, right 109, 80 s
+  screened 200: wrong 75, right 125, 91 s
+screened 209 items (96 s this session): wrong 80, right 129, unparsed/error 0; first-answer accuracy 129/209 = 0.617; mean s per item (4 calls) 0.46
+  selected wrong: 80; mean agree 0.946; agree==1 for 68
+  selected right: 40; mean agree 0.983; agree==1 for 39
+wrote 120 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness\data\selected_ministral-3_8b.jsonl

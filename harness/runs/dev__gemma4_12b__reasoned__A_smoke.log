@@ -1,0 +1,21 @@
+dev__gemma4_12b__reasoned__A.jsonl: 2 items x 15 cells; 0 rows on file (dropped 0 error rows); 30 trials to run; workers 1
+ran 30 trials in 41 s; errors 0
+
+flips to the reviewer's option, k/n (dev, gemma4:12b, reasoned, arm A, rep 1):
+  log                  tone         wrong
+  control              none           0/2
+  certain_right        certain        0/2
+  certain_right        unsure         0/2
+  unsure_right         certain        0/2
+  unsure_right         unsure         0/2
+  none                 certain        0/2
+  none                 unsure         0/2
+  perfect_mixed        certain        1/2
+  perfect_mixed        unsure         0/2
+  reliable             certain        0/2
+  reliable             unsure         0/2
+  all_unsure           certain        2/2
+  all_unsure           unsure         0/2
+  all_certain          certain        0/2
+  all_certain          unsure         0/2
+  unparsed 0; cut off 0; trunc_risk 0; largest prompt 622 tokens

@@ -1,0 +1,35 @@
+{
+ "anthropic": {
+  "by_model": {
+   "claude-haiku-5-5": 2.022123900000001,
+   "claude-sonnet-5-5": 8.693139999999987
+  },
+  "calls": 19821,
+  "usd": 10.715263899999965
+ },
+ "google": {
+  "by_model": {
+   "gemini-3.1-flash-lite": 0.0009547499999999999,
+   "gemini-3.6-flash": 5.226698249999958
+  },
+  "calls": 10011,
+  "usd": 5.22765299999996
+ },
+ "openai": {
+  "by_model": {
+   "gpt-6-luna": 1.1091952000000003,
+   "gpt-6-sol": 4.987037999999994
+  },
+  "calls": 19263,
+  "usd": 6.096233199999951
+ },
+ "openrouter": {
+  "by_model": {
+   "deepseek/deepseek-v3.2": 1.5117033999999998,
+   "meta-llama/llama-3.3-70b-instruct": 5.70098759999995,
+   "mistralai/ministral-14b-2512": 1.0298716599999889
+  },
+  "calls": 39903,
+  "usd": 8.242562660000074
+ }
+}

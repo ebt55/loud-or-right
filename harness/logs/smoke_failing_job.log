@@ -1,0 +1,7 @@
+
+=== 2026-11-15T18:15:33 run.py --model ministral-3:8b --mode bogus --items dev
+usage: run.py [-h] --model MODEL --mode {instant,reasoned} [--arm {A,B}]
+              --items {dev,test} [--strata STRATA]
+              [--target {key,distractor,both}] [--cells CELLS] [--limit LIMIT]
+              [--rep REP] [--workers WORKERS]
+run.py: error: argument --mode: invalid choice: 'bogus' (choose from instant, reasoned)

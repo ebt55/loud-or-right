@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16cm" height="16.00cm" viewBox="0 0 600 600" font-family="Helvetica, Arial, sans-serif">
+<title>Record effect by voice</title>
+<rect x="0" y="0" width="600" height="600" fill="#ffffff"/>
+<text x="8.0" y="18.0" font-size="12" text-anchor="start" font-weight="bold" fill="#000000">Record effect by voice, answer-only, arm A, model-was-wrong items (target key)</text>
+<rect x="70" y="40" width="440" height="440" fill="none" stroke="#000000" stroke-width="1"/>
+<line x1="70.0" y1="480.0" x2="510.0" y2="40.0" stroke="#bdbdbd" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="70.0" y1="392.0" x2="510.0" y2="392.0" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="158.0" y1="480.0" x2="158.0" y2="40.0" stroke="#bdbdbd" stroke-width="1"/>
+<text x="506.0" y="54.0" font-size="11" text-anchor="end" font-weight="normal" fill="#6e6e6e">y = x</text>
+<line x1="70.0" y1="480.0" x2="70.0" y2="484.0" stroke="#000000" stroke-width="1"/>
+<text x="70.0" y="497.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">-0.25</text>
+<line x1="66.0" y1="480.0" x2="70.0" y2="480.0" stroke="#000000" stroke-width="1"/>
+<text x="63.0" y="484.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">-0.25</text>
+<line x1="158.0" y1="480.0" x2="158.0" y2="484.0" stroke="#000000" stroke-width="1"/>
+<text x="158.0" y="497.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">0</text>
+<line x1="66.0" y1="392.0" x2="70.0" y2="392.0" stroke="#000000" stroke-width="1"/>
+<text x="63.0" y="396.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">0</text>
+<line x1="246.0" y1="480.0" x2="246.0" y2="484.0" stroke="#000000" stroke-width="1"/>
+<text x="246.0" y="497.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">0.25</text>
+<line x1="66.0" y1="304.0" x2="70.0" y2="304.0" stroke="#000000" stroke-width="1"/>
+<text x="63.0" y="308.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">0.25</text>
+<line x1="334.0" y1="480.0" x2="334.0" y2="484.0" stroke="#000000" stroke-width="1"/>
+<text x="334.0" y="497.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">0.5</text>
+<line x1="66.0" y1="216.0" x2="70.0" y2="216.0" stroke="#000000" stroke-width="1"/>
+<text x="63.0" y="220.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">0.5</text>
+<line x1="422.0" y1="480.0" x2="422.0" y2="484.0" stroke="#000000" stroke-width="1"/>
+<text x="422.0" y="497.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">0.75</text>
+<line x1="66.0" y1="128.0" x2="70.0" y2="128.0" stroke="#000000" stroke-width="1"/>
+<text x="63.0" y="132.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">0.75</text>
+<line x1="510.0" y1="480.0" x2="510.0" y2="484.0" stroke="#000000" stroke-width="1"/>
+<text x="510.0" y="497.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">1</text>
+<line x1="66.0" y1="40.0" x2="70.0" y2="40.0" stroke="#000000" stroke-width="1"/>
+<text x="63.0" y="44.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">1</text>
+<text x="290.0" y="516.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">certain-voice record effect d_c (certain|certain_right - certain|unsure_right)</text>
+<text x="18.0" y="260.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000" transform="rotate(-90 18.0 260.0)">unsure-voice record effect d_u (unsure|unsure_right - unsure|certain_right)</text>
+<line x1="153.6" y1="396.4" x2="173.4" y2="396.4" stroke="#6e6e6e" stroke-width="0.9"/>
+<line x1="162.4" y1="414.0" x2="162.4" y2="383.2" stroke="#6e6e6e" stroke-width="0.9"/>
+<line x1="444.0" y1="97.2" x2="492.4" y2="97.2" stroke="#6e6e6e" stroke-width="0.9"/>
+<line x1="470.4" y1="128.0" x2="470.4" y2="70.8" stroke="#6e6e6e" stroke-width="0.9"/>
+<line x1="325.2" y1="361.2" x2="404.4" y2="361.2" stroke="#c0392b" stroke-width="0.9"/>
+<line x1="364.8" y1="378.8" x2="364.8" y2="339.2" stroke="#c0392b" stroke-width="0.9"/>
+<line x1="241.6" y1="392.0" x2="312.0" y2="392.0" stroke="#000000" stroke-width="0.9"/>
+<line x1="276.8" y1="392.0" x2="276.8" y2="392.0" stroke="#000000" stroke-width="0.9"/>
+<line x1="323.0" y1="244.6" x2="397.8" y2="244.6" stroke="#6e6e6e" stroke-width="0.9"/>
+<line x1="360.4" y1="279.8" x2="360.4" y2="207.2" stroke="#6e6e6e" stroke-width="0.9"/>
+<line x1="219.6" y1="427.2" x2="294.4" y2="427.2" stroke="#000000" stroke-width="0.9"/>
+<line x1="254.8" y1="453.6" x2="254.8" y2="405.2" stroke="#000000" stroke-width="0.9"/>
+<line x1="144.8" y1="363.4" x2="186.6" y2="363.4" stroke="#6e6e6e" stroke-width="0.9"/>
+<line x1="164.6" y1="383.2" x2="164.6" y2="341.3" stroke="#6e6e6e" stroke-width="0.9"/>
+<line x1="298.8" y1="229.2" x2="378.0" y2="229.2" stroke="#6e6e6e" stroke-width="0.9"/>
+<line x1="338.4" y1="268.8" x2="338.4" y2="189.6" stroke="#6e6e6e" stroke-width="0.9"/>
+<line x1="169.0" y1="392.0" x2="206.4" y2="392.0" stroke="#000000" stroke-width="0.9"/>
+<line x1="186.6" y1="398.6" x2="186.6" y2="385.4" stroke="#000000" stroke-width="0.9"/>
+<line x1="296.6" y1="422.8" x2="373.6" y2="422.8" stroke="#000000" stroke-width="0.9"/>
+<line x1="334.0" y1="444.8" x2="334.0" y2="405.2" stroke="#000000" stroke-width="0.9"/>
+<line x1="360.4" y1="414.0" x2="430.8" y2="414.0" stroke="#c0392b" stroke-width="0.9"/>
+<line x1="395.6" y1="436.0" x2="395.6" y2="396.4" stroke="#c0392b" stroke-width="0.9"/>
+<line x1="224.0" y1="403.0" x2="298.8" y2="403.0" stroke="#000000" stroke-width="0.9"/>
+<line x1="261.4" y1="427.2" x2="261.4" y2="381.0" stroke="#000000" stroke-width="0.9"/>
+<line x1="285.6" y1="343.6" x2="364.8" y2="343.6" stroke="#c0392b" stroke-width="0.9"/>
+<line x1="325.2" y1="370.0" x2="325.2" y2="317.2" stroke="#c0392b" stroke-width="0.9"/>
+<line x1="158.0" y1="392.0" x2="180.0" y2="392.0" stroke="#c0392b" stroke-width="0.9"/>
+<line x1="166.8" y1="392.0" x2="166.8" y2="392.0" stroke="#c0392b" stroke-width="0.9"/>
+<line x1="166.8" y1="370.0" x2="224.0" y2="370.0" stroke="#000000" stroke-width="0.9"/>
+<line x1="193.2" y1="387.6" x2="193.2" y2="348.0" stroke="#000000" stroke-width="0.9"/>
+<rect x="158.2" y="392.2" width="8.4" height="8.4" fill="#6e6e6e"/>
+<rect x="466.2" y="93.0" width="8.4" height="8.4" fill="#6e6e6e"/>
+<polygon points="364.8,355.7 359.8,365.2 369.8,365.2" fill="#c0392b"/>
+<circle cx="276.8" cy="392.0" r="4.5" fill="#000000"/>
+<rect x="356.2" y="240.4" width="8.4" height="8.4" fill="#6e6e6e"/>
+<circle cx="254.8" cy="427.2" r="4.5" fill="#000000"/>
+<rect x="160.4" y="359.2" width="8.4" height="8.4" fill="#6e6e6e"/>
+<rect x="334.2" y="225.0" width="8.4" height="8.4" fill="#6e6e6e"/>
+<circle cx="186.6" cy="392.0" r="4.5" fill="#000000"/>
+<circle cx="334.0" cy="422.8" r="4.5" fill="#000000"/>
+<polygon points="395.6,408.5 390.6,418.0 400.6,418.0" fill="#c0392b"/>
+<circle cx="261.4" cy="403.0" r="4.5" fill="#000000"/>
+<polygon points="325.2,338.1 320.2,347.6 330.2,347.6" fill="#c0392b"/>
+<polygon points="166.8,386.5 161.8,396.0 171.8,396.0" fill="#c0392b"/>
+<circle cx="193.2" cy="370.0" r="4.5" fill="#000000"/>
+<text stroke="#ffffff" stroke-width="3" paint-order="stroke" x="462.4" y="101.2" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">claude-sonnet-5-5</text>
+<text stroke="#ffffff" stroke-width="3" paint-order="stroke" x="346.4" y="233.2" font-size="11" text-anchor="start" font-weight="normal" fill="#000000">gpt-6-sol</text>
+<text stroke="#ffffff" stroke-width="3" paint-order="stroke" x="368.4" y="248.6" font-size="11" text-anchor="start" font-weight="normal" fill="#000000">gemini-3.6-flash</text>
+<text stroke="#ffffff" stroke-width="3" paint-order="stroke" x="333.2" y="347.6" font-size="11" text-anchor="start" font-weight="normal" fill="#000000">mistral-medium-3-5</text>
+<text stroke="#ffffff" stroke-width="3" paint-order="stroke" x="364.8" y="378.2" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">deepseek-v4.1-flash-1017</text>
+<text stroke="#ffffff" stroke-width="3" paint-order="stroke" x="156.6" y="367.4" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">gpt-6-luna</text>
+<text stroke="#ffffff" stroke-width="3" paint-order="stroke" x="201.2" y="374.0" font-size="11" text-anchor="start" font-weight="normal" fill="#000000">qwen3.5:9b</text>
+<text stroke="#ffffff" stroke-width="3" paint-order="stroke" x="174.8" y="408.0" font-size="11" text-anchor="start" font-weight="normal" fill="#000000">qwen3.8-27b</text>
+<text stroke="#ffffff" stroke-width="3" paint-order="stroke" x="178.6" y="384.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">deepseek-v3.2</text>
+<text stroke="#ffffff" stroke-width="3" paint-order="stroke" x="284.8" y="396.0" font-size="11" text-anchor="start" font-weight="normal" fill="#000000">gemma4:12b</text>
+<line x1="162.4" y1="396.4" x2="162.4" y2="412.4" stroke="#bdbdbd" stroke-width="0.8"/>
+<text stroke="#ffffff" stroke-width="3" paint-order="stroke" x="162.4" y="424.4" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">claude-haiku-5-5</text>
+<line x1="261.4" y1="403.0" x2="261.4" y2="433.0" stroke="#bdbdbd" stroke-width="0.8"/>
+<text stroke="#ffffff" stroke-width="3" paint-order="stroke" x="261.4" y="445.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">ministral-14b-2512</text>
+<text stroke="#ffffff" stroke-width="3" paint-order="stroke" x="395.6" y="431.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">llama-4-maverick</text>
+<line x1="334.0" y1="422.8" x2="342.0" y2="438.8" stroke="#bdbdbd" stroke-width="0.8"/>
+<text stroke="#ffffff" stroke-width="3" paint-order="stroke" x="342.0" y="450.8" font-size="11" text-anchor="start" font-weight="normal" fill="#000000">llama-3.3-70b-instruct</text>
+<line x1="254.8" y1="427.2" x2="254.8" y2="457.2" stroke="#bdbdbd" stroke-width="0.8"/>
+<text stroke="#ffffff" stroke-width="3" paint-order="stroke" x="254.8" y="469.2" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">ministral-3:8b</text>
+<circle cx="16.0" cy="538.0" r="4.5" fill="#000000"/>
+<text x="26.0" y="542.0" font-size="11" text-anchor="start" font-weight="normal" fill="#000000">open-weight (Ollama, OpenRouter, DeepSeek)</text>
+<rect x="295.8" y="533.8" width="8.4" height="8.4" fill="#6e6e6e"/>
+<text x="310.0" y="542.0" font-size="11" text-anchor="start" font-weight="normal" fill="#000000">hosted (OpenAI, Anthropic, Google)</text>
+<polygon points="16.0,550.5 11.0,560.0 21.0,560.0" fill="#c0392b"/>
+<text x="26.0" y="560.0" font-size="11" text-anchor="start" font-weight="normal" fill="#000000">recency tier (exploratory)</text>
+<text x="8.0" y="578.0" font-size="11" text-anchor="start" font-weight="normal" fill="#000000">Bars: 95% item-bootstrap intervals. Models with fewer than 10 items are not drawn.</text>
+</svg>

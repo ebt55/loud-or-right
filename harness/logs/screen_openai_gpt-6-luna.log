@@ -1,0 +1,17 @@
+  screened 25: wrong 4, right 21, 17 s
+  screened 50: wrong 9, right 41, 32 s
+  screened 75: wrong 19, right 56, 47 s
+  screened 100: wrong 30, right 70, 61 s
+  screened 125: wrong 31, right 94, 77 s
+  screened 150: wrong 37, right 113, 90 s
+  screened 175: wrong 42, right 133, 104 s
+  screened 200: wrong 49, right 151, 117 s
+  screened 225: wrong 56, right 169, 133 s
+  screened 250: wrong 59, right 191, 147 s
+  screened 275: wrong 67, right 208, 161 s
+  screened 300: wrong 74, right 226, 176 s
+  screened 325: wrong 77, right 248, 191 s
+screened 336 items (197 s this session): wrong 81, right 255, unparsed/error 0; first-answer accuracy 255/336 = 0.759; mean s per item (2 calls each this session) 2.12
+  selected wrong: 80; mean agree 0.787; agree==1 for 63
+  selected right: 40; mean agree 0.975; agree==1 for 39
+wrote 120 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness\data\selected_openai_gpt-6-luna.jsonl

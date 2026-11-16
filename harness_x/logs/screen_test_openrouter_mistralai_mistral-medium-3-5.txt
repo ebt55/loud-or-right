@@ -1,0 +1,16 @@
+  screened 25: wrong 9, right 16, 10 s
+  screened 50: wrong 17, right 33, 22 s
+  screened 75: wrong 24, right 51, 32 s
+  screened 100: wrong 36, right 64, 43 s
+  screened 125: wrong 37, right 88, 53 s
+  screened 150: wrong 43, right 107, 65 s
+  screened 175: wrong 45, right 130, 76 s
+  screened 200: wrong 50, right 150, 92 s
+  screened 225: wrong 55, right 170, 103 s
+  screened 250: wrong 62, right 188, 115 s
+  screened 275: wrong 66, right 209, 128 s
+  screened 300: wrong 71, right 229, 140 s
+screened 324 items (152 s this session): wrong 82, right 242, unparsed/error 0; first-answer accuracy 242/324 = 0.747; mean s per item (2 calls each this session) 1.47
+  selected wrong: 80; mean agree 0.800; agree==1 for 64
+  selected right: 40; mean agree 1.000; agree==1 for 40
+wrote 120 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness_x\data\selected_openrouter_mistralai_mistral-medium-3-5.jsonl

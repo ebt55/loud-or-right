@@ -1,0 +1,64 @@
+# Loud or Right? How Language Models Weigh a Critic's Confidence, Its Track Record, and the Order of the Evidence
+
+Code, data and analysis for a submission to the Apart Research **AI x Epistemics Research Sprint** (November 2026).
+
+**Author:** Ebin Babu Thomas, Independent AI Engineer & Researcher.
+
+**Report:** [`paper/report.pdf`](paper/report.pdf). Its source is [`paper/report.md`](paper/report.md).
+
+## What the study does
+
+A model answers a ten-option multiple-choice question (MMLU-Pro). A scripted reviewer then objects to its answer, with certainty ("I am certain") or with doubt ("I think ..., but I am not sure"). Before the objection, the model sees a practice log of the reviewer's past objections, in which the reviewer's record differs by expressed confidence: right only when certain, only when unsure, or always.
+
+Across 15 models:
+- **Sonnet and Sol:** Claude Sonnet 5.5 and GPT-6 Sol weighed each objection by the record of its own voice, across surface forms and entry orders.
+- **Open-weight models:** they followed the reviewer's overall score, the order of the log's entries and confident wording.
+- **Order confound:** a fixed entry order confounded the registered contrasts. A reversed-order arm and an order-randomised arm, both with predictions or decision rules fixed in advance, measured it.
+
+## Pre-existing work
+
+None. All code and data were produced during the sprint; work began on 15 November 2026, and no code or data predates it.
+
+## Repository layout
+
+| Path | Contents |
+|---|---|
+| `loud-or-right-design.md` | Design document, as red-teamed before the test run |
+| `pilot/` | Pilot scripts and data from development items |
+| `harness/` | Frozen code for the main run (`design.py`, `run.py`, `run_all.py`, `analyze.py`, `api_client.py`, ...), item pool, selected items, run outputs (`runs/*.jsonl`), analysis outputs (`analysis/`), and `FREEZE.md`, the pre-registration record with every later deviation logged |
+| `harness_x/` | A copy of the code with the exploratory additions: the recency tier, arm R (reversed order), arm S (order randomised per item) and Sonnet with reasoning on model-was-wrong items. Its record is `FREEZE_X.md`; predictions and decision rules were written there before each run |
+| `harness/posthoc/` | Post hoc analyses (first-entry split, arm R vs A, arm S) |
+| `paper/` | Report source and builds, figure script (`make_figs.py`), figures, and the number audit (`recount-paper.md`) |
+
+## Reproducing
+
+Requirements: Python 3.12+ and [`uv`](https://github.com/astral-sh/uv). Local models need [Ollama](https://ollama.com) with `gemma4:12b`, `ministral-3:8b` and `qwen3.5:9b`.
+
+To run hosted models, copy `.env.example` to `.env` and add your own keys. Never commit `.env`.
+
+```bash
+cd harness
+uv run --quiet --no-project python -I run_all.py gemma4:12b
+```
+
+```bash
+uv run --quiet --no-project python -I analyze.py runs/test__*.jsonl runs/probe__*.jsonl --summary --name all
+```
+
+```bash
+python ../paper/make_figs.py
+```
+
+Each run file records the model, sampling settings and serving provider on every row. The missing-data rules and statistics are in the docstring of `harness/analyze.py`.
+
+## Data
+
+Items come from MMLU-Pro (Wang et al., 2024; https://arxiv.org/abs/2406.01574), used under its licence. All conversations are synthetic, and the reviewer is fictional.
+
+## Use of AI tools
+
+The study design, code, runs and analysis were produced with Claude models, directed by the author. Design and results were reviewed by other AI agents. The report was drafted by Claude (Fable 5.2) from the audited analysis outputs. See the LLM Usage Statement in the report.
+
+## Licence
+
+Code: MIT (see `LICENSE`). MMLU-Pro items remain under their original licence.

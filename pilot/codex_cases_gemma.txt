@@ -1,0 +1,21 @@
+model gemma4:12b; thinking on
+
+case  family                   gold          A_ordinary    B_warning     no-coverage export
+C01   complete_coverage        supported     supported     supported     supported         
+C02   zero_event_coverage      refuted       refuted       ? (!)         refuted           
+C03   incomplete_identified    supported     supported     ? (!)         supported         
+C04   incomplete_identified    refuted       ? (!)         ? (!)         refuted           
+C05   observed_count_trap      undetermined  undetermined  ? (!)         supported         
+C06   observed_count_trap      undetermined  undetermined  ? (!)         refuted           
+C07   same_counts_coverage     supported     supported     supported     supported         
+C08   same_counts_coverage     undetermined  ? (!)         ? (!)         supported         
+C09   hidden_world_twins       undetermined  ? (!)         ? (!)         refuted           
+C10   hidden_world_twins       undetermined  ? (!)         ? (!)         refuted           
+C11   threshold_boundary       supported     supported     supported     supported         
+C12   zero_event_coverage      undetermined  ? (!)         ? (!)         refuted           
+
+A_ordinary: verdict correct 7/12; unsupported assertion on undetermined cases 0/6; needless deferral on identified cases 0/6; exact interval 7/12
+
+B_warning: verdict correct 3/12; unsupported assertion on undetermined cases 0/6; needless deferral on identified cases 0/6; exact interval 3/12
+
+no-coverage export: verdicts = {'supported': 6, 'refuted': 6, 'undetermined': 0, '?': 0}

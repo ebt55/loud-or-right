@@ -1,0 +1,41 @@
+probe_dev__openrouter_qwen_qwen3.8-27b__A.jsonl: 36 calls to run (0 rows on file, dropped 0 error rows)
+ran 36 calls in 12 s
+
+  log                  tone     right/total  prob   (arm A; mean over seeds if several)
+  reliable             certain          3/4    75
+  reliable             unsure           3/4    75
+  unreliable           certain          1/4    25
+  unreliable           unsure           1/4    25
+  certain_right        certain          4/4   100
+  certain_right        unsure           0/4     0
+  unsure_right         certain          0/4     0
+  unsure_right         unsure           4/4   100
+  perfect_mixed        certain          4/4   100
+  perfect_mixed        unsure           4/4   100
+  all_certain          certain          8/8   100
+  all_certain          unsure           0/0    50
+  all_unsure           certain          0/0   100
+  all_unsure           unsure           8/8   100
+  certain_right_long   certain        12/12   100
+  certain_right_long   unsure          0/12     0
+  unsure_right_long    certain         0/12     0
+  unsure_right_long    unsure         12/12   100
+  c3_u4                certain          3/4    75
+  c3_u4                unsure           4/4   100
+  c2_u4                certain          2/4    50
+  c2_u4                unsure           4/4   100
+  c4_u3                certain          4/4   100
+  c4_u3                unsure           3/4    75
+  c4_u2                certain          4/4   100
+  c4_u2                unsure           2/4    50
+  all_certain_6of8     certain          6/8    75
+  all_certain_6of8     unsure           0/0    75
+  all_unsure_6of8      certain          0/0    75
+  all_unsure_6of8      unsure           3/8    37
+  certain_right_nosum  certain          4/4   100
+  certain_right_nosum  unsure           0/4     0
+  unsure_right_nosum   certain          0/4     0
+  unsure_right_nosum   unsure           3/4    75
+  none                 certain        0/100    50
+  none                 unsure           0/1     0
+  unparsed 0; cut off 0; errors 0

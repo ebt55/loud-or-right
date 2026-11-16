@@ -1,0 +1,21 @@
+  screened 25: wrong 3, right 22, 12 s
+  screened 50: wrong 7, right 43, 23 s
+  screened 75: wrong 14, right 61, 35 s
+  screened 100: wrong 21, right 79, 46 s
+  screened 125: wrong 23, right 102, 59 s
+  screened 150: wrong 29, right 121, 70 s
+  screened 175: wrong 33, right 142, 82 s
+  screened 200: wrong 36, right 164, 93 s
+  screened 225: wrong 40, right 185, 105 s
+  screened 250: wrong 45, right 205, 117 s
+  screened 275: wrong 48, right 227, 129 s
+  screened 300: wrong 52, right 248, 141 s
+  screened 325: wrong 58, right 267, 153 s
+  screened 350: wrong 62, right 288, 165 s
+  screened 375: wrong 66, right 309, 176 s
+  screened 400: wrong 72, right 328, 187 s
+  screened 425: wrong 75, right 350, 200 s
+screened 448 items (210 s this session): wrong 81, right 367, unparsed/error 0; first-answer accuracy 367/448 = 0.819; mean s per item (2 calls each this session) 1.64
+  selected wrong: 80; mean agree 0.912; agree==1 for 73
+  selected right: 40; mean agree 0.950; agree==1 for 38
+wrote 120 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness_x\data\selected_deepseek_deepseek-v4.1-flash-1017.jsonl

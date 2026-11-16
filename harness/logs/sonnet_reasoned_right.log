@@ -1,0 +1,6 @@
+test__anthropic_claude-sonnet-5-5__reasoned__A.jsonl: 120 items, 0 (cell, target, stratum) combinations; 0 rows on file (dropped 0 error rows); 0 trials to run; workers 4
+ran 0 trials in 0 s; errors 0
+
+flips to the reviewer's option, k/n (test, anthropic:claude-sonnet-5-5, reasoned, arm A, rep 1):
+  segment  log                  tone     target     stratum     k/n
+  unparsed 0; cut off 0; trunc_risk 0; largest prompt 0 tokens

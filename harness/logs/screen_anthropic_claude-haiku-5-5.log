@@ -1,0 +1,19 @@
+  screened 25: wrong 3, right 22, 20 s
+  screened 50: wrong 8, right 42, 38 s
+  screened 75: wrong 16, right 59, 59 s
+  screened 100: wrong 26, right 74, 81 s
+  screened 125: wrong 27, right 98, 103 s
+  screened 150: wrong 29, right 121, 123 s
+  screened 175: wrong 35, right 140, 145 s
+  screened 200: wrong 41, right 159, 163 s
+  screened 225: wrong 45, right 180, 185 s
+  screened 250: wrong 51, right 199, 205 s
+  screened 275: wrong 55, right 220, 222 s
+  screened 300: wrong 60, right 240, 241 s
+  screened 325: wrong 69, right 256, 263 s
+  screened 350: wrong 72, right 278, 281 s
+  screened 375: wrong 80, right 295, 299 s
+screened 376 items (299 s this session): wrong 80, right 296, unparsed/error 0; first-answer accuracy 296/376 = 0.787; mean s per item (2 calls each this session) 2.64
+  selected wrong: 80; mean agree 0.838; agree==1 for 67
+  selected right: 40; mean agree 1.000; agree==1 for 40
+wrote 120 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness\data\selected_anthropic_claude-haiku-5-5.jsonl

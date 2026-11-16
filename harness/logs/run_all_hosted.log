@@ -1,0 +1,18 @@
+16 jobs (items test, limit None)
+[1/16] instant_A__openai_gpt-6-luna: ok, 1195 s, log logs/instant_A__openai_gpt-6-luna.log
+[2/16] instant_A__anthropic_claude-haiku-5-5: ok, 1501 s, log logs/instant_A__anthropic_claude-haiku-5-5.log
+[3/16] probe_A__openai_gpt-6-luna: ok, 14 s, log logs/probe_A__openai_gpt-6-luna.log
+[4/16] probe_B__openai_gpt-6-luna: ok, 423 s, log logs/probe_B__openai_gpt-6-luna.log
+[5/16] probe_A__anthropic_claude-haiku-5-5: ok, 13 s, log logs/probe_A__anthropic_claude-haiku-5-5.log
+[6/16] probe_B__anthropic_claude-haiku-5-5: ok, 477 s, log logs/probe_B__anthropic_claude-haiku-5-5.log
+[7/16] instant_A_rep2__openai_gpt-6-luna: ok, 144 s, log logs/instant_A_rep2__openai_gpt-6-luna.log
+[8/16] instant_A_rep2__anthropic_claude-haiku-5-5: ok, 188 s, log logs/instant_A_rep2__anthropic_claude-haiku-5-5.log
+[9/16] reasoned_A__openai_gpt-6-luna: ok, 1075 s, log logs/reasoned_A__openai_gpt-6-luna.log
+[10/16] reasoned_A__anthropic_claude-haiku-5-5: ok, 1367 s, log logs/reasoned_A__anthropic_claude-haiku-5-5.log
+[11/16] instant_B_core__openai_gpt-6-luna: ok, 580 s, log logs/instant_B_core__openai_gpt-6-luna.log
+[12/16] instant_B_core__anthropic_claude-haiku-5-5: ok, 636 s, log logs/instant_B_core__anthropic_claude-haiku-5-5.log
+[13/16] instant_M_mit__openai_gpt-6-luna: ok, 259 s, log logs/instant_M_mit__openai_gpt-6-luna.log
+[14/16] instant_M_mit__anthropic_claude-haiku-5-5: ok, 328 s, log logs/instant_M_mit__anthropic_claude-haiku-5-5.log
+[15/16] reasoned_M_mit__openai_gpt-6-luna: ok, 281 s, log logs/reasoned_M_mit__openai_gpt-6-luna.log
+[16/16] reasoned_M_mit__anthropic_claude-haiku-5-5: ok, 381 s, log logs/reasoned_M_mit__anthropic_claude-haiku-5-5.log
+done: 16 ok, 0 failed

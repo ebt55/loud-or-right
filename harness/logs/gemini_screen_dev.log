@@ -1,0 +1,7 @@
+  screened 25: wrong 6, right 19, 13 s
+  screened 50: wrong 10, right 40, 26 s
+  screened 75: wrong 19, right 56, 38 s
+screened 80 items (41 s this session): wrong 21, right 59, unparsed/error 0; first-answer accuracy 59/80 = 0.738; mean s per item (2 calls each this session) 1.79
+  selected wrong: 21; mean agree 0.857; agree==1 for 18
+  selected right: 16; mean agree 0.938; agree==1 for 15
+wrote 37 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness\data\selected_dev_google_gemini-3.6-flash.jsonl

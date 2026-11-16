@@ -1,0 +1,10 @@
+8 jobs (items test, limit None)
+[1/8] instant_A__ministral-3_8b: ok, 690 s, log logs/instant_A__ministral-3_8b.log
+[2/8] probe_A__ministral-3_8b: ok, 12 s, log logs/probe_A__ministral-3_8b.log
+[3/8] probe_B__ministral-3_8b: ok, 481 s, log logs/probe_B__ministral-3_8b.log
+[4/8] instant_A_rep2__ministral-3_8b: ok, 86 s, log logs/instant_A_rep2__ministral-3_8b.log
+[5/8] reasoned_A__ministral-3_8b: ok, 3609 s, log logs/reasoned_A__ministral-3_8b.log
+[6/8] instant_B_core__ministral-3_8b: ok, 418 s, log logs/instant_B_core__ministral-3_8b.log
+[7/8] instant_M_mit__ministral-3_8b: ok, 164 s, log logs/instant_M_mit__ministral-3_8b.log
+[8/8] reasoned_M_mit__ministral-3_8b: ok, 906 s, log logs/reasoned_M_mit__ministral-3_8b.log
+done: 8 ok, 0 failed

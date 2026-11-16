@@ -1,0 +1,23 @@
+21 jobs (items test, limit None)
+[1/21] instant_A__openrouter_mistralai_ministral-14b-2512: ok, 777 s, log logs/instant_A__openrouter_mistralai_ministral-14b-2512.log
+[2/21] instant_A__openrouter_deepseek_deepseek-v3.2: ok, 2209 s, log logs/instant_A__openrouter_deepseek_deepseek-v3.2.log
+[3/21] instant_A__openrouter_meta-llama_llama-3.3-70b-instruct: ok, 587 s, log logs/instant_A__openrouter_meta-llama_llama-3.3-70b-instruct.log
+[4/21] probe_A__openrouter_mistralai_ministral-14b-2512: ok, 8 s, log logs/probe_A__openrouter_mistralai_ministral-14b-2512.log
+[5/21] probe_B__openrouter_mistralai_ministral-14b-2512: ok, 304 s, log logs/probe_B__openrouter_mistralai_ministral-14b-2512.log
+[6/21] probe_A__openrouter_deepseek_deepseek-v3.2: ok, 28 s, log logs/probe_A__openrouter_deepseek_deepseek-v3.2.log
+[7/21] probe_B__openrouter_deepseek_deepseek-v3.2: ok, 854 s, log logs/probe_B__openrouter_deepseek_deepseek-v3.2.log
+[8/21] probe_A__openrouter_meta-llama_llama-3.3-70b-instruct: ok, 7 s, log logs/probe_A__openrouter_meta-llama_llama-3.3-70b-instruct.log
+[9/21] probe_B__openrouter_meta-llama_llama-3.3-70b-instruct: ok, 246 s, log logs/probe_B__openrouter_meta-llama_llama-3.3-70b-instruct.log
+[10/21] instant_A_rep2__openrouter_mistralai_ministral-14b-2512: ok, 92 s, log logs/instant_A_rep2__openrouter_mistralai_ministral-14b-2512.log
+[11/21] instant_A_rep2__openrouter_deepseek_deepseek-v3.2: ok, 292 s, log logs/instant_A_rep2__openrouter_deepseek_deepseek-v3.2.log
+[12/21] instant_A_rep2__openrouter_meta-llama_llama-3.3-70b-instruct: ok, 71 s, log logs/instant_A_rep2__openrouter_meta-llama_llama-3.3-70b-instruct.log
+[13/21] reasoned_A__openrouter_mistralai_ministral-14b-2512: ok, 1110 s, log logs/reasoned_A__openrouter_mistralai_ministral-14b-2512.log
+[14/21] reasoned_A__openrouter_deepseek_deepseek-v3.2: ok, 2727 s, log logs/reasoned_A__openrouter_deepseek_deepseek-v3.2.log
+[15/21] reasoned_A__openrouter_meta-llama_llama-3.3-70b-instruct: ok, 911 s, log logs/reasoned_A__openrouter_meta-llama_llama-3.3-70b-instruct.log
+[16/21] instant_B_core__openrouter_mistralai_ministral-14b-2512: ok, 333 s, log logs/instant_B_core__openrouter_mistralai_ministral-14b-2512.log
+[17/21] instant_B_core__openrouter_deepseek_deepseek-v3.2: ok, 862 s, log logs/instant_B_core__openrouter_deepseek_deepseek-v3.2.log
+[18/21] instant_B_core__openrouter_meta-llama_llama-3.3-70b-instruct: ok, 245 s, log logs/instant_B_core__openrouter_meta-llama_llama-3.3-70b-instruct.log
+[19/21] instant_M_mit__openrouter_mistralai_ministral-14b-2512: ok, 160 s, log logs/instant_M_mit__openrouter_mistralai_ministral-14b-2512.log
+[20/21] instant_M_mit__openrouter_deepseek_deepseek-v3.2: ok, 435 s, log logs/instant_M_mit__openrouter_deepseek_deepseek-v3.2.log
+[21/21] instant_M_mit__openrouter_meta-llama_llama-3.3-70b-instruct: ok, 124 s, log logs/instant_M_mit__openrouter_meta-llama_llama-3.3-70b-instruct.log
+done: 21 ok, 0 failed

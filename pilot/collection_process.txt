@@ -1,0 +1,17 @@
+model gemma4:12b; 10 scenarios; share of answers by collection method
+
+mode               method     asserts trend  cannot_tell  unparsed
+no reasoning       census     10/10           0/10         0
+no reasoning       voluntary  1/10           9/10         0
+no reasoning       tipline    10/10           0/10         0
+no reasoning       unstated   10/10           0/10         0
+no reasoning       pair-joint census+voluntary: 9/10
+no reasoning       pair-joint census+tipline: 0/10
+
+visible reasoning  census     10/10           0/10         0
+visible reasoning  voluntary  1/10           9/10         0
+visible reasoning  tipline    10/10           0/10         0
+visible reasoning  unstated   10/10           0/10         0
+visible reasoning  pair-joint census+voluntary: 9/10
+visible reasoning  pair-joint census+tipline: 0/10
+

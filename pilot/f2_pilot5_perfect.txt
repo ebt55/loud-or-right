@@ -1,0 +1,9 @@
+
+mode instant:
+  perfect_mixed          certain 31/32   unsure 24/32
+  unparsed 0/64; cut off 0; largest prompt 905 tokens
+
+mode reasoned:
+  perfect_mixed          certain 27/32   unsure 20/32
+  unparsed 5/64; cut off 5; largest prompt 919 tokens
+elapsed 818 s

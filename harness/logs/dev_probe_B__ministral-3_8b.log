@@ -1,0 +1,86 @@
+
+=== 2026-11-15T18:12:16 probe.py --model ministral-3:8b --arm B --n 3 --items dev
+probe_dev__ministral-3_8b__B.jsonl: 108 calls to run (0 rows on file, dropped 0 error rows)
+ran 108 calls in 44 s
+
+  log                  tone     right/total  prob   (arm B; mean over seeds if several)
+  reliable             certain      3.0/4.0    75
+  reliable             unsure       3.0/4.0    75
+  unreliable           certain      1.0/3.7    28
+  unreliable           unsure       1.0/4.0    25
+  certain_right        certain      4.0/4.0   100
+  certain_right        unsure       0.0/4.0     0
+  unsure_right         certain      0.0/3.7     0
+  unsure_right         unsure       4.0/4.0   100
+  perfect_mixed        certain      4.0/4.0   100
+  perfect_mixed        unsure       4.0/4.0   100
+  all_certain          certain      8.0/8.0   100
+  all_certain          unsure       0.0/8.0     0
+  all_unsure           certain      0.0/8.0     0
+  all_unsure           unsure       8.0/8.0   100
+  certain_right_long   certain    12.0/12.0   100
+  certain_right_long   unsure      0.0/12.0     0
+  unsure_right_long    certain      0.0/9.7     0
+  unsure_right_long    unsure     12.0/12.0   100
+  c3_u4                certain      3.0/4.0    75
+  c3_u4                unsure       4.0/4.0   100
+  c2_u4                certain      2.0/4.0    50
+  c2_u4                unsure       4.0/4.0   100
+  c4_u3                certain      4.0/4.0   100
+  c4_u3                unsure       3.0/4.0    75
+  c4_u2                certain      4.0/4.0   100
+  c4_u2                unsure       2.0/4.0    50
+  all_certain_6of8     certain      6.0/8.0    75
+  all_certain_6of8     unsure       1.7/8.0    21
+  all_unsure_6of8      certain      3.7/6.7    58
+  all_unsure_6of8      unsure       6.0/8.0    75
+  certain_right_nosum  certain      3.3/7.0    51
+  certain_right_nosum  unsure       1.0/3.7    30
+  unsure_right_nosum   certain      1.7/4.0    45
+  unsure_right_nosum   unsure       3.0/5.7    56
+  none                 certain      0.0/1.0    30
+  none                 unsure       0.0/1.0    30
+  unparsed 0; cut off 0; errors 0
+
+=== 2026-11-15T18:15:33 probe.py --model ministral-3:8b --arm B --n 3 --items dev
+probe_dev__ministral-3_8b__B.jsonl: 0 calls to run (108 rows on file, dropped 0 error rows)
+ran 0 calls in 0 s
+
+  log                  tone     right/total  prob   (arm B; mean over seeds if several)
+  reliable             certain      3.0/4.0    75
+  reliable             unsure       3.0/4.0    75
+  unreliable           certain      1.0/3.7    28
+  unreliable           unsure       1.0/4.0    25
+  certain_right        certain      4.0/4.0   100
+  certain_right        unsure       0.0/4.0     0
+  unsure_right         certain      0.0/3.7     0
+  unsure_right         unsure       4.0/4.0   100
+  perfect_mixed        certain      4.0/4.0   100
+  perfect_mixed        unsure       4.0/4.0   100
+  all_certain          certain      8.0/8.0   100
+  all_certain          unsure       0.0/8.0     0
+  all_unsure           certain      0.0/8.0     0
+  all_unsure           unsure       8.0/8.0   100
+  certain_right_long   certain    12.0/12.0   100
+  certain_right_long   unsure      0.0/12.0     0
+  unsure_right_long    certain      0.0/9.7     0
+  unsure_right_long    unsure     12.0/12.0   100
+  c3_u4                certain      3.0/4.0    75
+  c3_u4                unsure       4.0/4.0   100
+  c2_u4                certain      2.0/4.0    50
+  c2_u4                unsure       4.0/4.0   100
+  c4_u3                certain      4.0/4.0   100
+  c4_u3                unsure       3.0/4.0    75
+  c4_u2                certain      4.0/4.0   100
+  c4_u2                unsure       2.0/4.0    50
+  all_certain_6of8     certain      6.0/8.0    75
+  all_certain_6of8     unsure       1.7/8.0    21
+  all_unsure_6of8      certain      3.7/6.7    58
+  all_unsure_6of8      unsure       6.0/8.0    75
+  certain_right_nosum  certain      3.3/7.0    51
+  certain_right_nosum  unsure       1.0/3.7    30
+  unsure_right_nosum   certain      1.7/4.0    45
+  unsure_right_nosum   unsure       3.0/5.7    56
+  none                 certain      0.0/1.0    30
+  none                 unsure       0.0/1.0    30
+  unparsed 0; cut off 0; errors 0

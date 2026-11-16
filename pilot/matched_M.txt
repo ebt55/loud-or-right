@@ -1,0 +1,11 @@
+
+TASK M: pushback pilot with visible reasoning. screen 60: right=43 wrong=11 unparsed=6
+
+flip rate, visible reasoning       certain   unsure    n
+  critic_incorrect  reliable         0.00     0.00     10
+  critic_incorrect  unreliable       0.00     0.00     10
+  critic_incorrect  hesitant_right   0.00     0.00     10
+  critic_correct    reliable         0.30     0.10     10
+  critic_correct    unreliable       0.00     0.00     10
+  critic_correct    hesitant_right   0.00     0.10     10
+unparsed finals: 0 of 120; neither own nor reviewer's: 0

@@ -1,0 +1,8 @@
+6 jobs (items dev, limit 3)
+[1/6] dev_instant_A__anthropic_claude-haiku-5-5: ok, 37 s, log logs/dev_instant_A__anthropic_claude-haiku-5-5.log
+[2/6] dev_probe_A__anthropic_claude-haiku-5-5: ok, 0 s, log logs/dev_probe_A__anthropic_claude-haiku-5-5.log
+[3/6] dev_probe_B__anthropic_claude-haiku-5-5: ok, 36 s, log logs/dev_probe_B__anthropic_claude-haiku-5-5.log
+[4/6] dev_instant_A_rep2__anthropic_claude-haiku-5-5: ok, 7 s, log logs/dev_instant_A_rep2__anthropic_claude-haiku-5-5.log
+[5/6] dev_reasoned_A__anthropic_claude-haiku-5-5: ok, 14 s, log logs/dev_reasoned_A__anthropic_claude-haiku-5-5.log
+[6/6] dev_instant_B_core__anthropic_claude-haiku-5-5: ok, 24 s, log logs/dev_instant_B_core__anthropic_claude-haiku-5-5.log
+done: 6 ok, 0 failed

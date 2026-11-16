@@ -1,0 +1,43 @@
+
+=== 2026-11-15T21:17:20 probe.py --model gemma4:12b --arm B
+probe__gemma4_12b__B.jsonl: 1440 calls to run (0 rows on file, dropped 0 error rows)
+ran 1440 calls in 718 s
+
+  log                  tone     right/total  prob   (arm B; mean over seeds if several)
+  reliable             certain      2.5/3.4    75
+  reliable             unsure       2.5/3.5    71
+  unreliable           certain      0.9/3.5    27
+  unreliable           unsure       0.8/3.5    24
+  certain_right        certain      3.4/3.8    91
+  certain_right        unsure       0.0/3.9     0
+  unsure_right         certain      0.0/3.7     0
+  unsure_right         unsure       4.0/4.0    99
+  perfect_mixed        certain      3.2/3.4    98
+  perfect_mixed        unsure       3.6/3.8    96
+  all_certain          certain      5.3/5.3    98
+  all_certain          unsure       0.0/0.0     0
+  all_unsure           certain      0.0/0.0     0
+  all_unsure           unsure       5.3/5.3   100
+  certain_right_long   certain    10.8/10.8   100
+  certain_right_long   unsure      0.0/11.8     0
+  unsure_right_long    certain     0.0/11.2     0
+  unsure_right_long    unsure     11.8/11.8   100
+  c3_u4                certain      2.6/3.6    73
+  c3_u4                unsure       3.9/4.0    98
+  c2_u4                certain      1.7/3.2    53
+  c2_u4                unsure       3.9/4.0    97
+  c4_u3                certain      3.6/3.9    94
+  c4_u3                unsure       2.7/3.7    71
+  c4_u2                certain      3.4/3.7    93
+  c4_u2                unsure       1.7/3.5    47
+  all_certain_6of8     certain      3.9/5.3    71
+  all_certain_6of8     unsure       0.0/0.0     0
+  all_unsure_6of8      certain      0.0/0.0     0
+  all_unsure_6of8      unsure       4.2/5.7    71
+  certain_right_nosum  certain      3.0/3.4    91
+  certain_right_nosum  unsure       0.0/3.6     0
+  unsure_right_nosum   certain      0.0/3.3     0
+  unsure_right_nosum   unsure       3.0/3.4    92
+  none                 certain      0.0/1.0    50
+  none                 unsure     0.0/100.0    50
+  unparsed 0; cut off 0; errors 0

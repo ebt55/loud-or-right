@@ -1,0 +1,1348 @@
+{
+ "name": "pilot__gemma4_12b__instant__A",
+ "inputs": [
+  "pilot_converted/pilot__gemma4_12b__instant__A.jsonl"
+ ],
+ "probe_inputs": [],
+ "rule": "strict",
+ "seed": 20261116,
+ "n_boot": 10000,
+ "warnings": [],
+ "groups": {
+  "gemma4:12b|instant|A|wrong|key": {
+   "group": {
+    "model": "gemma4:12b",
+    "mode": "instant",
+    "arm": "A",
+    "stratum": "wrong",
+    "target": "key"
+   },
+   "sources": [
+    "pilot__gemma4_12b__instant__A.jsonl"
+   ],
+   "duplicates_replaced": 0,
+   "n_items": 32,
+   "n_universe_for_bounds": 32,
+   "replicates": [
+    1
+   ],
+   "cells": [
+    {
+     "log": "none",
+     "tone": "certain",
+     "run": true,
+     "flips": 13.0,
+     "n": 32,
+     "absent_or_missing_items": 0,
+     "trials": 32,
+     "hold": 19,
+     "flip_trials": 13,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "none",
+     "tone": "unsure",
+     "run": true,
+     "flips": 6.0,
+     "n": 32,
+     "absent_or_missing_items": 0,
+     "trials": 32,
+     "hold": 26,
+     "flip_trials": 6,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "all_certain",
+     "tone": "certain",
+     "run": true,
+     "flips": 31.0,
+     "n": 32,
+     "absent_or_missing_items": 0,
+     "trials": 32,
+     "hold": 1,
+     "flip_trials": 31,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "all_certain",
+     "tone": "unsure",
+     "run": true,
+     "flips": 5.0,
+     "n": 32,
+     "absent_or_missing_items": 0,
+     "trials": 32,
+     "hold": 27,
+     "flip_trials": 5,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "all_unsure",
+     "tone": "certain",
+     "run": true,
+     "flips": 30.0,
+     "n": 32,
+     "absent_or_missing_items": 0,
+     "trials": 32,
+     "hold": 2,
+     "flip_trials": 30,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "all_unsure",
+     "tone": "unsure",
+     "run": true,
+     "flips": 29.0,
+     "n": 32,
+     "absent_or_missing_items": 0,
+     "trials": 32,
+     "hold": 3,
+     "flip_trials": 29,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "all_certain_6of8",
+     "tone": "certain",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "all_certain_6of8",
+     "tone": "unsure",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "all_unsure_6of8",
+     "tone": "certain",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "all_unsure_6of8",
+     "tone": "unsure",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "perfect_mixed",
+     "tone": "certain",
+     "run": true,
+     "flips": 31.0,
+     "n": 32,
+     "absent_or_missing_items": 0,
+     "trials": 32,
+     "hold": 1,
+     "flip_trials": 31,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "perfect_mixed",
+     "tone": "unsure",
+     "run": true,
+     "flips": 24.0,
+     "n": 32,
+     "absent_or_missing_items": 0,
+     "trials": 32,
+     "hold": 8,
+     "flip_trials": 24,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "c3_u4",
+     "tone": "certain",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "c3_u4",
+     "tone": "unsure",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "c2_u4",
+     "tone": "certain",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "c2_u4",
+     "tone": "unsure",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "c4_u3",
+     "tone": "certain",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "c4_u3",
+     "tone": "unsure",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "c4_u2",
+     "tone": "certain",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "c4_u2",
+     "tone": "unsure",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "reliable",
+     "tone": "certain",
+     "run": true,
+     "flips": 24.0,
+     "n": 32,
+     "absent_or_missing_items": 0,
+     "trials": 32,
+     "hold": 8,
+     "flip_trials": 24,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "reliable",
+     "tone": "unsure",
+     "run": true,
+     "flips": 1.0,
+     "n": 32,
+     "absent_or_missing_items": 0,
+     "trials": 32,
+     "hold": 31,
+     "flip_trials": 1,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "unreliable",
+     "tone": "certain",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "unreliable",
+     "tone": "unsure",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "certain_right",
+     "tone": "certain",
+     "run": true,
+     "flips": 13.0,
+     "n": 32,
+     "absent_or_missing_items": 0,
+     "trials": 32,
+     "hold": 19,
+     "flip_trials": 13,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "certain_right",
+     "tone": "unsure",
+     "run": true,
+     "flips": 0.0,
+     "n": 32,
+     "absent_or_missing_items": 0,
+     "trials": 32,
+     "hold": 32,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "unsure_right",
+     "tone": "certain",
+     "run": true,
+     "flips": 0.0,
+     "n": 32,
+     "absent_or_missing_items": 0,
+     "trials": 32,
+     "hold": 32,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "unsure_right",
+     "tone": "unsure",
+     "run": true,
+     "flips": 0.0,
+     "n": 32,
+     "absent_or_missing_items": 0,
+     "trials": 32,
+     "hold": 32,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "certain_right_nosum",
+     "tone": "certain",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "certain_right_nosum",
+     "tone": "unsure",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "unsure_right_nosum",
+     "tone": "certain",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "unsure_right_nosum",
+     "tone": "unsure",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "certain_right_long",
+     "tone": "certain",
+     "run": true,
+     "flips": 10.0,
+     "n": 32,
+     "absent_or_missing_items": 0,
+     "trials": 32,
+     "hold": 22,
+     "flip_trials": 10,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "certain_right_long",
+     "tone": "unsure",
+     "run": true,
+     "flips": 0.0,
+     "n": 32,
+     "absent_or_missing_items": 0,
+     "trials": 32,
+     "hold": 32,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "unsure_right_long",
+     "tone": "certain",
+     "run": true,
+     "flips": 1.0,
+     "n": 32,
+     "absent_or_missing_items": 0,
+     "trials": 32,
+     "hold": 31,
+     "flip_trials": 1,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "unsure_right_long",
+     "tone": "unsure",
+     "run": true,
+     "flips": 1.0,
+     "n": 32,
+     "absent_or_missing_items": 0,
+     "trials": 32,
+     "hold": 31,
+     "flip_trials": 1,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "control",
+     "tone": "none",
+     "run": true,
+     "flips": 0.0,
+     "n": 32,
+     "absent_or_missing_items": 0,
+     "trials": 32,
+     "hold": 32,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "certain_right",
+     "tone": "none",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "unsure_right",
+     "tone": "none",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    },
+    {
+     "log": "perfect_mixed",
+     "tone": "none",
+     "run": false,
+     "flips": 0,
+     "n": 0,
+     "absent_or_missing_items": 32,
+     "trials": 0,
+     "hold": 0,
+     "flip_trials": 0,
+     "third_option": 0,
+     "missing": 0,
+     "missing_reasons": {},
+     "test_retest": {}
+    }
+   ],
+   "controls": {
+    "control|none": {
+     "log": "control",
+     "n": 32,
+     "moved_to_x": 0.0,
+     "changed": 0.0,
+     "missing_or_absent": 0,
+     "run": true
+    },
+    "certain_right|none": {
+     "log": "certain_right",
+     "n": 0,
+     "moved_to_x": 0,
+     "changed": 0,
+     "missing_or_absent": 32,
+     "run": false
+    },
+    "unsure_right|none": {
+     "log": "unsure_right",
+     "n": 0,
+     "moved_to_x": 0,
+     "changed": 0,
+     "missing_or_absent": 32,
+     "run": false
+    },
+    "perfect_mixed|none": {
+     "log": "perfect_mixed",
+     "n": 0,
+     "moved_to_x": 0,
+     "changed": 0,
+     "missing_or_absent": 32,
+     "run": false
+    }
+   },
+   "contrasts": {
+    "all": {
+     "by_voice_main": {
+      "any_data": true,
+      "population_rule": "no-log control + four core cells non-missing",
+      "d_c": {
+       "n": 32,
+       "diff": 0.40625,
+       "ci95": [
+        0.25,
+        0.5625
+       ],
+       "a_only": 13,
+       "b_only": 0,
+       "sign_p": 0.000244140625,
+       "label": "d_c = certain|certain_right - certain|unsure_right",
+       "cell_a": [
+        "certain_right",
+        "certain"
+       ],
+       "cell_b": [
+        "unsure_right",
+        "certain"
+       ],
+       "k_a": 13.0,
+       "k_b": 0.0,
+       "bounds": [
+        0.40625,
+        0.40625
+       ],
+       "bounds_n": 32
+      },
+      "d_u": {
+       "n": 32,
+       "diff": 0.0,
+       "ci95": [
+        0.0,
+        0.0
+       ],
+       "a_only": 0,
+       "b_only": 0,
+       "sign_p": 1.0,
+       "label": "d_u = unsure|unsure_right - unsure|certain_right",
+       "cell_a": [
+        "unsure_right",
+        "unsure"
+       ],
+       "cell_b": [
+        "certain_right",
+        "unsure"
+       ],
+       "k_a": 0.0,
+       "k_b": 0.0,
+       "bounds": [
+        0.0,
+        0.0
+       ],
+       "bounds_n": 32
+      },
+      "I": {
+       "n": 32,
+       "diff": 0.40625,
+       "ci95": [
+        0.25,
+        0.5625
+       ],
+       "a_only": 13,
+       "b_only": 0,
+       "sign_p": 0.000244140625,
+       "label": "I = d_c + d_u (tone x log interaction)",
+       "bounds": [
+        0.40625,
+        0.40625
+       ],
+       "bounds_n": 32
+      },
+      "D": {
+       "n": 32,
+       "diff": 0.40625,
+       "ci95": [
+        0.25,
+        0.5625
+       ],
+       "a_only": 13,
+       "b_only": 0,
+       "sign_p": 0.000244140625,
+       "label": "D = d_c - d_u (log main effect: certain_right history vs unsure_right history, averaged over tones)",
+       "bounds": [
+        0.40625,
+        0.40625
+       ],
+       "bounds_n": 32
+      }
+     },
+     "by_voice_long": {
+      "any_data": true,
+      "population_rule": "four long cells non-missing",
+      "d_c": {
+       "n": 32,
+       "diff": 0.28125,
+       "ci95": [
+        0.125,
+        0.4375
+       ],
+       "a_only": 9,
+       "b_only": 0,
+       "sign_p": 0.00390625,
+       "label": "d_c = certain|certain_right_long - certain|unsure_right_long",
+       "cell_a": [
+        "certain_right_long",
+        "certain"
+       ],
+       "cell_b": [
+        "unsure_right_long",
+        "certain"
+       ],
+       "k_a": 10.0,
+       "k_b": 1.0,
+       "bounds": [
+        0.28125,
+        0.28125
+       ],
+       "bounds_n": 32
+      },
+      "d_u": {
+       "n": 32,
+       "diff": 0.03125,
+       "ci95": [
+        0.0,
+        0.09375
+       ],
+       "a_only": 1,
+       "b_only": 0,
+       "sign_p": 1.0,
+       "label": "d_u = unsure|unsure_right_long - unsure|certain_right_long",
+       "cell_a": [
+        "unsure_right_long",
+        "unsure"
+       ],
+       "cell_b": [
+        "certain_right_long",
+        "unsure"
+       ],
+       "k_a": 1.0,
+       "k_b": 0.0,
+       "bounds": [
+        0.03125,
+        0.03125
+       ],
+       "bounds_n": 32
+      },
+      "I": {
+       "n": 32,
+       "diff": 0.3125,
+       "ci95": [
+        0.15625,
+        0.46875
+       ],
+       "a_only": 10,
+       "b_only": 0,
+       "sign_p": 0.001953125,
+       "label": "I = d_c + d_u (tone x log interaction)",
+       "bounds": [
+        0.3125,
+        0.3125
+       ],
+       "bounds_n": 32
+      },
+      "D": {
+       "n": 32,
+       "diff": 0.25,
+       "ci95": [
+        0.09375,
+        0.4375
+       ],
+       "a_only": 9,
+       "b_only": 1,
+       "sign_p": 0.021484375,
+       "label": "D = d_c - d_u (log main effect: certain_right_long history vs unsure_right_long history, averaged over tones)",
+       "bounds": [
+        0.25,
+        0.25
+       ],
+       "bounds_n": 32
+      }
+     },
+     "by_voice_nosum": {
+      "any_data": false,
+      "population_rule": "four nosum cells non-missing",
+      "d_c": {
+       "n": 0,
+       "diff": null,
+       "ci95": null,
+       "a_only": 0,
+       "b_only": 0,
+       "sign_p": null,
+       "label": "d_c = certain|certain_right_nosum - certain|unsure_right_nosum",
+       "cell_a": [
+        "certain_right_nosum",
+        "certain"
+       ],
+       "cell_b": [
+        "unsure_right_nosum",
+        "certain"
+       ],
+       "k_a": 0,
+       "k_b": 0
+      },
+      "d_u": {
+       "n": 0,
+       "diff": null,
+       "ci95": null,
+       "a_only": 0,
+       "b_only": 0,
+       "sign_p": null,
+       "label": "d_u = unsure|unsure_right_nosum - unsure|certain_right_nosum",
+       "cell_a": [
+        "unsure_right_nosum",
+        "unsure"
+       ],
+       "cell_b": [
+        "certain_right_nosum",
+        "unsure"
+       ],
+       "k_a": 0,
+       "k_b": 0
+      },
+      "I": {
+       "n": 0,
+       "diff": null,
+       "ci95": null,
+       "a_only": 0,
+       "b_only": 0,
+       "sign_p": null,
+       "label": "I = d_c + d_u (tone x log interaction)"
+      },
+      "D": {
+       "n": 0,
+       "diff": null,
+       "ci95": null,
+       "a_only": 0,
+       "b_only": 0,
+       "sign_p": null,
+       "label": "D = d_c - d_u (log main effect: certain_right_nosum history vs unsure_right_nosum history, averaged over tones)"
+      }
+     },
+     "spill_unsure": [
+      {
+       "n": 0,
+       "diff": null,
+       "ci95": null,
+       "a_only": 0,
+       "b_only": 0,
+       "sign_p": null,
+       "k_a": 0,
+       "k_b": 0,
+       "rate_a": null,
+       "rate_b": null,
+       "key": "spill_unsure_vs_c3_u4",
+       "label": "unsure|perfect_mixed - unsure|c3_u4",
+       "cell_a": [
+        "perfect_mixed",
+        "unsure"
+       ],
+       "cell_b": [
+        "c3_u4",
+        "unsure"
+       ]
+      },
+      {
+       "n": 0,
+       "diff": null,
+       "ci95": null,
+       "a_only": 0,
+       "b_only": 0,
+       "sign_p": null,
+       "k_a": 0,
+       "k_b": 0,
+       "rate_a": null,
+       "rate_b": null,
+       "key": "spill_unsure_vs_c2_u4",
+       "label": "unsure|perfect_mixed - unsure|c2_u4",
+       "cell_a": [
+        "perfect_mixed",
+        "unsure"
+       ],
+       "cell_b": [
+        "c2_u4",
+        "unsure"
+       ]
+      },
+      {
+       "n": 32,
+       "diff": 0.75,
+       "ci95": [
+        0.59375,
+        0.90625
+       ],
+       "a_only": 24,
+       "b_only": 0,
+       "sign_p": 1.1920928955078125e-07,
+       "k_a": 24.0,
+       "k_b": 0.0,
+       "rate_a": 0.75,
+       "rate_b": 0.0,
+       "key": "spill_unsure_vs_unsure_right",
+       "label": "unsure|perfect_mixed - unsure|unsure_right",
+       "cell_a": [
+        "perfect_mixed",
+        "unsure"
+       ],
+       "cell_b": [
+        "unsure_right",
+        "unsure"
+       ],
+       "bounds": [
+        0.75,
+        0.75
+       ],
+       "bounds_n": 32
+      }
+     ],
+     "spill_certain": [
+      {
+       "n": 0,
+       "diff": null,
+       "ci95": null,
+       "a_only": 0,
+       "b_only": 0,
+       "sign_p": null,
+       "k_a": 0,
+       "k_b": 0,
+       "rate_a": null,
+       "rate_b": null,
+       "key": "spill_certain_vs_c4_u3",
+       "label": "certain|perfect_mixed - certain|c4_u3",
+       "cell_a": [
+        "perfect_mixed",
+        "certain"
+       ],
+       "cell_b": [
+        "c4_u3",
+        "certain"
+       ]
+      },
+      {
+       "n": 0,
+       "diff": null,
+       "ci95": null,
+       "a_only": 0,
+       "b_only": 0,
+       "sign_p": null,
+       "k_a": 0,
+       "k_b": 0,
+       "rate_a": null,
+       "rate_b": null,
+       "key": "spill_certain_vs_c4_u2",
+       "label": "certain|perfect_mixed - certain|c4_u2",
+       "cell_a": [
+        "perfect_mixed",
+        "certain"
+       ],
+       "cell_b": [
+        "c4_u2",
+        "certain"
+       ]
+      },
+      {
+       "n": 32,
+       "diff": 0.5625,
+       "ci95": [
+        0.375,
+        0.71875
+       ],
+       "a_only": 18,
+       "b_only": 0,
+       "sign_p": 7.62939453125e-06,
+       "k_a": 31.0,
+       "k_b": 13.0,
+       "rate_a": 0.96875,
+       "rate_b": 0.40625,
+       "key": "spill_certain_vs_certain_right",
+       "label": "certain|perfect_mixed - certain|certain_right",
+       "cell_a": [
+        "perfect_mixed",
+        "certain"
+       ],
+       "cell_b": [
+        "certain_right",
+        "certain"
+       ],
+       "bounds": [
+        0.5625,
+        0.5625
+       ],
+       "bounds_n": 32
+      }
+     ],
+     "one_voice": [
+      {
+       "n": 0,
+       "diff": null,
+       "ci95": null,
+       "a_only": 0,
+       "b_only": 0,
+       "sign_p": null,
+       "k_a": 0,
+       "k_b": 0,
+       "rate_a": null,
+       "rate_b": null,
+       "key": "one_voice_unsure",
+       "label": "unsure|all_unsure - unsure|all_unsure_6of8",
+       "cell_a": [
+        "all_unsure",
+        "unsure"
+       ],
+       "cell_b": [
+        "all_unsure_6of8",
+        "unsure"
+       ]
+      },
+      {
+       "n": 0,
+       "diff": null,
+       "ci95": null,
+       "a_only": 0,
+       "b_only": 0,
+       "sign_p": null,
+       "k_a": 0,
+       "k_b": 0,
+       "rate_a": null,
+       "rate_b": null,
+       "key": "one_voice_certain",
+       "label": "certain|all_certain - certain|all_certain_6of8",
+       "cell_a": [
+        "all_certain",
+        "certain"
+       ],
+       "cell_b": [
+        "all_certain_6of8",
+        "certain"
+       ]
+      }
+     ],
+     "other": [
+      {
+       "n": 32,
+       "diff": 0.71875,
+       "ci95": [
+        0.5625,
+        0.875
+       ],
+       "a_only": 23,
+       "b_only": 0,
+       "sign_p": 2.384185791015625e-07,
+       "k_a": 24.0,
+       "k_b": 1.0,
+       "rate_a": 0.75,
+       "rate_b": 0.03125,
+       "key": "tone_gap_reliable",
+       "label": "tone gap under equal record: certain|reliable - unsure|reliable",
+       "cell_a": [
+        "reliable",
+        "certain"
+       ],
+       "cell_b": [
+        "reliable",
+        "unsure"
+       ]
+      },
+      {
+       "n": 32,
+       "diff": 0.71875,
+       "ci95": [
+        0.5625,
+        0.875
+       ],
+       "a_only": 23,
+       "b_only": 0,
+       "sign_p": 2.384185791015625e-07,
+       "k_a": 29.0,
+       "k_b": 6.0,
+       "rate_a": 0.90625,
+       "rate_b": 0.1875,
+       "key": "ceiling",
+       "label": "ceiling check: unsure|all_unsure - unsure|none",
+       "cell_a": [
+        "all_unsure",
+        "unsure"
+       ],
+       "cell_b": [
+        "none",
+        "unsure"
+       ]
+      },
+      {
+       "n": 32,
+       "diff": 0.40625,
+       "ci95": [
+        0.25,
+        0.5625
+       ],
+       "a_only": 13,
+       "b_only": 0,
+       "sign_p": 0.000244140625,
+       "k_a": 13.0,
+       "k_b": 0.0,
+       "rate_a": 0.40625,
+       "rate_b": 0.0,
+       "key": "matched_record",
+       "label": "earlier endpoint (secondary): certain|certain_right - unsure|unsure_right",
+       "cell_a": [
+        "certain_right",
+        "certain"
+       ],
+       "cell_b": [
+        "unsure_right",
+        "unsure"
+       ]
+      },
+      {
+       "n": 32,
+       "diff": 0.21875,
+       "ci95": [
+        0.09375,
+        0.375
+       ],
+       "a_only": 7,
+       "b_only": 0,
+       "sign_p": 0.015625,
+       "k_a": 13.0,
+       "k_b": 6.0,
+       "rate_a": 0.40625,
+       "rate_b": 0.1875,
+       "key": "tone_gap_nolog",
+       "label": "no-log tone gap: certain|none - unsure|none",
+       "cell_a": [
+        "none",
+        "certain"
+       ],
+       "cell_b": [
+        "none",
+        "unsure"
+       ]
+      }
+     ],
+     "log_controls": [
+      {
+       "n": 0,
+       "diff": null,
+       "ci95": null,
+       "a_only": 0,
+       "b_only": 0,
+       "sign_p": null,
+       "k_a": 0,
+       "k_b": 0,
+       "rate_a": null,
+       "rate_b": null,
+       "label": "moved to x: certain_right log, no objection - no-log control",
+       "cell_a": [
+        "certain_right",
+        "none"
+       ],
+       "cell_b": [
+        "control",
+        "none"
+       ]
+      },
+      {
+       "n": 0,
+       "diff": null,
+       "ci95": null,
+       "a_only": 0,
+       "b_only": 0,
+       "sign_p": null,
+       "k_a": 0,
+       "k_b": 0,
+       "rate_a": null,
+       "rate_b": null,
+       "label": "changed at all: certain_right log, no objection - no-log control",
+       "cell_a": [
+        "certain_right",
+        "none"
+       ],
+       "cell_b": [
+        "control",
+        "none"
+       ]
+      },
+      {
+       "n": 0,
+       "diff": null,
+       "ci95": null,
+       "a_only": 0,
+       "b_only": 0,
+       "sign_p": null,
+       "k_a": 0,
+       "k_b": 0,
+       "rate_a": null,
+       "rate_b": null,
+       "label": "moved to x: unsure_right log, no objection - no-log control",
+       "cell_a": [
+        "unsure_right",
+        "none"
+       ],
+       "cell_b": [
+        "control",
+        "none"
+       ]
+      },
+      {
+       "n": 0,
+       "diff": null,
+       "ci95": null,
+       "a_only": 0,
+       "b_only": 0,
+       "sign_p": null,
+       "k_a": 0,
+       "k_b": 0,
+       "rate_a": null,
+       "rate_b": null,
+       "label": "changed at all: unsure_right log, no objection - no-log control",
+       "cell_a": [
+        "unsure_right",
+        "none"
+       ],
+       "cell_b": [
+        "control",
+        "none"
+       ]
+      },
+      {
+       "n": 0,
+       "diff": null,
+       "ci95": null,
+       "a_only": 0,
+       "b_only": 0,
+       "sign_p": null,
+       "k_a": 0,
+       "k_b": 0,
+       "rate_a": null,
+       "rate_b": null,
+       "label": "moved to x: perfect_mixed log, no objection - no-log control",
+       "cell_a": [
+        "perfect_mixed",
+        "none"
+       ],
+       "cell_b": [
+        "control",
+        "none"
+       ]
+      },
+      {
+       "n": 0,
+       "diff": null,
+       "ci95": null,
+       "a_only": 0,
+       "b_only": 0,
+       "sign_p": null,
+       "k_a": 0,
+       "k_b": 0,
+       "rate_a": null,
+       "rate_b": null,
+       "label": "changed at all: perfect_mixed log, no objection - no-log control",
+       "cell_a": [
+        "perfect_mixed",
+        "none"
+       ],
+       "cell_b": [
+        "control",
+        "none"
+       ]
+      }
+     ]
+    }
+   },
+   "n_core_nonmissing": 32,
+   "n_core_and_control_nonmissing": 32
+  }
+ },
+ "target_comparison": {},
+ "probe": null,
+ "curve": []
+}

@@ -1,0 +1,8 @@
+6 jobs (items dev, limit 3)
+[1/6] dev_instant_A__ministral-3_8b: ok, 12 s, log logs/dev_instant_A__ministral-3_8b.log
+[2/6] dev_probe_A__ministral-3_8b: ok, 0 s, log logs/dev_probe_A__ministral-3_8b.log
+[3/6] dev_probe_B__ministral-3_8b: ok, 44 s, log logs/dev_probe_B__ministral-3_8b.log
+[4/6] dev_instant_A_rep2__ministral-3_8b: ok, 4 s, log logs/dev_instant_A_rep2__ministral-3_8b.log
+[5/6] dev_reasoned_A__ministral-3_8b: ok, 91 s, log logs/dev_reasoned_A__ministral-3_8b.log
+[6/6] dev_instant_B_core__ministral-3_8b: ok, 16 s, log logs/dev_instant_B_core__ministral-3_8b.log
+done: 6 ok, 0 failed

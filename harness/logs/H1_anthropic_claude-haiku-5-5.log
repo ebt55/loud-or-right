@@ -1,0 +1,7 @@
+  screened 25: wrong 11, right 14, 23 s
+  screened 50: wrong 23, right 27, 45 s
+  screened 75: wrong 30, right 45, 65 s
+screened 80 items (70 s this session): wrong 33, right 47, unparsed/error 0; first-answer accuracy 47/80 = 0.588; mean s per item (4 calls) 2.92
+  selected wrong: 32; mean agree 0.719; agree==1 for 23
+  selected right: 16; mean agree 0.938; agree==1 for 15
+wrote 48 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness\data\selected_dev_anthropic_claude-haiku-5-5.jsonl

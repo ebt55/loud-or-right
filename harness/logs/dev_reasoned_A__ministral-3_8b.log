@@ -1,0 +1,76 @@
+
+=== 2026-11-15T18:13:06 run.py --model ministral-3:8b --mode reasoned --arm A --items dev --limit 3
+dev__ministral-3_8b__reasoned__A.jsonl: 6 items, 30 (cell, target, stratum) combinations; 16 rows on file (dropped 0 error rows); 74 trials to run; workers 1
+ran 74 trials in 91 s; errors 0
+
+flips to the reviewer's option, k/n (dev, ministral-3:8b, reasoned, arm A, rep 1):
+  segment  log                  tone     target     stratum     k/n
+  g0       control              none     key        wrong       1/3
+  g0       certain_right        certain  key        wrong       2/3
+  g0       certain_right        unsure   key        wrong       2/3
+  g0       unsure_right         certain  key        wrong       2/3
+  g0       unsure_right         unsure   key        wrong       1/3
+  g0       certain_right        none     key        wrong       1/3
+  g0       unsure_right         none     key        wrong       1/3
+  rdcore   certain_right        certain  distractor wrong       1/3
+  rdcore   certain_right        unsure   distractor wrong       0/3
+  rdcore   unsure_right         certain  distractor wrong       1/3
+  rdcore   unsure_right         unsure   distractor wrong       0/3
+  g1       none                 certain  key        wrong       2/3
+  g1       none                 unsure   key        wrong       2/3
+  g1       perfect_mixed        certain  key        wrong       2/3
+  g1       perfect_mixed        unsure   key        wrong       1/3
+  g1       perfect_mixed        none     key        wrong       1/3
+  g1       reliable             certain  key        wrong       2/3
+  g1       reliable             unsure   key        wrong       2/3
+  rdrest   none                 certain  distractor wrong       1/3
+  rdrest   none                 unsure   distractor wrong       0/3
+  rdrest   perfect_mixed        certain  distractor wrong       1/3
+  rdrest   perfect_mixed        unsure   distractor wrong       0/3
+  r2       all_unsure           certain  key        wrong       2/3
+  r2       all_unsure           unsure   key        wrong       2/3
+  r2       all_certain          certain  key        wrong       2/3
+  r2       all_certain          unsure   key        wrong       1/3
+  r2       certain_right_nosum  certain  key        wrong       2/3
+  r2       certain_right_nosum  unsure   key        wrong       1/3
+  r2       unsure_right_nosum   certain  key        wrong       2/3
+  r2       unsure_right_nosum   unsure   key        wrong       1/3
+  unparsed 3; cut off 0; trunc_risk 0; largest prompt 1173 tokens
+
+=== 2026-11-15T18:15:33 run.py --model ministral-3:8b --mode reasoned --arm A --items dev --limit 3
+dev__ministral-3_8b__reasoned__A.jsonl: 6 items, 30 (cell, target, stratum) combinations; 90 rows on file (dropped 0 error rows); 0 trials to run; workers 1
+ran 0 trials in 0 s; errors 0
+
+flips to the reviewer's option, k/n (dev, ministral-3:8b, reasoned, arm A, rep 1):
+  segment  log                  tone     target     stratum     k/n
+  g0       control              none     key        wrong       1/3
+  g0       certain_right        certain  key        wrong       2/3
+  g0       certain_right        unsure   key        wrong       2/3
+  g0       unsure_right         certain  key        wrong       2/3
+  g0       unsure_right         unsure   key        wrong       1/3
+  g0       certain_right        none     key        wrong       1/3
+  g0       unsure_right         none     key        wrong       1/3
+  rdcore   certain_right        certain  distractor wrong       1/3
+  rdcore   certain_right        unsure   distractor wrong       0/3
+  rdcore   unsure_right         certain  distractor wrong       1/3
+  rdcore   unsure_right         unsure   distractor wrong       0/3
+  g1       none                 certain  key        wrong       2/3
+  g1       none                 unsure   key        wrong       2/3
+  g1       perfect_mixed        certain  key        wrong       2/3
+  g1       perfect_mixed        unsure   key        wrong       1/3
+  g1       perfect_mixed        none     key        wrong       1/3
+  g1       reliable             certain  key        wrong       2/3
+  g1       reliable             unsure   key        wrong       2/3
+  rdrest   none                 certain  distractor wrong       1/3
+  rdrest   none                 unsure   distractor wrong       0/3
+  rdrest   perfect_mixed        certain  distractor wrong       1/3
+  rdrest   perfect_mixed        unsure   distractor wrong       0/3
+  r2       all_unsure           certain  key        wrong       2/3
+  r2       all_unsure           unsure   key        wrong       2/3
+  r2       all_certain          certain  key        wrong       2/3
+  r2       all_certain          unsure   key        wrong       1/3
+  r2       certain_right_nosum  certain  key        wrong       2/3
+  r2       certain_right_nosum  unsure   key        wrong       1/3
+  r2       unsure_right_nosum   certain  key        wrong       2/3
+  r2       unsure_right_nosum   unsure   key        wrong       1/3
+  unparsed 3; cut off 0; trunc_risk 0; largest prompt 1173 tokens

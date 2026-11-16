@@ -1,0 +1,43 @@
+
+=== 2026-11-15T20:01:41 probe.py --model openrouter:deepseek/deepseek-v3.2 --arm B --workers 4
+probe__openrouter_deepseek_deepseek-v3.2__B.jsonl: 1440 calls to run (0 rows on file, dropped 0 error rows)
+ran 1440 calls in 854 s
+
+  log                  tone     right/total  prob   (arm B; mean over seeds if several)
+  reliable             certain      3.0/4.0    75
+  reliable             unsure       3.0/4.0    75
+  unreliable           certain      1.0/4.0    25
+  unreliable           unsure       1.0/4.0    25
+  certain_right        certain      4.0/4.0   100
+  certain_right        unsure       0.0/4.0     0
+  unsure_right         certain      0.0/4.0     0
+  unsure_right         unsure       4.0/4.0   100
+  perfect_mixed        certain      4.0/4.0   100
+  perfect_mixed        unsure       4.0/4.0   100
+  all_certain          certain      7.9/7.9   100
+  all_certain          unsure       3.2/3.2    40
+  all_unsure           certain      4.2/4.2    52
+  all_unsure           unsure       7.9/7.9   100
+  certain_right_long   certain    11.3/11.4   100
+  certain_right_long   unsure      0.0/12.0     0
+  unsure_right_long    certain     0.0/10.7     0
+  unsure_right_long    unsure     12.0/12.0   100
+  c3_u4                certain      3.0/4.0    75
+  c3_u4                unsure       4.0/4.0   100
+  c2_u4                certain      2.0/4.0    51
+  c2_u4                unsure       4.0/4.0   100
+  c4_u3                certain      4.0/4.0   100
+  c4_u3                unsure       3.0/4.0    75
+  c4_u2                certain      4.0/4.0   100
+  c4_u2                unsure       2.0/4.0    50
+  all_certain_6of8     certain      5.5/7.2    76
+  all_certain_6of8     unsure       0.2/0.3     6
+  all_unsure_6of8      certain      0.1/0.2     5
+  all_unsure_6of8      unsure       5.5/7.3    75
+  certain_right_nosum  certain      3.9/3.9    99
+  certain_right_nosum  unsure       0.0/3.9     0
+  unsure_right_nosum   certain      0.0/4.0     0
+  unsure_right_nosum   unsure       3.7/3.8    97
+  none                 certain      0.8/1.6    40
+  none                 unsure       1.0/2.0    50
+  unparsed 0; cut off 0; errors 0

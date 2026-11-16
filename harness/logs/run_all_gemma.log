@@ -1,0 +1,10 @@
+8 jobs (items test, limit None)
+[1/8] instant_A__gemma4_12b: ok, 1607 s, log logs/instant_A__gemma4_12b.log
+[2/8] probe_A__gemma4_12b: ok, 18 s, log logs/probe_A__gemma4_12b.log
+[3/8] probe_B__gemma4_12b: ok, 718 s, log logs/probe_B__gemma4_12b.log
+[4/8] instant_A_rep2__gemma4_12b: ok, 182 s, log logs/instant_A_rep2__gemma4_12b.log
+[5/8] reasoned_A__gemma4_12b: ok, 4719 s, log logs/reasoned_A__gemma4_12b.log
+[6/8] instant_B_core__gemma4_12b: ok, 880 s, log logs/instant_B_core__gemma4_12b.log
+[7/8] instant_M_mit__gemma4_12b: ok, 359 s, log logs/instant_M_mit__gemma4_12b.log
+[8/8] reasoned_M_mit__gemma4_12b: ok, 1193 s, log logs/reasoned_M_mit__gemma4_12b.log
+done: 8 ok, 0 failed

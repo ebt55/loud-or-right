@@ -1,0 +1,7 @@
+
+mode instant:
+  all_confident          certain 31/32   unsure 5/32
+  all_hesitant           certain 30/32   unsure 29/32
+  matched 8-of-8 uniform record: certain 31/32, unsure 29/32; only certain 2, only unsure 0
+  unparsed 0/128; cut off 0; largest prompt 904 tokens
+elapsed 639 s

@@ -1,0 +1,13 @@
+  screened 25: wrong 12, right 13, 13 s
+  screened 50: wrong 20, right 30, 24 s
+  screened 75: wrong 30, right 45, 36 s
+  screened 100: wrong 44, right 56, 45 s
+  screened 125: wrong 50, right 75, 59 s
+  screened 150: wrong 57, right 93, 69 s
+  screened 175: wrong 63, right 112, 81 s
+  screened 200: wrong 69, right 131, 91 s
+  screened 225: wrong 75, right 150, 102 s
+screened 240 items (107 s this session): wrong 80, right 160, unparsed/error 0; first-answer accuracy 160/240 = 0.667; mean s per item (2 calls each this session) 1.39
+  selected wrong: 80; mean agree 0.900; agree==1 for 72
+  selected right: 40; mean agree 1.000; agree==1 for 40
+wrote 120 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness\data\selected_openrouter_mistralai_ministral-14b-2512.jsonl

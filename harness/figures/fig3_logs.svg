@@ -1,0 +1,323 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16cm" height="28.53cm" viewBox="0 0 600 1070" font-family="Helvetica, Arial, sans-serif">
+<title>Flip rate across logs</title>
+<rect x="0" y="0" width="600" height="1070" fill="#ffffff"/>
+<text x="8.0" y="18.0" font-size="12" text-anchor="start" font-weight="bold" fill="#000000">Answer-only flip rate across logs (arm A, target key, model-was-wrong items)</text>
+<text x="150.0" y="44.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#000000">claude-haiku-5-5</text>
+<line x1="44.0" y1="188.0" x2="286.0" y2="188.0" stroke="#000000" stroke-width="1"/>
+<line x1="44.0" y1="56.0" x2="44.0" y2="188.0" stroke="#000000" stroke-width="1"/>
+<line x1="40.0" y1="188.0" x2="44.0" y2="188.0" stroke="#000000" stroke-width="1"/>
+<text x="37.0" y="192.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">0</text>
+<line x1="40.0" y1="122.0" x2="44.0" y2="122.0" stroke="#000000" stroke-width="1"/>
+<text x="37.0" y="126.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">0.5</text>
+<line x1="44.0" y1="122.0" x2="286.0" y2="122.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="40.0" y1="56.0" x2="44.0" y2="56.0" stroke="#000000" stroke-width="1"/>
+<text x="37.0" y="60.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">1</text>
+<line x1="44.0" y1="56.0" x2="286.0" y2="56.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="44.0" y1="188.0" x2="44.0" y2="192.0" stroke="#000000" stroke-width="1"/>
+<text x="47.0" y="200.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 47.0 200.0)">no log</text>
+<line x1="74.2" y1="188.0" x2="74.2" y2="192.0" stroke="#000000" stroke-width="1"/>
+<text x="77.2" y="200.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 77.2 200.0)">perfect mixed</text>
+<line x1="104.5" y1="188.0" x2="104.5" y2="192.0" stroke="#000000" stroke-width="1"/>
+<text x="107.5" y="200.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 107.5 200.0)">C3/4 U4/4</text>
+<line x1="134.8" y1="188.0" x2="134.8" y2="192.0" stroke="#000000" stroke-width="1"/>
+<text x="137.8" y="200.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 137.8 200.0)">C2/4 U4/4</text>
+<line x1="165.0" y1="188.0" x2="165.0" y2="192.0" stroke="#000000" stroke-width="1"/>
+<text x="168.0" y="200.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 168.0 200.0)">unsure-is-right</text>
+<line x1="195.2" y1="188.0" x2="195.2" y2="192.0" stroke="#000000" stroke-width="1"/>
+<text x="198.2" y="200.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 198.2 200.0)">C4/4 U3/4</text>
+<line x1="225.5" y1="188.0" x2="225.5" y2="192.0" stroke="#000000" stroke-width="1"/>
+<text x="228.5" y="200.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 228.5 200.0)">C4/4 U2/4</text>
+<line x1="255.8" y1="188.0" x2="255.8" y2="192.0" stroke="#000000" stroke-width="1"/>
+<text x="258.8" y="200.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 258.8 200.0)">certain-is-right</text>
+<line x1="286.0" y1="188.0" x2="286.0" y2="192.0" stroke="#000000" stroke-width="1"/>
+<text x="289.0" y="200.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 289.0 200.0)">reliable (3/4, 3/4)</text>
+<polyline points="44.0,188.0 74.2,183.9" fill="none" stroke="#000000" stroke-width="1.6"/>
+<polyline points="255.8,188.0 286.0,183.9" fill="none" stroke="#000000" stroke-width="1.6"/>
+<circle cx="44.0" cy="188.0" r="2.8" fill="#000000"/>
+<circle cx="74.2" cy="183.9" r="2.8" fill="#000000"/>
+<circle cx="165.0" cy="183.9" r="2.8" fill="#000000"/>
+<circle cx="255.8" cy="188.0" r="2.8" fill="#000000"/>
+<circle cx="286.0" cy="183.9" r="2.8" fill="#000000"/>
+<polyline points="44.0,183.9 74.2,179.8" fill="none" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<polyline points="255.8,188.0 286.0,188.0" fill="none" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<circle cx="44.0" cy="183.9" r="2.8" fill="#c0392b"/>
+<circle cx="74.2" cy="179.8" r="2.8" fill="#c0392b"/>
+<circle cx="165.0" cy="183.9" r="2.8" fill="#c0392b"/>
+<circle cx="255.8" cy="188.0" r="2.8" fill="#c0392b"/>
+<circle cx="286.0" cy="188.0" r="2.8" fill="#c0392b"/>
+<text x="450.0" y="44.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#000000">gemma4:12b</text>
+<line x1="344.0" y1="188.0" x2="586.0" y2="188.0" stroke="#000000" stroke-width="1"/>
+<line x1="344.0" y1="56.0" x2="344.0" y2="188.0" stroke="#000000" stroke-width="1"/>
+<line x1="340.0" y1="188.0" x2="344.0" y2="188.0" stroke="#000000" stroke-width="1"/>
+<text x="337.0" y="192.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">0</text>
+<line x1="340.0" y1="122.0" x2="344.0" y2="122.0" stroke="#000000" stroke-width="1"/>
+<text x="337.0" y="126.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">0.5</text>
+<line x1="344.0" y1="122.0" x2="586.0" y2="122.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="340.0" y1="56.0" x2="344.0" y2="56.0" stroke="#000000" stroke-width="1"/>
+<text x="337.0" y="60.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">1</text>
+<line x1="344.0" y1="56.0" x2="586.0" y2="56.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="344.0" y1="188.0" x2="344.0" y2="192.0" stroke="#000000" stroke-width="1"/>
+<text x="347.0" y="200.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 347.0 200.0)">no log</text>
+<line x1="374.2" y1="188.0" x2="374.2" y2="192.0" stroke="#000000" stroke-width="1"/>
+<text x="377.2" y="200.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 377.2 200.0)">perfect mixed</text>
+<line x1="404.5" y1="188.0" x2="404.5" y2="192.0" stroke="#000000" stroke-width="1"/>
+<text x="407.5" y="200.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 407.5 200.0)">C3/4 U4/4</text>
+<line x1="434.8" y1="188.0" x2="434.8" y2="192.0" stroke="#000000" stroke-width="1"/>
+<text x="437.8" y="200.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 437.8 200.0)">C2/4 U4/4</text>
+<line x1="465.0" y1="188.0" x2="465.0" y2="192.0" stroke="#000000" stroke-width="1"/>
+<text x="468.0" y="200.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 468.0 200.0)">unsure-is-right</text>
+<line x1="495.2" y1="188.0" x2="495.2" y2="192.0" stroke="#000000" stroke-width="1"/>
+<text x="498.2" y="200.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 498.2 200.0)">C4/4 U3/4</text>
+<line x1="525.5" y1="188.0" x2="525.5" y2="192.0" stroke="#000000" stroke-width="1"/>
+<text x="528.5" y="200.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 528.5 200.0)">C4/4 U2/4</text>
+<line x1="555.8" y1="188.0" x2="555.8" y2="192.0" stroke="#000000" stroke-width="1"/>
+<text x="558.8" y="200.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 558.8 200.0)">certain-is-right</text>
+<line x1="586.0" y1="188.0" x2="586.0" y2="192.0" stroke="#000000" stroke-width="1"/>
+<text x="589.0" y="200.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 589.0 200.0)">reliable (3/4, 3/4)</text>
+<polyline points="344.0,134.4 374.2,56.0 404.5,80.8 434.8,130.2 465.0,183.9 495.2,84.9 525.5,93.1 555.8,130.2 586.0,89.0" fill="none" stroke="#000000" stroke-width="1.6"/>
+<circle cx="344.0" cy="134.4" r="2.8" fill="#000000"/>
+<circle cx="374.2" cy="56.0" r="2.8" fill="#000000"/>
+<circle cx="404.5" cy="80.8" r="2.8" fill="#000000"/>
+<circle cx="434.8" cy="130.2" r="2.8" fill="#000000"/>
+<circle cx="465.0" cy="183.9" r="2.8" fill="#000000"/>
+<circle cx="495.2" cy="84.9" r="2.8" fill="#000000"/>
+<circle cx="525.5" cy="93.1" r="2.8" fill="#000000"/>
+<circle cx="555.8" cy="130.2" r="2.8" fill="#000000"/>
+<circle cx="586.0" cy="89.0" r="2.8" fill="#000000"/>
+<polyline points="344.0,163.2 374.2,84.9 404.5,163.2 434.8,179.8 465.0,188.0 495.2,167.4 525.5,183.9 555.8,188.0 586.0,183.9" fill="none" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<circle cx="344.0" cy="163.2" r="2.8" fill="#c0392b"/>
+<circle cx="374.2" cy="84.9" r="2.8" fill="#c0392b"/>
+<circle cx="404.5" cy="163.2" r="2.8" fill="#c0392b"/>
+<circle cx="434.8" cy="179.8" r="2.8" fill="#c0392b"/>
+<circle cx="465.0" cy="188.0" r="2.8" fill="#c0392b"/>
+<circle cx="495.2" cy="167.4" r="2.8" fill="#c0392b"/>
+<circle cx="525.5" cy="183.9" r="2.8" fill="#c0392b"/>
+<circle cx="555.8" cy="188.0" r="2.8" fill="#c0392b"/>
+<circle cx="586.0" cy="183.9" r="2.8" fill="#c0392b"/>
+<text x="150.0" y="294.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#000000">ministral-3:8b</text>
+<line x1="44.0" y1="438.0" x2="286.0" y2="438.0" stroke="#000000" stroke-width="1"/>
+<line x1="44.0" y1="306.0" x2="44.0" y2="438.0" stroke="#000000" stroke-width="1"/>
+<line x1="40.0" y1="438.0" x2="44.0" y2="438.0" stroke="#000000" stroke-width="1"/>
+<text x="37.0" y="442.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">0</text>
+<line x1="40.0" y1="372.0" x2="44.0" y2="372.0" stroke="#000000" stroke-width="1"/>
+<text x="37.0" y="376.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">0.5</text>
+<line x1="44.0" y1="372.0" x2="286.0" y2="372.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="40.0" y1="306.0" x2="44.0" y2="306.0" stroke="#000000" stroke-width="1"/>
+<text x="37.0" y="310.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">1</text>
+<line x1="44.0" y1="306.0" x2="286.0" y2="306.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="44.0" y1="438.0" x2="44.0" y2="442.0" stroke="#000000" stroke-width="1"/>
+<text x="47.0" y="450.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 47.0 450.0)">no log</text>
+<line x1="74.2" y1="438.0" x2="74.2" y2="442.0" stroke="#000000" stroke-width="1"/>
+<text x="77.2" y="450.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 77.2 450.0)">perfect mixed</text>
+<line x1="104.5" y1="438.0" x2="104.5" y2="442.0" stroke="#000000" stroke-width="1"/>
+<text x="107.5" y="450.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 107.5 450.0)">C3/4 U4/4</text>
+<line x1="134.8" y1="438.0" x2="134.8" y2="442.0" stroke="#000000" stroke-width="1"/>
+<text x="137.8" y="450.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 137.8 450.0)">C2/4 U4/4</text>
+<line x1="165.0" y1="438.0" x2="165.0" y2="442.0" stroke="#000000" stroke-width="1"/>
+<text x="168.0" y="450.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 168.0 450.0)">unsure-is-right</text>
+<line x1="195.2" y1="438.0" x2="195.2" y2="442.0" stroke="#000000" stroke-width="1"/>
+<text x="198.2" y="450.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 198.2 450.0)">C4/4 U3/4</text>
+<line x1="225.5" y1="438.0" x2="225.5" y2="442.0" stroke="#000000" stroke-width="1"/>
+<text x="228.5" y="450.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 228.5 450.0)">C4/4 U2/4</text>
+<line x1="255.8" y1="438.0" x2="255.8" y2="442.0" stroke="#000000" stroke-width="1"/>
+<text x="258.8" y="450.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 258.8 450.0)">certain-is-right</text>
+<line x1="286.0" y1="438.0" x2="286.0" y2="442.0" stroke="#000000" stroke-width="1"/>
+<text x="289.0" y="450.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 289.0 450.0)">reliable (3/4, 3/4)</text>
+<polyline points="44.0,351.4 74.2,347.2 104.5,359.6 134.8,359.6 165.0,417.4 195.2,359.6 225.5,359.6 255.8,363.8 286.0,359.6" fill="none" stroke="#000000" stroke-width="1.6"/>
+<circle cx="44.0" cy="351.4" r="2.8" fill="#000000"/>
+<circle cx="74.2" cy="347.2" r="2.8" fill="#000000"/>
+<circle cx="104.5" cy="359.6" r="2.8" fill="#000000"/>
+<circle cx="134.8" cy="359.6" r="2.8" fill="#000000"/>
+<circle cx="165.0" cy="417.4" r="2.8" fill="#000000"/>
+<circle cx="195.2" cy="359.6" r="2.8" fill="#000000"/>
+<circle cx="225.5" cy="359.6" r="2.8" fill="#000000"/>
+<circle cx="255.8" cy="363.8" r="2.8" fill="#000000"/>
+<circle cx="286.0" cy="359.6" r="2.8" fill="#000000"/>
+<polyline points="44.0,396.8 74.2,405.0 104.5,421.5 134.8,421.5 165.0,433.9 195.2,413.2 225.5,413.2 255.8,425.6 286.0,413.2" fill="none" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<circle cx="44.0" cy="396.8" r="2.8" fill="#c0392b"/>
+<circle cx="74.2" cy="405.0" r="2.8" fill="#c0392b"/>
+<circle cx="104.5" cy="421.5" r="2.8" fill="#c0392b"/>
+<circle cx="134.8" cy="421.5" r="2.8" fill="#c0392b"/>
+<circle cx="165.0" cy="433.9" r="2.8" fill="#c0392b"/>
+<circle cx="195.2" cy="413.2" r="2.8" fill="#c0392b"/>
+<circle cx="225.5" cy="413.2" r="2.8" fill="#c0392b"/>
+<circle cx="255.8" cy="425.6" r="2.8" fill="#c0392b"/>
+<circle cx="286.0" cy="413.2" r="2.8" fill="#c0392b"/>
+<text x="450.0" y="294.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#000000">gpt-6-luna</text>
+<line x1="344.0" y1="438.0" x2="586.0" y2="438.0" stroke="#000000" stroke-width="1"/>
+<line x1="344.0" y1="306.0" x2="344.0" y2="438.0" stroke="#000000" stroke-width="1"/>
+<line x1="340.0" y1="438.0" x2="344.0" y2="438.0" stroke="#000000" stroke-width="1"/>
+<text x="337.0" y="442.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">0</text>
+<line x1="340.0" y1="372.0" x2="344.0" y2="372.0" stroke="#000000" stroke-width="1"/>
+<text x="337.0" y="376.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">0.5</text>
+<line x1="344.0" y1="372.0" x2="586.0" y2="372.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="340.0" y1="306.0" x2="344.0" y2="306.0" stroke="#000000" stroke-width="1"/>
+<text x="337.0" y="310.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">1</text>
+<line x1="344.0" y1="306.0" x2="586.0" y2="306.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="344.0" y1="438.0" x2="344.0" y2="442.0" stroke="#000000" stroke-width="1"/>
+<text x="347.0" y="450.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 347.0 450.0)">no log</text>
+<line x1="374.2" y1="438.0" x2="374.2" y2="442.0" stroke="#000000" stroke-width="1"/>
+<text x="377.2" y="450.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 377.2 450.0)">perfect mixed</text>
+<line x1="404.5" y1="438.0" x2="404.5" y2="442.0" stroke="#000000" stroke-width="1"/>
+<text x="407.5" y="450.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 407.5 450.0)">C3/4 U4/4</text>
+<line x1="434.8" y1="438.0" x2="434.8" y2="442.0" stroke="#000000" stroke-width="1"/>
+<text x="437.8" y="450.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 437.8 450.0)">C2/4 U4/4</text>
+<line x1="465.0" y1="438.0" x2="465.0" y2="442.0" stroke="#000000" stroke-width="1"/>
+<text x="468.0" y="450.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 468.0 450.0)">unsure-is-right</text>
+<line x1="495.2" y1="438.0" x2="495.2" y2="442.0" stroke="#000000" stroke-width="1"/>
+<text x="498.2" y="450.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 498.2 450.0)">C4/4 U3/4</text>
+<line x1="525.5" y1="438.0" x2="525.5" y2="442.0" stroke="#000000" stroke-width="1"/>
+<text x="528.5" y="450.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 528.5 450.0)">C4/4 U2/4</text>
+<line x1="555.8" y1="438.0" x2="555.8" y2="442.0" stroke="#000000" stroke-width="1"/>
+<text x="558.8" y="450.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 558.8 450.0)">certain-is-right</text>
+<line x1="586.0" y1="438.0" x2="586.0" y2="442.0" stroke="#000000" stroke-width="1"/>
+<text x="589.0" y="450.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 589.0 450.0)">reliable (3/4, 3/4)</text>
+<polyline points="344.0,417.4 374.2,405.0" fill="none" stroke="#000000" stroke-width="1.6"/>
+<polyline points="555.8,433.9 586.0,438.0" fill="none" stroke="#000000" stroke-width="1.6"/>
+<circle cx="344.0" cy="417.4" r="2.8" fill="#000000"/>
+<circle cx="374.2" cy="405.0" r="2.8" fill="#000000"/>
+<circle cx="465.0" cy="433.9" r="2.8" fill="#000000"/>
+<circle cx="555.8" cy="433.9" r="2.8" fill="#000000"/>
+<circle cx="586.0" cy="438.0" r="2.8" fill="#000000"/>
+<polyline points="344.0,413.2 374.2,409.1" fill="none" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<polyline points="555.8,438.0 586.0,438.0" fill="none" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<circle cx="344.0" cy="413.2" r="2.8" fill="#c0392b"/>
+<circle cx="374.2" cy="409.1" r="2.8" fill="#c0392b"/>
+<circle cx="465.0" cy="425.6" r="2.8" fill="#c0392b"/>
+<circle cx="555.8" cy="438.0" r="2.8" fill="#c0392b"/>
+<circle cx="586.0" cy="438.0" r="2.8" fill="#c0392b"/>
+<text x="150.0" y="544.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#000000">openrouter:deepseek/deepseek-v3.2</text>
+<line x1="44.0" y1="688.0" x2="286.0" y2="688.0" stroke="#000000" stroke-width="1"/>
+<line x1="44.0" y1="556.0" x2="44.0" y2="688.0" stroke="#000000" stroke-width="1"/>
+<line x1="40.0" y1="688.0" x2="44.0" y2="688.0" stroke="#000000" stroke-width="1"/>
+<text x="37.0" y="692.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">0</text>
+<line x1="40.0" y1="622.0" x2="44.0" y2="622.0" stroke="#000000" stroke-width="1"/>
+<text x="37.0" y="626.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">0.5</text>
+<line x1="44.0" y1="622.0" x2="286.0" y2="622.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="40.0" y1="556.0" x2="44.0" y2="556.0" stroke="#000000" stroke-width="1"/>
+<text x="37.0" y="560.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">1</text>
+<line x1="44.0" y1="556.0" x2="286.0" y2="556.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="44.0" y1="688.0" x2="44.0" y2="692.0" stroke="#000000" stroke-width="1"/>
+<text x="47.0" y="700.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 47.0 700.0)">no log</text>
+<line x1="74.2" y1="688.0" x2="74.2" y2="692.0" stroke="#000000" stroke-width="1"/>
+<text x="77.2" y="700.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 77.2 700.0)">perfect mixed</text>
+<line x1="104.5" y1="688.0" x2="104.5" y2="692.0" stroke="#000000" stroke-width="1"/>
+<text x="107.5" y="700.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 107.5 700.0)">C3/4 U4/4</text>
+<line x1="134.8" y1="688.0" x2="134.8" y2="692.0" stroke="#000000" stroke-width="1"/>
+<text x="137.8" y="700.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 137.8 700.0)">C2/4 U4/4</text>
+<line x1="165.0" y1="688.0" x2="165.0" y2="692.0" stroke="#000000" stroke-width="1"/>
+<text x="168.0" y="700.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 168.0 700.0)">unsure-is-right</text>
+<line x1="195.2" y1="688.0" x2="195.2" y2="692.0" stroke="#000000" stroke-width="1"/>
+<text x="198.2" y="700.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 198.2 700.0)">C4/4 U3/4</text>
+<line x1="225.5" y1="688.0" x2="225.5" y2="692.0" stroke="#000000" stroke-width="1"/>
+<text x="228.5" y="700.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 228.5 700.0)">C4/4 U2/4</text>
+<line x1="255.8" y1="688.0" x2="255.8" y2="692.0" stroke="#000000" stroke-width="1"/>
+<text x="258.8" y="700.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 258.8 700.0)">certain-is-right</text>
+<line x1="286.0" y1="688.0" x2="286.0" y2="692.0" stroke="#000000" stroke-width="1"/>
+<text x="289.0" y="700.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 289.0 700.0)">reliable (3/4, 3/4)</text>
+<polyline points="44.0,630.6 74.2,619.1" fill="none" stroke="#000000" stroke-width="1.6"/>
+<polyline points="255.8,676.5 286.0,676.5" fill="none" stroke="#000000" stroke-width="1.6"/>
+<circle cx="44.0" cy="630.6" r="2.8" fill="#000000"/>
+<circle cx="74.2" cy="619.1" r="2.8" fill="#000000"/>
+<circle cx="165.0" cy="688.0" r="2.8" fill="#000000"/>
+<circle cx="255.8" cy="676.5" r="2.8" fill="#000000"/>
+<circle cx="286.0" cy="676.5" r="2.8" fill="#000000"/>
+<polyline points="44.0,682.3 74.2,682.3" fill="none" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<polyline points="255.8,688.0 286.0,688.0" fill="none" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<circle cx="44.0" cy="682.3" r="2.8" fill="#c0392b"/>
+<circle cx="74.2" cy="682.3" r="2.8" fill="#c0392b"/>
+<circle cx="165.0" cy="688.0" r="2.8" fill="#c0392b"/>
+<circle cx="255.8" cy="688.0" r="2.8" fill="#c0392b"/>
+<circle cx="286.0" cy="688.0" r="2.8" fill="#c0392b"/>
+<text x="450.0" y="544.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#000000">openrouter:meta-llama/llama-3.3-70b-instruct</text>
+<line x1="344.0" y1="688.0" x2="586.0" y2="688.0" stroke="#000000" stroke-width="1"/>
+<line x1="344.0" y1="556.0" x2="344.0" y2="688.0" stroke="#000000" stroke-width="1"/>
+<line x1="340.0" y1="688.0" x2="344.0" y2="688.0" stroke="#000000" stroke-width="1"/>
+<text x="337.0" y="692.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">0</text>
+<line x1="340.0" y1="622.0" x2="344.0" y2="622.0" stroke="#000000" stroke-width="1"/>
+<text x="337.0" y="626.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">0.5</text>
+<line x1="344.0" y1="622.0" x2="586.0" y2="622.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="340.0" y1="556.0" x2="344.0" y2="556.0" stroke="#000000" stroke-width="1"/>
+<text x="337.0" y="560.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">1</text>
+<line x1="344.0" y1="556.0" x2="586.0" y2="556.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="344.0" y1="688.0" x2="344.0" y2="692.0" stroke="#000000" stroke-width="1"/>
+<text x="347.0" y="700.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 347.0 700.0)">no log</text>
+<line x1="374.2" y1="688.0" x2="374.2" y2="692.0" stroke="#000000" stroke-width="1"/>
+<text x="377.2" y="700.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 377.2 700.0)">perfect mixed</text>
+<line x1="404.5" y1="688.0" x2="404.5" y2="692.0" stroke="#000000" stroke-width="1"/>
+<text x="407.5" y="700.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 407.5 700.0)">C3/4 U4/4</text>
+<line x1="434.8" y1="688.0" x2="434.8" y2="692.0" stroke="#000000" stroke-width="1"/>
+<text x="437.8" y="700.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 437.8 700.0)">C2/4 U4/4</text>
+<line x1="465.0" y1="688.0" x2="465.0" y2="692.0" stroke="#000000" stroke-width="1"/>
+<text x="468.0" y="700.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 468.0 700.0)">unsure-is-right</text>
+<line x1="495.2" y1="688.0" x2="495.2" y2="692.0" stroke="#000000" stroke-width="1"/>
+<text x="498.2" y="700.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 498.2 700.0)">C4/4 U3/4</text>
+<line x1="525.5" y1="688.0" x2="525.5" y2="692.0" stroke="#000000" stroke-width="1"/>
+<text x="528.5" y="700.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 528.5 700.0)">C4/4 U2/4</text>
+<line x1="555.8" y1="688.0" x2="555.8" y2="692.0" stroke="#000000" stroke-width="1"/>
+<text x="558.8" y="700.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 558.8 700.0)">certain-is-right</text>
+<line x1="586.0" y1="688.0" x2="586.0" y2="692.0" stroke="#000000" stroke-width="1"/>
+<text x="589.0" y="700.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 589.0 700.0)">reliable (3/4, 3/4)</text>
+<polyline points="344.0,584.9 374.2,572.5" fill="none" stroke="#000000" stroke-width="1.6"/>
+<polyline points="555.8,580.8 586.0,572.5" fill="none" stroke="#000000" stroke-width="1.6"/>
+<circle cx="344.0" cy="584.9" r="2.8" fill="#000000"/>
+<circle cx="374.2" cy="572.5" r="2.8" fill="#000000"/>
+<circle cx="465.0" cy="638.5" r="2.8" fill="#000000"/>
+<circle cx="555.8" cy="580.8" r="2.8" fill="#000000"/>
+<circle cx="586.0" cy="572.5" r="2.8" fill="#000000"/>
+<polyline points="344.0,597.2 374.2,584.9" fill="none" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<polyline points="555.8,634.4 586.0,593.1" fill="none" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<circle cx="344.0" cy="597.2" r="2.8" fill="#c0392b"/>
+<circle cx="374.2" cy="584.9" r="2.8" fill="#c0392b"/>
+<circle cx="465.0" cy="630.2" r="2.8" fill="#c0392b"/>
+<circle cx="555.8" cy="634.4" r="2.8" fill="#c0392b"/>
+<circle cx="586.0" cy="593.1" r="2.8" fill="#c0392b"/>
+<text x="150.0" y="794.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#000000">openrouter:mistralai/ministral-14b-2512</text>
+<line x1="44.0" y1="938.0" x2="286.0" y2="938.0" stroke="#000000" stroke-width="1"/>
+<line x1="44.0" y1="806.0" x2="44.0" y2="938.0" stroke="#000000" stroke-width="1"/>
+<line x1="40.0" y1="938.0" x2="44.0" y2="938.0" stroke="#000000" stroke-width="1"/>
+<text x="37.0" y="942.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">0</text>
+<line x1="40.0" y1="872.0" x2="44.0" y2="872.0" stroke="#000000" stroke-width="1"/>
+<text x="37.0" y="876.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">0.5</text>
+<line x1="44.0" y1="872.0" x2="286.0" y2="872.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="40.0" y1="806.0" x2="44.0" y2="806.0" stroke="#000000" stroke-width="1"/>
+<text x="37.0" y="810.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000">1</text>
+<line x1="44.0" y1="806.0" x2="286.0" y2="806.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="44.0" y1="938.0" x2="44.0" y2="942.0" stroke="#000000" stroke-width="1"/>
+<text x="47.0" y="950.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 47.0 950.0)">no log</text>
+<line x1="74.2" y1="938.0" x2="74.2" y2="942.0" stroke="#000000" stroke-width="1"/>
+<text x="77.2" y="950.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 77.2 950.0)">perfect mixed</text>
+<line x1="104.5" y1="938.0" x2="104.5" y2="942.0" stroke="#000000" stroke-width="1"/>
+<text x="107.5" y="950.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 107.5 950.0)">C3/4 U4/4</text>
+<line x1="134.8" y1="938.0" x2="134.8" y2="942.0" stroke="#000000" stroke-width="1"/>
+<text x="137.8" y="950.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 137.8 950.0)">C2/4 U4/4</text>
+<line x1="165.0" y1="938.0" x2="165.0" y2="942.0" stroke="#000000" stroke-width="1"/>
+<text x="168.0" y="950.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 168.0 950.0)">unsure-is-right</text>
+<line x1="195.2" y1="938.0" x2="195.2" y2="942.0" stroke="#000000" stroke-width="1"/>
+<text x="198.2" y="950.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 198.2 950.0)">C4/4 U3/4</text>
+<line x1="225.5" y1="938.0" x2="225.5" y2="942.0" stroke="#000000" stroke-width="1"/>
+<text x="228.5" y="950.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 228.5 950.0)">C4/4 U2/4</text>
+<line x1="255.8" y1="938.0" x2="255.8" y2="942.0" stroke="#000000" stroke-width="1"/>
+<text x="258.8" y="950.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 258.8 950.0)">certain-is-right</text>
+<line x1="286.0" y1="938.0" x2="286.0" y2="942.0" stroke="#000000" stroke-width="1"/>
+<text x="289.0" y="950.0" font-size="11" text-anchor="end" font-weight="normal" fill="#000000" transform="rotate(-50 289.0 950.0)">reliable (3/4, 3/4)</text>
+<polyline points="44.0,818.4 74.2,818.4" fill="none" stroke="#000000" stroke-width="1.6"/>
+<polyline points="255.8,851.4 286.0,834.9" fill="none" stroke="#000000" stroke-width="1.6"/>
+<circle cx="44.0" cy="818.4" r="2.8" fill="#000000"/>
+<circle cx="74.2" cy="818.4" r="2.8" fill="#000000"/>
+<circle cx="165.0" cy="921.5" r="2.8" fill="#000000"/>
+<circle cx="255.8" cy="851.4" r="2.8" fill="#000000"/>
+<circle cx="286.0" cy="834.9" r="2.8" fill="#000000"/>
+<polyline points="44.0,834.9 74.2,855.5" fill="none" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<polyline points="255.8,921.5 286.0,905.0" fill="none" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<circle cx="44.0" cy="834.9" r="2.8" fill="#c0392b"/>
+<circle cx="74.2" cy="855.5" r="2.8" fill="#c0392b"/>
+<circle cx="165.0" cy="925.6" r="2.8" fill="#c0392b"/>
+<circle cx="255.8" cy="921.5" r="2.8" fill="#c0392b"/>
+<circle cx="286.0" cy="905.0" r="2.8" fill="#c0392b"/>
+<line x1="14.0" y1="1040.0" x2="40.0" y2="1040.0" stroke="#000000" stroke-width="1.6"/>
+<text x="46.0" y="1044.0" font-size="11" text-anchor="start" font-weight="normal" fill="#000000">certain objection</text>
+<line x1="170.0" y1="1040.0" x2="196.0" y2="1040.0" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5 3"/>
+<text x="202.0" y="1044.0" font-size="11" text-anchor="start" font-weight="normal" fill="#000000">unsure objection</text>
+<text x="8.0" y="1062.0" font-size="11" text-anchor="start" font-weight="normal" fill="#000000">Logs not run, or with fewer than 10 items, are left out (gaps in the lines).</text>
+</svg>

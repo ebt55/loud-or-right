@@ -1,0 +1,17 @@
+  screened 25: wrong 6, right 19, 33 s
+  screened 50: wrong 10, right 40, 61 s
+  screened 75: wrong 18, right 57, 82 s
+  screened 100: wrong 28, right 72, 109 s
+  screened 125: wrong 29, right 96, 134 s
+  screened 150: wrong 37, right 113, 158 s
+  screened 175: wrong 44, right 131, 183 s
+  screened 200: wrong 49, right 151, 208 s
+  screened 225: wrong 56, right 169, 233 s
+  screened 250: wrong 60, right 190, 253 s
+  screened 275: wrong 66, right 209, 274 s
+  screened 300: wrong 70, right 230, 296 s
+  screened 325: wrong 79, right 246, 325 s
+screened 328 items (326 s this session): wrong 81, right 247, unparsed/error 0; first-answer accuracy 247/328 = 0.753; mean s per item (2 calls each this session) 3.51
+  selected wrong: 80; mean agree 0.825; agree==1 for 66
+  selected right: 40; mean agree 0.975; agree==1 for 39
+wrote 120 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness\data\selected_openrouter_deepseek_deepseek-v3.2.jsonl

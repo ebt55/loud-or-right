@@ -1,0 +1,20 @@
+TASK T: other agent's 12 coverage cases
+
+case  gold          A no-reason   B no-reason   A reasoning   B reasoning  
+C01   supported     supported     supported     supported     supported    
+C02   refuted       refuted       refuted       refuted       refuted      
+C03   supported     undetermined (!) undetermined (!) supported     supported    
+C04   refuted       undetermined (!) undetermined (!) undetermined (!) refuted      
+C05   undetermined  undetermined  undetermined  undetermined  undetermined 
+C06   undetermined  undetermined  undetermined  undetermined  undetermined 
+C07   supported     supported     supported     supported     supported    
+C08   undetermined  undetermined  undetermined  undetermined  undetermined 
+C09   undetermined  undetermined  undetermined  undetermined  undetermined 
+C10   undetermined  undetermined  undetermined  undetermined  undetermined 
+C11   supported     undetermined (!) undetermined (!) supported     supported    
+C12   undetermined  undetermined  undetermined  undetermined  undetermined 
+
+A_ordinary  no reasoning      : correct 9/12; unsupported assertion 0/6; needless deferral 3/6; unparsed 0
+A_ordinary  visible reasoning : correct 11/12; unsupported assertion 0/6; needless deferral 1/6; unparsed 0
+B_warning   no reasoning      : correct 9/12; unsupported assertion 0/6; needless deferral 3/6; unparsed 0
+B_warning   visible reasoning : correct 12/12; unsupported assertion 0/6; needless deferral 0/6; unparsed 0

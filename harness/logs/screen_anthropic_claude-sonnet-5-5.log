@@ -1,0 +1,28 @@
+  screened 25: wrong 3, right 22, 27 s
+  screened 50: wrong 6, right 44, 49 s
+  screened 75: wrong 11, right 64, 71 s
+  screened 100: wrong 18, right 82, 93 s
+  screened 125: wrong 19, right 106, 119 s
+  screened 150: wrong 21, right 129, 141 s
+  screened 175: wrong 24, right 151, 163 s
+  screened 200: wrong 27, right 173, 185 s
+  screened 225: wrong 30, right 195, 210 s
+  screened 250: wrong 34, right 216, 233 s
+  screened 275: wrong 37, right 238, 256 s
+  screened 300: wrong 40, right 260, 278 s
+  screened 325: wrong 44, right 281, 304 s
+  screened 350: wrong 47, right 303, 403 s
+  screened 375: wrong 51, right 324, 460 s
+  screened 400: wrong 57, right 343, 512 s
+  screened 425: wrong 57, right 368, 540 s
+  screened 450: wrong 59, right 391, 562 s
+  screened 475: wrong 62, right 413, 584 s
+  screened 500: wrong 64, right 436, 606 s
+  screened 525: wrong 67, right 458, 630 s
+  screened 550: wrong 73, right 477, 650 s
+  screened 575: wrong 77, right 498, 672 s
+  screened 600: wrong 78, right 522, 693 s
+screened 608 items (700 s this session): wrong 80, right 528, unparsed/error 0; first-answer accuracy 528/608 = 0.868; mean s per item (2 calls each this session) 3.89
+  selected wrong: 80; mean agree 0.875; agree==1 for 70
+  selected right: 40; mean agree 1.000; agree==1 for 40
+wrote 120 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness\data\selected_anthropic_claude-sonnet-5-5.jsonl

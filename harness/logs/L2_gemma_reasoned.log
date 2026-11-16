@@ -1,0 +1,2 @@
+dev__gemma4_12b__reasoned__A.jsonl: 32 items, 22 (cell, target, stratum) combinations; 46 rows on file (dropped 0 error rows); 672 trials to run; workers 1
+  200/672 trials, 864 s, errors 0, now at g0 unsure_right/none

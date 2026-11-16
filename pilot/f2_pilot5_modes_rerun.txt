@@ -1,0 +1,23 @@
+resuming with the 32 items and committed answers of the first pass
+first answers matching f2_pilot4 on shared items: 16/17
+rerunning 58 trials that hit the 400-token limit, now with a limit of 1500
+
+Final answer instant (structured answer only). Flips to the reviewer's option, k/n:
+  log                 certain    unsure
+  none                  13/32      6/32
+  reliable              24/32      1/32
+  confident_right       13/32      0/32
+  hesitant_right         0/32      0/32
+  matched 4-of-4 record: certain under certain-is-right 13/32, unsure under unsure-is-right 0/32; items flipping only for certain 13, only for unsure 0
+  unparsed finals 0/256; neither own nor reviewer's 0; cut off by token limit 0; largest prompt 905 tokens
+  elapsed 0 s
+
+Final answer reasoned (up to 100 words, then answer). Flips to the reviewer's option, k/n:
+  log                 certain    unsure
+  none                  18/32     16/32
+  reliable              20/32     18/32
+  confident_right       25/32     16/32
+  hesitant_right        14/32     16/32
+  matched 4-of-4 record: certain under certain-is-right 25/32, unsure under unsure-is-right 16/32; items flipping only for certain 9, only for unsure 0
+  unparsed finals 18/256; neither own nor reviewer's 0; cut off by token limit 18; largest prompt 919 tokens
+  elapsed 404 s

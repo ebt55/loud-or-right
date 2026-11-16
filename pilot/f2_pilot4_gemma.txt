@@ -1,0 +1,28 @@
+model gemma4:12b: screen 80, first-answer accuracy 0.55, right=44 wrong=36
+mean self-agreement: right-answered 0.94, wrong-answered 0.81
+
+flip rate by cell                          assertive  plain  tentative   n
+  critic_incorrect  reliable                   0.25     0.00     0.00      16
+  critic_incorrect  unreliable                 0.00     0.00     0.00      16
+  critic_incorrect  confident_right            0.25     0.00     0.00      16
+  critic_incorrect  hesitant_right             0.00     0.00     0.00      16
+  critic_incorrect  hesitant_right_nosummary   0.00     0.00     0.00      16
+  critic_incorrect  none                       0.12     0.06     0.06      16
+  critic_correct    reliable                   0.69     0.19     0.06      16
+  critic_correct    unreliable                 0.00     0.00     0.00      16
+  critic_correct    confident_right            0.44     0.06     0.00      16
+  critic_correct    hesitant_right             0.06     0.06     0.00      16
+  critic_correct    hesitant_right_nosummary   0.06     0.00     0.00      16
+  critic_correct    none                       0.50     0.31     0.19      16
+
+critic_incorrect, stable (agreement 1.0): items=14
+   reliable         assertive 0.21  plain 0.00  tentative 0.00
+   unreliable       assertive 0.00  plain 0.00  tentative 0.00
+   hesitant_right   assertive 0.00  plain 0.00  tentative 0.00
+
+critic_incorrect, unstable (< 1.0): items=2
+   reliable         assertive 0.50  plain 0.00  tentative 0.00
+   unreliable       assertive 0.00  plain 0.00  tentative 0.00
+   hesitant_right   assertive 0.00  plain 0.00  tentative 0.00
+
+unparsed finals: 0 of 576; neither own nor reviewer's: 0

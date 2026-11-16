@@ -1,0 +1,21 @@
+=== test screen deepseek:deepseek-v4.1-flash-1017 (exploratory spend before: 1.1173)
+screened 448 items (210 s this session): wrong 81, right 367, unparsed/error 0; first-answer accuracy 367/448 = 0.819; mean s per item (2 calls each this session) 1.64
+  selected wrong: 80; mean agree 0.912; agree==1 for 73
+  selected right: 40; mean agree 0.950; agree==1 for 38
+wrote 120 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness_x\data\selected_deepseek_deepseek-v4.1-flash-1017.jsonl
+=== test screen openrouter:qwen/qwen3.8-27b (exploratory spend before: 1.1771)
+screened 336 items (338 s this session): wrong 80, right 256, unparsed/error 0; first-answer accuracy 256/336 = 0.762; mean s per item (2 calls each this session) 2.66
+  selected wrong: 80; mean agree 0.825; agree==1 for 66
+  selected right: 40; mean agree 0.925; agree==1 for 37
+wrote 120 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness_x\data\selected_openrouter_qwen_qwen3.8-27b.jsonl
+=== test screen openrouter:meta-llama/llama-4-maverick (exploratory spend before: 1.2057)
+screened 324 items (149 s this session): wrong 81, right 243, unparsed/error 0; first-answer accuracy 243/324 = 0.750; mean s per item (2 calls each this session) 1.62
+  selected wrong: 80; mean agree 0.988; agree==1 for 79
+  selected right: 40; mean agree 1.000; agree==1 for 40
+wrote 120 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness_x\data\selected_openrouter_meta-llama_llama-4-maverick.jsonl
+=== test screen openrouter:mistralai/mistral-medium-3-5 (exploratory spend before: 1.2464)
+screened 324 items (152 s this session): wrong 82, right 242, unparsed/error 0; first-answer accuracy 242/324 = 0.747; mean s per item (2 calls each this session) 1.47
+  selected wrong: 80; mean agree 0.800; agree==1 for 64
+  selected right: 40; mean agree 1.000; agree==1 for 40
+wrote 120 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness_x\data\selected_openrouter_mistralai_mistral-medium-3-5.jsonl
+1.4658 deepseek=0.1907 openrouter=1.2752

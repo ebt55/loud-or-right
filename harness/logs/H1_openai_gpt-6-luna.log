@@ -1,0 +1,7 @@
+  screened 25: wrong 12, right 13, 17 s
+  screened 50: wrong 23, right 27, 32 s
+  screened 75: wrong 34, right 41, 47 s
+screened 80 items (49 s this session): wrong 37, right 43, unparsed/error 0; first-answer accuracy 43/80 = 0.537; mean s per item (4 calls) 2.24
+  selected wrong: 32; mean agree 0.781; agree==1 for 25
+  selected right: 16; mean agree 1.000; agree==1 for 16
+wrote 48 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness\data\selected_dev_openai_gpt-6-luna.jsonl

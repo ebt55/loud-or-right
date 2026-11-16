@@ -1,0 +1,11 @@
+
+=== 2026-11-15T21:44:28 run.py --model google:gemini-3.6-flash --mode instant --arm B --cells core --items test --workers 4
+test__google_gemini-3.6-flash__instant__B.jsonl: 120 items, 24 (cell, target, stratum) combinations; 0 rows on file (dropped 0 error rows); 1920 trials to run; workers 4
+  200/1920 trials, 1598 s, errors 200, now at g0 certain_right/unsure
+  400/1920 trials, 3189 s, errors 399, now at g0 unsure_right/unsure
+  600/1920 trials, 4783 s, errors 599, now at d0core certain_right/certain
+  800/1920 trials, 6376 s, errors 798, now at d0core unsure_right/certain
+  1000/1920 trials, 7969 s, errors 998, now at g1 none/unsure
+  1200/1920 trials, 9566 s, errors 1198, now at g1 perfect_mixed/unsure
+  1400/1920 trials, 11162 s, errors 1398, now at g1 reliable/unsure
+  1600/1920 trials, 12760 s, errors 1598, now at d0rest none/unsure

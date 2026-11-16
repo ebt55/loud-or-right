@@ -1,0 +1,22 @@
+  screened 25: wrong 4, right 21, 13 s
+  screened 50: wrong 7, right 43, 25 s
+  screened 75: wrong 14, right 61, 37 s
+  screened 100: wrong 20, right 80, 52 s
+  screened 125: wrong 22, right 103, 67 s
+  screened 150: wrong 25, right 125, 80 s
+  screened 175: wrong 28, right 147, 93 s
+  screened 200: wrong 31, right 169, 107 s
+  screened 225: wrong 34, right 191, 120 s
+  screened 250: wrong 37, right 213, 132 s
+  screened 275: wrong 44, right 231, 143 s
+  screened 300: wrong 48, right 252, 156 s
+  screened 325: wrong 52, right 273, 169 s
+  screened 350: wrong 56, right 294, 181 s
+  screened 375: wrong 61, right 314, 195 s
+  screened 400: wrong 67, right 333, 207 s
+  screened 425: wrong 70, right 355, 225 s
+  screened 450: wrong 76, right 374, 237 s
+screened 468 items (245 s this session): wrong 80, right 388, unparsed/error 0; first-answer accuracy 388/468 = 0.829; mean s per item (2 calls each this session) 1.82
+  selected wrong: 80; mean agree 0.900; agree==1 for 72
+  selected right: 40; mean agree 1.000; agree==1 for 40
+wrote 120 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness\data\selected_google_gemini-3.6-flash.jsonl

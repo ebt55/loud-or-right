@@ -1,0 +1,6 @@
+8 jobs (items test, limit None)
+[1/8] instant_A__google_gemini-3.6-flash: ok, 1087 s, log logs/instant_A__google_gemini-3.6-flash.log
+[2/8] probe_A__google_gemini-3.6-flash: ok, 10 s, log logs/probe_A__google_gemini-3.6-flash.log
+[3/8] probe_B__google_gemini-3.6-flash: ok, 388 s, log logs/probe_B__google_gemini-3.6-flash.log
+[4/8] instant_A_rep2__google_gemini-3.6-flash: ok, 155 s, log logs/instant_A_rep2__google_gemini-3.6-flash.log
+[5/8] reasoned_A__google_gemini-3.6-flash: ok, 5543 s, log logs/reasoned_A__google_gemini-3.6-flash.log

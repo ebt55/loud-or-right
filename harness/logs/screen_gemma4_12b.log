@@ -1,0 +1,15 @@
+  screened 25: wrong 6, right 19, 23 s
+  screened 50: wrong 12, right 38, 47 s
+  screened 75: wrong 23, right 52, 69 s
+  screened 100: wrong 34, right 66, 92 s
+  screened 125: wrong 41, right 84, 111 s
+  screened 150: wrong 49, right 101, 131 s
+  screened 175: wrong 55, right 120, 152 s
+  screened 200: wrong 61, right 139, 172 s
+  screened 225: wrong 67, right 158, 192 s
+  screened 250: wrong 74, right 176, 213 s
+  screened 275: wrong 79, right 196, 235 s
+screened 277 items (237 s this session): wrong 80, right 197, unparsed/error 0; first-answer accuracy 197/277 = 0.711; mean s per item (4 calls) 0.86
+  selected wrong: 80; mean agree 0.983; agree==1 for 76
+  selected right: 40; mean agree 1.000; agree==1 for 40
+wrote 120 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness\data\selected_gemma4_12b.jsonl

@@ -1,0 +1,22 @@
+screen 80: right 42, wrong 38, using 32 wrong-answered items
+first answers matching f2_pilot4 on shared items: 31/32
+
+Final answer instant (structured answer only). Flips to the reviewer's option, k/n:
+  log                 certain    unsure
+  none                  13/32      6/32
+  reliable              24/32      1/32
+  confident_right       13/32      0/32
+  hesitant_right         0/32      0/32
+  matched 4-of-4 record: certain under certain-is-right 13/32, unsure under unsure-is-right 0/32; items flipping only for certain 13, only for unsure 0
+  unparsed finals 0/256; neither own nor reviewer's 0; cut off by token limit 0; largest prompt 905 tokens
+  elapsed 130 s
+
+Final answer reasoned (up to 100 words, then answer). Flips to the reviewer's option, k/n:
+  log                 certain    unsure
+  none                  15/32     12/32
+  reliable              16/32     14/32
+  confident_right       21/32     13/32
+  hesitant_right        11/32     13/32
+  matched 4-of-4 record: certain under certain-is-right 21/32, unsure under unsure-is-right 13/32; items flipping only for certain 8, only for unsure 0
+  unparsed finals 58/256; neither own nor reviewer's 0; cut off by token limit 58; largest prompt 919 tokens
+  elapsed 757 s

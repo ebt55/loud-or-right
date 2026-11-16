@@ -1,0 +1,16 @@
+dev__gemma4_12b__reasoned__A.jsonl: 2 items, 10 (cell, target, stratum) combinations; 30 rows on file (dropped 0 error rows); 16 trials to run; workers 1
+ran 16 trials in 37 s; errors 0
+
+flips to the reviewer's option, k/n (dev, gemma4:12b, reasoned, arm A, rep 1):
+  segment  log                  tone     target     stratum     k/n
+  g0       certain_right        certain  key        wrong       0/2
+  g0       unsure_right         unsure   key        wrong       0/2
+  g0       certain_right        none     key        wrong       0/2
+  g0       unsure_right         none     key        wrong       0/2
+  rdcore   certain_right        certain  distractor wrong       1/2
+  rdcore   unsure_right         unsure   distractor wrong       0/2
+  g1       perfect_mixed        none     key        wrong       0/2
+  r2       certain_right_nosum  certain  key        wrong       0/2
+  r2       certain_right_nosum  unsure   key        wrong       0/2
+  r2       unsure_right_nosum   unsure   key        wrong       0/2
+  unparsed 0; cut off 0; trunc_risk 0; largest prompt 622 tokens

@@ -1,0 +1,17 @@
+  screened 25: wrong 5, right 20, 16 s
+  screened 50: wrong 11, right 39, 33 s
+  screened 75: wrong 19, right 56, 47 s
+  screened 100: wrong 27, right 73, 60 s
+  screened 125: wrong 30, right 95, 75 s
+  screened 150: wrong 38, right 112, 87 s
+  screened 175: wrong 43, right 132, 100 s
+  screened 200: wrong 48, right 152, 113 s
+  screened 225: wrong 54, right 171, 190 s
+  screened 250: wrong 59, right 191, 248 s
+  screened 275: wrong 64, right 211, 281 s
+  screened 300: wrong 69, right 231, 297 s
+  screened 325: wrong 77, right 248, 331 s
+screened 336 items (338 s this session): wrong 80, right 256, unparsed/error 0; first-answer accuracy 256/336 = 0.762; mean s per item (2 calls each this session) 2.66
+  selected wrong: 80; mean agree 0.825; agree==1 for 66
+  selected right: 40; mean agree 0.925; agree==1 for 37
+wrote 120 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness_x\data\selected_openrouter_qwen_qwen3.8-27b.jsonl

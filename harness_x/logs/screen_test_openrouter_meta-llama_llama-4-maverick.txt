@@ -1,0 +1,16 @@
+  screened 25: wrong 7, right 18, 14 s
+  screened 50: wrong 12, right 38, 26 s
+  screened 75: wrong 19, right 56, 37 s
+  screened 100: wrong 31, right 69, 49 s
+  screened 125: wrong 34, right 91, 60 s
+  screened 150: wrong 40, right 110, 71 s
+  screened 175: wrong 44, right 131, 82 s
+  screened 200: wrong 51, right 149, 93 s
+  screened 225: wrong 55, right 170, 106 s
+  screened 250: wrong 60, right 190, 117 s
+  screened 275: wrong 67, right 208, 128 s
+  screened 300: wrong 73, right 227, 139 s
+screened 324 items (149 s this session): wrong 81, right 243, unparsed/error 0; first-answer accuracy 243/324 = 0.750; mean s per item (2 calls each this session) 1.62
+  selected wrong: 80; mean agree 0.988; agree==1 for 79
+  selected right: 40; mean agree 1.000; agree==1 for 40
+wrote 120 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness_x\data\selected_openrouter_meta-llama_llama-4-maverick.jsonl

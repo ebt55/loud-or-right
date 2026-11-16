@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16cm" height="11.36cm" viewBox="0 0 600 426" font-family="Helvetica, Arial, sans-serif">
+<title>Confirmatory tests</title>
+<rect x="0" y="0" width="600" height="426" fill="#ffffff"/>
+<text x="8.0" y="18.0" font-size="12" text-anchor="start" font-weight="bold" fill="#000000">Confirmatory tests (answer-only) and secondary tests (deliberative), arm A, model-was-wrong items</text>
+<text x="196.5" y="40.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#000000">C1</text>
+<text x="196.5" y="54.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">certain-voice</text>
+<text x="196.5" y="68.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">record effect</text>
+<line x1="146.0" y1="356.0" x2="247.0" y2="356.0" stroke="#000000" stroke-width="1"/>
+<line x1="166.2" y1="356.0" x2="166.2" y2="360.0" stroke="#000000" stroke-width="1"/>
+<text x="166.2" y="372.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">0</text>
+<line x1="206.6" y1="356.0" x2="206.6" y2="360.0" stroke="#000000" stroke-width="1"/>
+<text x="206.6" y="372.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">0.5</text>
+<line x1="247.0" y1="356.0" x2="247.0" y2="360.0" stroke="#000000" stroke-width="1"/>
+<text x="247.0" y="372.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">1</text>
+<line x1="166.2" y1="74.0" x2="166.2" y2="356.0" stroke="#c0392b" stroke-width="1"/>
+<text x="309.5" y="40.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#000000">C2</text>
+<text x="309.5" y="54.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">equal-score</text>
+<text x="309.5" y="68.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">asymmetry (D)</text>
+<line x1="259.0" y1="356.0" x2="360.0" y2="356.0" stroke="#000000" stroke-width="1"/>
+<line x1="279.2" y1="356.0" x2="279.2" y2="360.0" stroke="#000000" stroke-width="1"/>
+<text x="279.2" y="372.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">0</text>
+<line x1="319.6" y1="356.0" x2="319.6" y2="360.0" stroke="#000000" stroke-width="1"/>
+<text x="319.6" y="372.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">0.5</text>
+<line x1="360.0" y1="356.0" x2="360.0" y2="360.0" stroke="#000000" stroke-width="1"/>
+<text x="360.0" y="372.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">1</text>
+<line x1="279.2" y1="74.0" x2="279.2" y2="356.0" stroke="#c0392b" stroke-width="1"/>
+<text x="422.5" y="40.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#000000">C3</text>
+<text x="422.5" y="54.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">spillover onto</text>
+<text x="422.5" y="68.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">unsure voice</text>
+<line x1="372.0" y1="356.0" x2="473.0" y2="356.0" stroke="#000000" stroke-width="1"/>
+<line x1="392.2" y1="356.0" x2="392.2" y2="360.0" stroke="#000000" stroke-width="1"/>
+<text x="392.2" y="372.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">0</text>
+<line x1="432.6" y1="356.0" x2="432.6" y2="360.0" stroke="#000000" stroke-width="1"/>
+<text x="432.6" y="372.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">0.5</text>
+<line x1="473.0" y1="356.0" x2="473.0" y2="360.0" stroke="#000000" stroke-width="1"/>
+<text x="473.0" y="372.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">1</text>
+<line x1="392.2" y1="74.0" x2="392.2" y2="356.0" stroke="#c0392b" stroke-width="1"/>
+<text x="535.5" y="40.0" font-size="12" text-anchor="middle" font-weight="bold" fill="#000000">C4</text>
+<text x="535.5" y="54.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">deference to a</text>
+<text x="535.5" y="68.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">wrong option</text>
+<line x1="485.0" y1="356.0" x2="586.0" y2="356.0" stroke="#000000" stroke-width="1"/>
+<line x1="505.2" y1="356.0" x2="505.2" y2="360.0" stroke="#000000" stroke-width="1"/>
+<text x="505.2" y="372.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">0</text>
+<line x1="545.6" y1="356.0" x2="545.6" y2="360.0" stroke="#000000" stroke-width="1"/>
+<text x="545.6" y="372.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">0.5</text>
+<line x1="586.0" y1="356.0" x2="586.0" y2="360.0" stroke="#000000" stroke-width="1"/>
+<text x="586.0" y="372.0" font-size="11" text-anchor="middle" font-weight="normal" fill="#000000">1</text>
+<line x1="505.2" y1="74.0" x2="505.2" y2="356.0" stroke="#c0392b" stroke-width="1"/>
+<text x="132.0" y="100.0" font-size="12" text-anchor="end" font-weight="normal" fill="#000000">claude-haiku-5-5</text>
+<line x1="158.6" y1="91.0" x2="166.2" y2="91.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="163.7" cy="91.0" r="3.6" fill="#000000"/>
+<line x1="166.2" y1="103.0" x2="188.9" y2="103.0" stroke="#6e6e6e" stroke-width="1.6"/>
+<circle cx="176.3" cy="103.0" r="3.6" fill="#6e6e6e"/>
+<line x1="264.1" y1="91.0" x2="279.2" y2="91.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="274.1" cy="91.0" r="3.6" fill="#000000"/>
+<line x1="276.7" y1="103.0" x2="301.9" y2="103.0" stroke="#6e6e6e" stroke-width="1.6"/>
+<circle cx="286.8" cy="103.0" r="3.6" fill="#6e6e6e"/>
+<line x1="387.1" y1="91.0" x2="402.3" y2="91.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="394.7" cy="91.0" r="3.6" fill="#000000"/>
+<line x1="382.1" y1="103.0" x2="402.3" y2="103.0" stroke="#6e6e6e" stroke-width="1.6"/>
+<circle cx="392.2" cy="103.0" r="3.6" fill="#6e6e6e"/>
+<line x1="505.2" y1="91.0" x2="505.2" y2="91.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="505.2" cy="91.0" r="3.6" fill="#000000"/>
+<line x1="505.2" y1="103.0" x2="517.8" y2="103.0" stroke="#6e6e6e" stroke-width="1.6"/>
+<circle cx="510.2" cy="103.0" r="3.6" fill="#6e6e6e"/>
+<text x="132.0" y="140.0" font-size="12" text-anchor="end" font-weight="normal" fill="#000000">gemma4:12b</text>
+<line x1="8.0" y1="116.0" x2="592.0" y2="116.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="186.4" y1="131.0" x2="214.2" y2="131.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="199.0" cy="131.0" r="3.6" fill="#000000"/>
+<line x1="169.7" y1="143.0" x2="197.8" y2="143.0" stroke="#6e6e6e" stroke-width="1.6"/>
+<circle cx="183.8" cy="143.0" r="3.6" fill="#6e6e6e"/>
+<line x1="299.4" y1="131.0" x2="327.2" y2="131.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="312.0" cy="131.0" r="3.6" fill="#000000"/>
+<line x1="289.7" y1="143.0" x2="321.4" y2="143.0" stroke="#6e6e6e" stroke-width="1.6"/>
+<circle cx="303.8" cy="143.0" r="3.6" fill="#6e6e6e"/>
+<line x1="442.7" y1="131.0" x2="465.4" y2="131.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="455.3" cy="131.0" r="3.6" fill="#000000"/>
+<line x1="522.9" y1="131.0" x2="548.1" y2="131.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="535.5" cy="131.0" r="3.6" fill="#000000"/>
+<line x1="514.9" y1="143.0" x2="544.0" y2="143.0" stroke="#6e6e6e" stroke-width="1.6"/>
+<circle cx="527.8" cy="143.0" r="3.6" fill="#6e6e6e"/>
+<text x="132.0" y="180.0" font-size="12" text-anchor="end" font-weight="normal" fill="#000000">ministral-3:8b</text>
+<line x1="8.0" y1="156.0" x2="592.0" y2="156.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="186.4" y1="171.0" x2="211.7" y2="171.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="199.0" cy="171.0" r="3.6" fill="#000000"/>
+<line x1="304.4" y1="171.0" x2="329.7" y2="171.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="317.1" cy="171.0" r="3.6" fill="#000000"/>
+<line x1="399.8" y1="171.0" x2="422.5" y2="171.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="409.9" cy="171.0" r="3.6" fill="#000000"/>
+<line x1="517.8" y1="171.0" x2="543.1" y2="171.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="530.5" cy="171.0" r="3.6" fill="#000000"/>
+<text x="132.0" y="220.0" font-size="12" text-anchor="end" font-weight="normal" fill="#000000">gpt-6-luna</text>
+<line x1="8.0" y1="196.0" x2="592.0" y2="196.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="158.6" y1="211.0" x2="173.8" y2="211.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="166.2" cy="211.0" r="3.6" fill="#000000"/>
+<line x1="146.7" y1="223.0" x2="169.0" y2="223.0" stroke="#6e6e6e" stroke-width="1.6"/>
+<circle cx="157.8" cy="223.0" r="3.6" fill="#6e6e6e"/>
+<line x1="259.0" y1="211.0" x2="281.7" y2="211.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="271.6" cy="211.0" r="3.6" fill="#000000"/>
+<line x1="259.7" y1="223.0" x2="293.1" y2="223.0" stroke="#6e6e6e" stroke-width="1.6"/>
+<circle cx="276.4" cy="223.0" r="3.6" fill="#6e6e6e"/>
+<line x1="392.2" y1="211.0" x2="414.9" y2="211.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="402.3" cy="211.0" r="3.6" fill="#000000"/>
+<line x1="384.4" y1="223.0" x2="400.0" y2="223.0" stroke="#6e6e6e" stroke-width="1.6"/>
+<circle cx="392.2" cy="223.0" r="3.6" fill="#6e6e6e"/>
+<line x1="497.6" y1="211.0" x2="505.2" y2="211.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="502.7" cy="211.0" r="3.6" fill="#000000"/>
+<line x1="497.4" y1="223.0" x2="513.0" y2="223.0" stroke="#6e6e6e" stroke-width="1.6"/>
+<circle cx="505.2" cy="223.0" r="3.6" fill="#6e6e6e"/>
+<text x="132.0" y="260.0" font-size="12" text-anchor="end" font-weight="normal" fill="#000000">openrouter:deepseek/deepseek-v3.2</text>
+<line x1="8.0" y1="236.0" x2="592.0" y2="236.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="166.2" y1="251.0" x2="183.8" y2="251.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="173.2" cy="251.0" r="3.6" fill="#000000"/>
+<line x1="279.2" y1="251.0" x2="296.8" y2="251.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="286.2" cy="251.0" r="3.6" fill="#000000"/>
+<line x1="392.2" y1="251.0" x2="402.7" y2="251.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="395.7" cy="251.0" r="3.6" fill="#000000"/>
+<line x1="505.2" y1="251.0" x2="522.8" y2="251.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="512.2" cy="251.0" r="3.6" fill="#000000"/>
+<text x="132.0" y="300.0" font-size="12" text-anchor="end" font-weight="normal" fill="#000000">openrouter:meta-llama/llama-3.3-70b-instruct</text>
+<line x1="8.0" y1="276.0" x2="592.0" y2="276.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="188.9" y1="291.0" x2="216.7" y2="291.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="201.6" cy="291.0" r="3.6" fill="#000000"/>
+<line x1="294.4" y1="291.0" x2="329.7" y2="291.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="312.0" cy="291.0" r="3.6" fill="#000000"/>
+<line x1="407.4" y1="291.0" x2="432.6" y2="291.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="420.0" cy="291.0" r="3.6" fill="#000000"/>
+<line x1="515.3" y1="291.0" x2="540.5" y2="291.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="527.9" cy="291.0" r="3.6" fill="#000000"/>
+<text x="132.0" y="340.0" font-size="12" text-anchor="end" font-weight="normal" fill="#000000">openrouter:mistralai/ministral-14b-2512</text>
+<line x1="8.0" y1="316.0" x2="592.0" y2="316.0" stroke="#bdbdbd" stroke-width="0.5"/>
+<line x1="196.4" y1="331.0" x2="221.8" y2="331.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="209.1" cy="331.0" r="3.6" fill="#000000"/>
+<line x1="307.0" y1="331.0" x2="342.3" y2="331.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="324.6" cy="331.0" r="3.6" fill="#000000"/>
+<line x1="420.0" y1="331.0" x2="450.3" y2="331.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="435.1" cy="331.0" r="3.6" fill="#000000"/>
+<line x1="530.5" y1="331.0" x2="555.7" y2="331.0" stroke="#000000" stroke-width="1.6"/>
+<circle cx="543.1" cy="331.0" r="3.6" fill="#000000"/>
+<circle cx="16.0" cy="392.0" r="3.6" fill="#000000"/>
+<text x="26.0" y="396.0" font-size="11" text-anchor="start" font-weight="normal" fill="#000000">answer-only (confirmatory)</text>
+<circle cx="206.0" cy="392.0" r="3.6" fill="#6e6e6e"/>
+<text x="216.0" y="396.0" font-size="11" text-anchor="start" font-weight="normal" fill="#000000">deliberative (secondary)</text>
+<text x="8.0" y="414.0" font-size="11" text-anchor="start" font-weight="normal" fill="#000000">Dot: estimate (difference in flip rate). Bar: 95% bootstrap interval. Not drawn when n &lt; 10 items.</text>
+</svg>

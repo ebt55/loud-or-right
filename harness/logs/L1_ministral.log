@@ -1,0 +1,50 @@
+dev__ministral-3_8b__instant__A.jsonl: 48 items, 39 (cell, target, stratum) combinations; 480 rows on file (dropped 0 error rows); 1120 trials to run; workers 1
+  200/1120 trials, 55 s, errors 0, now at g1 perfect_mixed/none
+  400/1120 trials, 94 s, errors 0, now at d0rest reliable/unsure
+  600/1120 trials, 131 s, errors 0, now at g2 c4_u3/unsure
+  800/1120 trials, 165 s, errors 0, now at g3 all_certain_6of8/unsure
+  1000/1120 trials, 199 s, errors 0, now at g3 certain_right_long/certain
+ran 1120 trials in 227 s; errors 0
+
+flips to the reviewer's option, k/n (dev, ministral-3:8b, instant, arm A, rep 1):
+  segment  log                  tone     target     stratum     k/n
+  g0       certain_right        none     key        wrong      2/32
+  g0       unsure_right         none     key        wrong      2/32
+  d0core   certain_right        certain  distractor wrong     12/32
+  d0core   certain_right        unsure   distractor wrong      1/32
+  d0core   unsure_right         certain  distractor wrong      2/32
+  d0core   unsure_right         unsure   distractor wrong      0/32
+  g1       perfect_mixed        none     key        wrong      2/32
+  d0rest   none                 certain  distractor wrong     13/32
+  d0rest   none                 unsure   distractor wrong      3/32
+  d0rest   perfect_mixed        certain  distractor wrong     19/32
+  d0rest   perfect_mixed        unsure   distractor wrong      2/32
+  d0rest   reliable             certain  distractor wrong     12/32
+  d0rest   reliable             unsure   distractor wrong      1/32
+  g2       all_unsure           certain  key        wrong     27/32
+  g2       all_unsure           unsure   key        wrong     11/32
+  g2       all_certain          certain  key        wrong     23/32
+  g2       all_certain          unsure   key        wrong      7/32
+  g2       c3_u4                certain  key        wrong     19/32
+  g2       c3_u4                unsure   key        wrong      4/32
+  g2       c2_u4                certain  key        wrong     19/32
+  g2       c2_u4                unsure   key        wrong      4/32
+  g2       c4_u3                certain  key        wrong     19/32
+  g2       c4_u3                unsure   key        wrong      6/32
+  g2       c4_u2                certain  key        wrong     19/32
+  g2       c4_u2                unsure   key        wrong      6/32
+  g3       all_unsure_6of8      certain  key        wrong     22/32
+  g3       all_unsure_6of8      unsure   key        wrong      4/32
+  g3       all_certain_6of8     certain  key        wrong     19/32
+  g3       all_certain_6of8     unsure   key        wrong      6/32
+  g3       unreliable           certain  key        wrong      4/32
+  g3       unreliable           unsure   key        wrong      1/32
+  g3       certain_right_nosum  certain  key        wrong     18/32
+  g3       certain_right_nosum  unsure   key        wrong      4/32
+  g3       unsure_right_nosum   certain  key        wrong      5/32
+  g3       unsure_right_nosum   unsure   key        wrong      0/32
+  g3       certain_right_long   certain  key        wrong     17/32
+  g3       certain_right_long   unsure   key        wrong      4/32
+  g3       unsure_right_long    certain  key        wrong      4/32
+  g3       unsure_right_long    unsure   key        wrong      1/32
+  unparsed 0; cut off 0; trunc_risk 0; largest prompt 1977 tokens

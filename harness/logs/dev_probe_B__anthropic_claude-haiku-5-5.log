@@ -1,0 +1,43 @@
+
+=== 2026-11-15T18:12:41 probe.py --model anthropic:claude-haiku-5-5 --arm B --n 3 --items dev --workers 4
+probe_dev__anthropic_claude-haiku-5-5__B.jsonl: 108 calls to run (0 rows on file, dropped 0 error rows)
+ran 108 calls in 36 s
+
+  log                  tone     right/total  prob   (arm B; mean over seeds if several)
+  reliable             certain      3.7/5.3    70
+  reliable             unsure       3.3/4.7    72
+  unreliable           certain      1.0/4.0    25
+  unreliable           unsure       0.7/4.0    25
+  certain_right        certain      3.3/4.0    50
+  certain_right        unsure       0.0/4.0     0
+  unsure_right         certain      0.0/4.0     0
+  unsure_right         unsure       4.0/4.0   100
+  perfect_mixed        certain      4.0/4.0    87
+  perfect_mixed        unsure       4.0/4.0    80
+  all_certain          certain      8.0/8.0    82
+  all_certain          unsure       8.0/8.0    75
+  all_unsure           certain      8.0/8.0    85
+  all_unsure           unsure       8.0/8.0    82
+  certain_right_long   certain    12.0/12.0   100
+  certain_right_long   unsure      0.0/12.0     0
+  unsure_right_long    certain     0.0/12.0     0
+  unsure_right_long    unsure     12.0/12.0   100
+  c3_u4                certain      3.3/4.0    50
+  c3_u4                unsure       4.0/4.0    85
+  c2_u4                certain      2.7/4.7    56
+  c2_u4                unsure       4.0/4.0    43
+  c4_u3                certain      4.7/4.7    80
+  c4_u3                unsure       3.7/4.3    71
+  c4_u2                certain      4.0/4.0    45
+  c4_u2                unsure       2.3/4.0    58
+  all_certain_6of8     certain      6.0/8.0    75
+  all_certain_6of8     unsure       6.0/8.0    62
+  all_unsure_6of8      certain      6.0/8.0    65
+  all_unsure_6of8      unsure       6.0/8.0    75
+  certain_right_nosum  certain      3.7/6.7    29
+  certain_right_nosum  unsure       0.0/4.3     0
+  unsure_right_nosum   certain      0.0/4.0     0
+  unsure_right_nosum   unsure       4.0/4.0    83
+  none                 certain      0.0/0.0    50
+  none                 unsure       0.0/0.0    50
+  unparsed 0; cut off 0; errors 0

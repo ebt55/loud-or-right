@@ -1,0 +1,38 @@
+manifest generated 2026-11-15T18:55:35+05:30
+
+## Items
+0a7dae8d449d9cbfea09d60298761f50eebf46990097a25ff74a1d2ad6520340  items_pool.jsonl  (1600 lines)
+26f995e76723c25b13c4ca242214581e3ca4790d20a34557bb45ad1dd21f8b9d  data/selected_anthropic_claude-haiku-5-5.jsonl  (120 lines)
+bbef9eecd1d5f05265326852311c977a42a2ebe8b8b207e1125bc64c61c91645  data/selected_anthropic_claude-sonnet-5-5.jsonl  (120 lines)
+fe4939219804a0e3a1b1dbc2cd9ee678d3406790ba6d284a83b6d1890bfbfdd4  data/selected_dev_anthropic_claude-haiku-5-5.jsonl  (48 lines)
+6285ca2fdfb41c8d81c690b5eff3162c036019f8074b18a343770029d5a70f9d  data/selected_dev_ministral-3_8b.jsonl  (48 lines)
+3b13e7a55cbd4643ab3c2e8d0a60d436b5a64459a4a7f48ef1a343805cee18ec  data/selected_dev_openai_gpt-6-luna.jsonl  (48 lines)
+1a27a914fa537d0815f9fe5606a0d510a9b7e677620aecadbe492a7168d435ef  data/selected_dev_openrouter_deepseek_deepseek-v3.2.jsonl  (39 lines)
+95ce5e998f7e131b13cc149605aeda265ebb4d2bbcfc59ba79ca0f980b04b8f3  data/selected_dev_openrouter_meta-llama_llama-3.3-70b-instruct.jsonl  (48 lines)
+03955c6cff94dc795d7d2f2209003ea9513689b7f522150971808996a08ecb99  data/selected_dev_openrouter_mistralai_ministral-14b-2512.jsonl  (48 lines)
+491ae37178a67aa5429ac9a407ddd0b7cc4a276fe01ee8659604a87028d107fe  data/selected_gemma4_12b.jsonl  (120 lines)
+f605923cccc17cb599c345307055adf8ac818f7a54e877afe970c4ff0f641ce6  data/selected_ministral-3_8b.jsonl  (120 lines)
+93e87b227873a4dd58ca8da97cd3cf5676d221ba8f21752577bd365ecf001044  data/selected_openai_gpt-6-luna.jsonl  (120 lines)
+af7aa7a8dd01d351252a6492d2b28f141917a436aa3ab9ee9d3bcd4426a7574b  data/selected_openai_gpt-6-sol.jsonl  (120 lines)
+ec6b39ef2e58959ee62baa44ebac7c5fa4abde4523ff51a29945f74e4b2393a5  data/selected_openrouter_deepseek_deepseek-v3.2.jsonl  (120 lines)
+e3468d9c66cfb907a9710d106cf810e5d96f7b8153dd769b0c5df0533380ac54  data/selected_openrouter_meta-llama_llama-3.3-70b-instruct.jsonl  (120 lines)
+3bf70e8b17a5fe15ffdb33884349d8be900a90bda0798e3d9df87222bacfa61e  data/selected_openrouter_mistralai_ministral-14b-2512.jsonl  (120 lines)
+
+## Code
+720d2daf30ef17c735607a84e4c3952252e412e0303fc2785ce70bbd5d021860  design.py
+0afabb6d20954e68f1fca175c43826821d5e3664fafa7b61940e8e541d6b9cd4  client.py
+376796c8b6bdd05d2fa016f4e4f7df2ed1197c908064f3c3feee0d62665674fd  api_client.py
+d72042e89b61292a91eae7555733204de4cf9f02d66d61aec14e7c04b9c0f539  run.py
+a7e1ed561857557302868f17c79485c576d32066287db4dc61520e1a85bbd016  screen.py
+da5628110b45f630f0424522e97b7317c723f901030ffd1698d744b1f70c985e  probe.py
+2681b1edbfc643d64dda2dc9b6fceb33ce15724e44f971711757cfb3b66bc6a8  run_all.py
+69588bf703afe5aeb0aae6c3c9fc44aaadf48708247bf93de80c16346b812869  analyze.py
+
+## Ollama models (/api/tags, same content as `ollama list`)
+ministral-3:8b         digest 1922accd5827  6.0 GB  8.9B Q4_K_M  modified 2026-11-15T16:44:22
+gemma4:12b             digest 6114515d63c1  8.0 GB  11.9B Q4_K_M  modified 2026-09-30T22:50:55
+
+## `ollama list`
+NAME              ID              SIZE      MODIFIED    
+ministral-3:8b    1922accd5827    6.0 GB    2 hours ago    
+gemma4:12b        6114515d63c1    8.0 GB    6 weeks ago

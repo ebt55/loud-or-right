@@ -1,0 +1,15 @@
+  screened 25: wrong 10, right 15, 8 s
+  screened 50: wrong 18, right 32, 15 s
+  screened 75: wrong 25, right 50, 23 s
+  screened 100: wrong 38, right 62, 30 s
+  screened 125: wrong 42, right 83, 40 s
+  screened 150: wrong 49, right 101, 49 s
+  screened 175: wrong 54, right 121, 57 s
+  screened 200: wrong 58, right 142, 65 s
+  screened 225: wrong 64, right 161, 73 s
+  screened 250: wrong 71, right 179, 82 s
+  screened 275: wrong 79, right 196, 90 s
+screened 284 items (93 s this session): wrong 81, right 203, unparsed/error 0; first-answer accuracy 203/284 = 0.715; mean s per item (2 calls each this session) 1.13
+  selected wrong: 80; mean agree 0.975; agree==1 for 78
+  selected right: 40; mean agree 1.000; agree==1 for 40
+wrote 120 rows to C:\Users\ebin\claude-ground\apart-research\AI x Epistemics Research Sprint Nov 2026\harness\data\selected_openrouter_meta-llama_llama-3.3-70b-instruct.jsonl

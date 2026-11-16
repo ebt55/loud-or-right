@@ -1,0 +1,33 @@
+{
+ "anthropic": {
+  "by_model": {
+   "claude-sonnet-5-5": 3.7059440000000095
+  },
+  "calls": 1280,
+  "usd": 3.7059440000000095
+ },
+ "deepseek": {
+  "by_model": {
+   "deepseek-v4.1-flash-1017": 0.6174077999999995
+  },
+  "calls": 4238,
+  "usd": 0.6174077999999995
+ },
+ "openai": {
+  "by_model": {
+   "gpt-6-sol": 1.9376560000000038
+  },
+  "calls": 1440,
+  "usd": 1.9376560000000038
+ },
+ "openrouter": {
+  "by_model": {
+   "meta-llama/llama-3.3-70b-instruct": 0.6192406999999989,
+   "meta-llama/llama-4-maverick": 0.7146258799999996,
+   "mistralai/mistral-medium-3-5": 3.161089499999992,
+   "qwen/qwen3.8-27b": 0.30466177499999986
+  },
+  "calls": 14719,
+  "usd": 4.799617854999989
+ }
+}

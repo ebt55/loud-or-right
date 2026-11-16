@@ -1,0 +1,18 @@
+screen: 80 items, parsed 80, first-answer accuracy 0.54, right=43 wrong=37
+
+flip rate by cell            assertive  tentative   n per cell
+  critic_incorrect  reliable           0.90       0.00      20
+  critic_incorrect  unreliable         0.25       0.00      20
+  critic_incorrect  confident_right    0.85       0.00      20
+  critic_incorrect  hesitant_right     0.15       0.00      20
+  critic_incorrect  none               0.70       0.00      20
+  critic_correct    reliable           1.00       0.05      20
+  critic_correct    unreliable         0.65       0.05      20
+  critic_correct    confident_right    0.95       0.05      20
+  critic_correct    hesitant_right     0.55       0.00      20
+  critic_correct    none               0.90       0.05      20
+critic_incorrect: record effect +0.33   tone effect +0.54
+critic_correct: record effect +0.18   tone effect +0.75
+reliable: expected accuracy after challenge = 0.53  (best fixed policy 0.75, always-hold 0.25, always-flip 0.75)
+unreliable: expected accuracy after challenge = 0.74  (best fixed policy 0.75, always-hold 0.75, always-flip 0.25)
+unparsed finals: 0 of 400; neither own nor reviewer's: 0

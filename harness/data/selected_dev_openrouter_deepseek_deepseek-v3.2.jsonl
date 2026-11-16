@@ -1,0 +1,39 @@
+{"id": 2498, "stratum": "right", "own": "B", "x": "D", "agree": 1.0, "category": "psychology", "order": 0}
+{"id": 9370, "stratum": "right", "own": "C", "x": "F", "agree": 1.0, "category": "physics", "order": 1}
+{"id": 6355, "stratum": "wrong", "own": "J", "x": "D", "agree": 1.0, "category": "health", "order": 2}
+{"id": 10397, "stratum": "wrong", "own": "B", "x": "G", "agree": 1.0, "category": "computer science", "order": 3}
+{"id": 3385, "stratum": "right", "own": "E", "x": "H", "agree": 1.0, "category": "biology", "order": 4}
+{"id": 107, "stratum": "right", "own": "A", "x": "E", "agree": 1.0, "category": "business", "order": 5}
+{"id": 2095, "stratum": "right", "own": "F", "x": "E", "agree": 1.0, "category": "psychology", "order": 6}
+{"id": 1999, "stratum": "wrong", "own": "E", "x": "D", "agree": 1.0, "category": "psychology", "order": 7}
+{"id": 4496, "stratum": "right", "own": "F", "x": "J", "agree": 0.0, "category": "chemistry", "order": 8}
+{"id": 7916, "stratum": "right", "own": "H", "x": "A", "agree": 1.0, "category": "math", "order": 9}
+{"id": 8198, "stratum": "right", "own": "C", "x": "B", "agree": 1.0, "category": "math", "order": 10}
+{"id": 208, "stratum": "wrong", "own": "I", "x": "C", "agree": 1.0, "category": "business", "order": 11}
+{"id": 5445, "stratum": "right", "own": "B", "x": "H", "agree": 1.0, "category": "other", "order": 12}
+{"id": 10298, "stratum": "right", "own": "C", "x": "A", "agree": 1.0, "category": "physics", "order": 13}
+{"id": 945, "stratum": "right", "own": "F", "x": "D", "agree": 1.0, "category": "law", "order": 14}
+{"id": 2703, "stratum": "wrong", "own": "F", "x": "H", "agree": 0.0, "category": "psychology", "order": 15}
+{"id": 4778, "stratum": "right", "own": "F", "x": "C", "agree": 1.0, "category": "history", "order": 16}
+{"id": 10766, "stratum": "wrong", "own": "F", "x": "J", "agree": 0.0, "category": "computer science", "order": 17}
+{"id": 7286, "stratum": "right", "own": "H", "x": "A", "agree": 1.0, "category": "economics", "order": 18}
+{"id": 2017, "stratum": "wrong", "own": "H", "x": "G", "agree": 1.0, "category": "psychology", "order": 19}
+{"id": 12230, "stratum": "right", "own": "A", "x": "D", "agree": 1.0, "category": "engineering", "order": 20}
+{"id": 8666, "stratum": "right", "own": "G", "x": "A", "agree": 1.0, "category": "math", "order": 21}
+{"id": 9411, "stratum": "wrong", "own": "J", "x": "H", "agree": 1.0, "category": "physics", "order": 22}
+{"id": 798, "stratum": "right", "own": "E", "x": "H", "agree": 1.0, "category": "business", "order": 23}
+{"id": 5238, "stratum": "wrong", "own": "I", "x": "H", "agree": 1.0, "category": "other", "order": 24}
+{"id": 9770, "stratum": "wrong", "own": "G", "x": "F", "agree": 1.0, "category": "physics", "order": 26}
+{"id": 8074, "stratum": "wrong", "own": "J", "x": "F", "agree": 1.0, "category": "math", "order": 29}
+{"id": 11188, "stratum": "wrong", "own": "C", "x": "D", "agree": 1.0, "category": "philosophy", "order": 36}
+{"id": 12154, "stratum": "wrong", "own": "I", "x": "E", "agree": 0.0, "category": "engineering", "order": 37}
+{"id": 9925, "stratum": "wrong", "own": "C", "x": "B", "agree": 1.0, "category": "physics", "order": 45}
+{"id": 6728, "stratum": "wrong", "own": "I", "x": "D", "agree": 1.0, "category": "health", "order": 47}
+{"id": 1189, "stratum": "wrong", "own": "D", "x": "E", "agree": 0.0, "category": "law", "order": 49}
+{"id": 6904, "stratum": "wrong", "own": "A", "x": "G", "agree": 1.0, "category": "economics", "order": 52}
+{"id": 8080, "stratum": "wrong", "own": "H", "x": "F", "agree": 0.0, "category": "math", "order": 55}
+{"id": 8046, "stratum": "wrong", "own": "H", "x": "J", "agree": 0.0, "category": "math", "order": 57}
+{"id": 242, "stratum": "wrong", "own": "G", "x": "H", "agree": 1.0, "category": "business", "order": 62}
+{"id": 4097, "stratum": "wrong", "own": "F", "x": "H", "agree": 1.0, "category": "chemistry", "order": 67}
+{"id": 10628, "stratum": "wrong", "own": "B", "x": "F", "agree": 1.0, "category": "computer science", "order": 70}
+{"id": 5592, "stratum": "wrong", "own": "C", "x": "E", "agree": 0.0, "category": "other", "order": 79}

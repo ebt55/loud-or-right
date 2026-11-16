@@ -1,0 +1,19 @@
+(!) marks an answer that differs from the expected one. Joint score covers X, Y, Z and R.
+   [full_context] no notice                  X_onlyA=YES  Y_onlyB=YES  Z_A+official=YES  R_official=YES  L_forum=NO   joint_ok=True
+   [full_context] notice Tradewind Wire      X_onlyA=NO  Y_onlyB=YES  Z_A+official=YES  R_official=YES  L_forum=NO   joint_ok=True
+   [full_context] notice Corbel Dispatch     X_onlyA=YES  Y_onlyB=NO  Z_A+official=YES  R_official=YES  L_forum=NO   joint_ok=True
+
+MEMORY [compact_generic] 219 words; strings kept: {'Tradewind Wire': False, 'Corbel Dispatch': False, 'forum': False, 'filing': False, 'Port Authority': False, 'sponsor': False}
+   [compact_generic] no notice                  X_onlyA=YES  Y_onlyB=YES  Z_A+official=YES  R_official=YES  L_forum=NO   joint_ok=True
+   [compact_generic] notice Tradewind Wire      X_onlyA=YES(!)  Y_onlyB=YES  Z_A+official=YES  R_official=YES  L_forum=NO   joint_ok=False
+   [compact_generic] notice Corbel Dispatch     X_onlyA=YES  Y_onlyB=YES(!)  Z_A+official=YES  R_official=YES  L_forum=NO   joint_ok=False
+
+MEMORY [fact_extract] 118 words; strings kept: {'Tradewind Wire': False, 'Corbel Dispatch': False, 'forum': False, 'filing': False, 'Port Authority': False, 'sponsor': False}
+   [fact_extract] no notice                  X_onlyA=YES  Y_onlyB=YES  Z_A+official=YES  R_official=YES  L_forum=NO   joint_ok=True
+   [fact_extract] notice Tradewind Wire      X_onlyA=YES(!)  Y_onlyB=YES  Z_A+official=YES  R_official=YES  L_forum=NO   joint_ok=False
+   [fact_extract] notice Corbel Dispatch     X_onlyA=YES  Y_onlyB=YES(!)  Z_A+official=YES  R_official=YES  L_forum=NO   joint_ok=False
+
+MEMORY [provenance_schema] 271 words; strings kept: {'Tradewind Wire': True, 'Corbel Dispatch': True, 'forum': True, 'filing': True, 'Port Authority': True, 'sponsor': True}
+   [provenance_schema] no notice                  X_onlyA=YES  Y_onlyB=YES  Z_A+official=YES  R_official=YES  L_forum=NO   joint_ok=True
+   [provenance_schema] notice Tradewind Wire      X_onlyA=NO  Y_onlyB=YES  Z_A+official=YES  R_official=YES  L_forum=NO   joint_ok=True
+   [provenance_schema] notice Corbel Dispatch     X_onlyA=YES  Y_onlyB=NO  Z_A+official=YES  R_official=YES  L_forum=NO   joint_ok=True
