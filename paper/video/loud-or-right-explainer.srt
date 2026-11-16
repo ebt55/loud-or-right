@@ -1,0 +1,279 @@
+1
+00:00:01,820 --> 00:00:05,080
+Someone tells an AI model
+that its answer is wrong.
+
+2
+00:00:05,350 --> 00:00:06,790
+Should it change the answer?
+
+3
+00:00:07,130 --> 00:00:09,940
+And what should count: how
+sure the critic sounds,
+
+4
+00:00:10,030 --> 00:00:12,050
+or how often that critic has been right?
+
+5
+00:00:12,777 --> 00:00:14,487
+Confidence can mislead.
+
+6
+00:00:14,867 --> 00:00:17,287
+Some critics are right
+when they sound certain.
+
+7
+00:00:17,717 --> 00:00:19,537
+Others are right when they hedge.
+
+8
+00:00:20,167 --> 00:00:23,797
+A careful listener would keep a
+track record for each tone of voice.
+
+9
+00:00:24,547 --> 00:00:26,807
+We tested whether language models do.
+
+10
+00:00:27,497 --> 00:00:32,377
+The model sees a practice log: eight
+past objections from a scripted reviewer,
+
+11
+00:00:32,467 --> 00:00:36,427
+Dana, half certain and half
+unsure, each marked right or wrong.
+
+12
+00:00:36,697 --> 00:00:39,637
+In one version, Dana is
+right only when certain.
+
+13
+00:00:39,747 --> 00:00:41,577
+In another, only when unsure.
+
+14
+00:00:41,857 --> 00:00:44,307
+Then Dana objects to
+the model's own answer,
+
+15
+00:00:44,417 --> 00:00:46,587
+and we record whether the model switches.
+
+16
+00:00:47,067 --> 00:00:49,067
+Fifteen models took the test.
+
+17
+00:00:50,103 --> 00:00:54,563
+Further right, a model follows the certain
+voice more when its record is good.
+
+18
+00:00:54,913 --> 00:00:57,463
+Further up, the same for the unsure voice.
+
+19
+00:00:57,773 --> 00:01:00,903
+On the diagonal, both voices'
+records count equally.
+
+20
+00:01:01,553 --> 00:01:05,913
+Claude Sonnet 5.5 and GPT-6 Sol sit there.
+
+21
+00:01:06,613 --> 00:01:08,603
+Five models barely responded.
+
+22
+00:01:10,053 --> 00:01:12,453
+Several open-weight
+models looked different.
+
+23
+00:01:12,893 --> 00:01:15,293
+They seemed to credit
+only the confident voice.
+
+24
+00:01:15,513 --> 00:01:19,473
+We had predicted that for two of them,
+in advance, and it came out as predicted.
+
+25
+00:01:19,703 --> 00:01:21,743
+But our explanation did not hold up.
+
+26
+00:01:22,410 --> 00:01:24,450
+Look at the log's first line.
+
+27
+00:01:24,900 --> 00:01:29,250
+In our main version the order never changed,
+and the first entry was a certain one.
+
+28
+00:01:29,530 --> 00:01:34,420
+So when the certain voice had the good
+record, the log opened with "Dana was right".
+
+29
+00:01:34,740 --> 00:01:37,230
+Otherwise it opened with "Dana was wrong".
+
+30
+00:01:37,440 --> 00:01:39,240
+Record and order were tangled.
+
+31
+00:01:39,987 --> 00:01:44,157
+So we ran exploratory tests, with
+predictions written down first.
+
+32
+00:01:44,257 --> 00:01:45,607
+We reversed the log.
+
+33
+00:01:45,747 --> 00:01:53,337
+For Llama 3.3, the gap between the voices
+flipped, from plus 0.59 to minus 0.16.
+
+34
+00:01:53,637 --> 00:01:56,847
+Two more models flipped,
+and Gemma's gap vanished.
+
+35
+00:01:56,997 --> 00:01:59,267
+Sonnet and Sol stayed on the diagonal.
+
+36
+00:01:59,487 --> 00:02:01,417
+Then we shuffled the order.
+
+37
+00:02:01,467 --> 00:02:04,447
+Compared with the original
+order, the gaps shrank.
+
+38
+00:02:04,567 --> 00:02:08,667
+Two Llama models kept a small
+leftover, but it is uncertain,
+
+39
+00:02:08,777 --> 00:02:12,847
+and it disappeared when we changed the
+reviewer's name, phrases and letters.
+
+40
+00:02:13,767 --> 00:02:15,857
+What else moved these models?
+
+41
+00:02:16,047 --> 00:02:18,427
+Our reading is the
+reviewer's overall score:
+
+42
+00:02:18,627 --> 00:02:22,967
+they followed an unsure objection far
+more when Dana had been right every time,
+
+43
+00:02:23,237 --> 00:02:26,287
+though the unsure voice's own
+record was perfect either way.
+
+44
+00:02:26,647 --> 00:02:28,577
+And tone: with no log,
+
+45
+00:02:28,697 --> 00:02:32,017
+every open-weight model followed
+a certain objection more often.
+
+46
+00:02:32,317 --> 00:02:36,497
+Yet asked directly, nearly all of
+them could state each voice's record.
+
+47
+00:02:37,297 --> 00:02:39,127
+Using the record has a cost.
+
+48
+00:02:39,307 --> 00:02:43,427
+On questions Sonnet had answered
+correctly, Dana pushed a wrong answer.
+
+49
+00:02:43,887 --> 00:02:47,757
+When the log favoured Dana's tone,
+Sonnet, answering immediately,
+
+50
+00:02:47,847 --> 00:02:52,317
+gave up its correct answer
+on 105 of 160 trials.
+
+51
+00:02:52,787 --> 00:02:55,707
+With brief reasoning, 8 of 160.
+
+52
+00:02:56,177 --> 00:02:59,637
+On questions it had got wrong,
+it still followed a good record.
+
+53
+00:03:00,127 --> 00:03:04,787
+But there Dana named the correct
+answer, so that comparison is not clean.
+
+54
+00:03:05,277 --> 00:03:07,947
+Sol almost never gave up a correct answer.
+
+55
+00:03:08,653 --> 00:03:11,093
+So: at the extremes we tested,
+
+56
+00:03:11,143 --> 00:03:15,453
+two models responded to each voice's
+own record, in every order we tried.
+
+57
+00:03:15,903 --> 00:03:20,073
+Several others followed order and tone,
+and seemed to weigh the overall score.
+
+58
+00:03:20,513 --> 00:03:23,503
+Neither being closed nor
+size marked the split.
+
+59
+00:03:23,933 --> 00:03:25,853
+If you test a model with a track record,
+
+60
+00:03:25,913 --> 00:03:29,243
+randomise its order, or order
+can pass for record use.
+
+61
+00:03:29,843 --> 00:03:32,233
+Code and data are open on GitHub.
+

@@ -2,3 +2,6 @@
 *.key.json
 __pycache__/
 *.pyc
+
+# Machine-specific paths for the video transcription check
+asr_local.env
