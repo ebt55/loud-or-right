@@ -6,7 +6,7 @@ Code, data and analysis for a submission to the Apart Research **AI x Epistemics
 
 **Report:** [`paper/report.pdf`](paper/report.pdf). Its source is [`paper/report.md`](paper/report.md).
 
-**Explainer video (3:34):** [`paper/video/loud-or-right-explainer.mp4`](paper/video/loud-or-right-explainer.mp4), with captions in [`loud-or-right-explainer.srt`](paper/video/loud-or-right-explainer.srt).
+**Explainer video (3:34):** [on YouTube](https://youtu.be/JbqzMuXK1OU), or [`paper/video/loud-or-right-explainer.mp4`](paper/video/loud-or-right-explainer.mp4), with captions in [`loud-or-right-explainer.srt`](paper/video/loud-or-right-explainer.srt).
 
 https://github.com/user-attachments/assets/47c0b10b-2412-48b4-931e-44024d78b8e1
 
